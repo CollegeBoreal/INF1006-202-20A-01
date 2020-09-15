@@ -1,1 +1,1 @@
-!{image}(s)
+![image](S)
