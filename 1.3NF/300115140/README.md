@@ -1,2 +1,2 @@
 # Domaine
-![image](Exercice BDD.jpg)
+![image](BDD.jpg)
