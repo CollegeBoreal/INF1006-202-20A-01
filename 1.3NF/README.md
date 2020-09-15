@@ -1,3 +1,3 @@
 # DOMAINE
-![IMAGE](DEVOIR.JFIF)
+![image](DEVOIR.JFIF)
 
