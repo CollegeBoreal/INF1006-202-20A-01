@@ -1,2 +1,2 @@
 
-![image].(superette 2 S plus)
+![image].(superette 2 S plus.jpeg)
