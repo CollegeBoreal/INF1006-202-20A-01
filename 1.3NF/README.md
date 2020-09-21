@@ -1,5 +1,5 @@
 # DOMAINE
 
 
-[Participation](Participation.md)
+[Participation](.scripts/Participation.md)
 
