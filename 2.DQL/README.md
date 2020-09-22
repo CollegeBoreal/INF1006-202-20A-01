@@ -72,7 +72,7 @@ PS > choco install mysql.workbench
 
 <img src="images/connection.png" width="451" heigth="300"></img>
 
-### Éxécuter les commandes SQL en se servant du modèle ci-dessous
+### Éxécuter les commandes [SQL](../S.SQLCommands) en se servant du modèle ci-dessous
 
 ![image](images/sakila.png)
 
