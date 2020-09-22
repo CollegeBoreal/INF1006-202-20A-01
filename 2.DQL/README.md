@@ -4,11 +4,11 @@ http://dev.mysql.com/doc/index-other.html
 
 - [x] Base de données `sakila-db`
 
-. Télécharger le fichier `sakila-db.zip` dans le répertoire racine de l'utilisateur. (Home Directory ~ )
+* Télécharger le fichier `sakila-db.zip` dans le répertoire racine de l'utilisateur. (Home Directory ~ )
 
 http://downloads.mysql.com/docs/sakila-db.zip
 
-. Décompresser le fichier
+* Décompresser le fichier
 
 ```
 $ unzip ~/Downloads/sakila-db.zip  -d ~/Downloads
