@@ -55,6 +55,19 @@ $ docker exec  --interactive some-mysql \
 
 ### Se connecter à [MySQL WorkBench](https://www.mysql.com/fr/products/workbench/)
 
+:m: Installer MySQL WorkBench
+
+:desktop: Windows
+
+```
+PS > choco install mysql.workbench
+```
+:apple: MacOS
+
+```
+% brew cask install mysqlworkbench
+```
+
 ![image](images/connection.png)
 
 ### Éxécuter les commandes SQL en se servant du modèle ci-dessous
