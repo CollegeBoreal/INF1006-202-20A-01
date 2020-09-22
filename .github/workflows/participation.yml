@@ -12,6 +12,10 @@ jobs:
         run: |
           cd 1.3NF
           bash .scripts/run.sh
+      - shell: bash
+        run: |
+          cd 2.DQL
+          bash .scripts/run.sh
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
