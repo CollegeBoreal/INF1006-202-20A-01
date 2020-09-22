@@ -2,7 +2,8 @@
 ### Example de bases de données
 http://dev.mysql.com/doc/index-other.html
 
-### Fichier sakila-db
+- [x] Base de données `sakila-db`
+
 . Télécharger le fichier `sakila-db.zip` dans le répertoire racine de l'utilisateur. (Home Directory ~ )
 
 http://downloads.mysql.com/docs/sakila-db.zip
@@ -13,9 +14,11 @@ http://downloads.mysql.com/docs/sakila-db.zip
 $ unzip ~/Downloads/sakila-db.zip  -d ~/Downloads
 ```
 
-### Charger les données dans Docker 
+- [x] Charger les données dans Docker 
 
-- Créer la base de données sakila
+:note: S'assurer que le conteneur `some-mysql` est créé
+
+. Créer la base de données sakila
 
 ```
 $ docker container exec --interactive --tty some-mysql \
@@ -23,7 +26,7 @@ $ docker container exec --interactive --tty some-mysql \
               "CREATE DATABASE sakila;"
 ```
 
-- Créer un utilisateur
+. Créer un utilisateur
 
 ```
 $ docker container exec --interactive some-mysql  \
@@ -31,7 +34,7 @@ $ docker container exec --interactive some-mysql  \
               "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';"
 ```
 
-- Accorder tous les droits a l'utilisateur d'utiliser la base sakila
+. Accorder tous les droits a l'utilisateur d'utiliser la base sakila
 
 ```
 $ docker container exec --interactive some-mysql  \
