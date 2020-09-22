@@ -70,7 +70,7 @@ PS > choco install mysql.workbench
 
 :m: Connection à MySQL Workbench
 
-<img src="images/connection.png" width="902" heigth="600"></img>
+<img src="images/connection.png" width="451" heigth="300"></img>
 
 ### Éxécuter les commandes SQL en se servant du modèle ci-dessous
 
