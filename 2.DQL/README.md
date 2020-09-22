@@ -57,7 +57,7 @@ $ docker exec  --interactive some-mysql \
 
 :m: Installer MySQL WorkBench
 
-:laptop: Windows
+:computer: Windows
 
 ```
 PS > choco install mysql.workbench
