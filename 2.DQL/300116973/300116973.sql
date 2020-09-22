@@ -1,3 +1,3 @@
 -- Ma requette SQL
 
-SELECT * FROM customer join film using 	(title)
+SELECT * FROM sakila.customer join sakila.film_actor
