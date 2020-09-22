@@ -84,8 +84,8 @@ PS > choco install mysql.workbench
 
 ## :bookmark: Devoir 
 
-- [x] Créer un fichier `:id:.sql` dans votre répertoire :id:
+- [x] Créer un fichier :id:`.sql` dans votre répertoire :id:
 
-- [x] Dans le fichier `:id:`.sql y mettre une requete SQL correspondant au modèle Sakila
+- [x] Dans le fichier :id:`.sql` y mettre une requete SQL correspondant au modèle Sakila
 
 # [Participation](.scripts/Participation.md)
