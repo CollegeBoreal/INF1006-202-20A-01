@@ -68,6 +68,8 @@ PS > choco install mysql.workbench
 % brew cask install mysqlworkbench
 ```
 
+:m: Connection à MySQL Workbench
+
 ![image](images/connection.png)
 
 ### Éxécuter les commandes SQL en se servant du modèle ci-dessous
