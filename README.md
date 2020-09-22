@@ -16,9 +16,9 @@ Système de gestion de bases de données
 |02|20-09-14| [Docker](./0.Docker)                                | Install MySQL with Docker                                          |
 |03|20-09-21| [3NF](./1.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                                     |
 |04|20-09-28| [DQL](2.DQL)                                        | Data Query Language                                               |
-|05|20-10-05|[3.Boot](./3.Boot)                              | Boot                                    | Chapitre 4, 5     |
-|06|20-10-12| [DCL]() & [DDL]()                                   | Data Control Language   & Data Description Language               |
-|07|20-10-19| [DML](4.DML)                                        | Data Manipulation Language                                         |
+|05|20-10-05| [DCL]() & [DDL]()                                   | Data Control Language   & Data Description Language               |
+|06|20-10-12| [DML](4.DML)                                        | Data Manipulation Language                                         |
+|07|20-10-19| :x:                                                 |                                           |
 |08|20-10-26| Autumn Break                                   |                                         |                   |
 |09|20-11-02| [DQL]()                                             | Data Query Language                                               |
 |10|20-11-09| [AWS RDS](R.RDS)                                    | Test                                                               |
@@ -47,8 +47,8 @@ Système de gestion de bases de données
 
 |No| Date   | Cours                       | Intitulé              |  Pratique .                                                    |
 |--|--------|:----------------------------|:----------------------|:---------------------------------------------------------------|
-| 1|05-09-19|                             | Rentree des classes   |                                                                |
-| 3|02-10-19| [DQL](./2.DQL#exercices)    | DQL                   | function, alias                                                |
+| 1|        |                             | Rentree des classes   |                                                                |
+| 3|.       | [DQL](./2.DQL#exercices)    | DQL                   | function, alias                                                |
 |  |        |                             |                       | groupement, condition (having), ordonnacement                  |
 |  |        |                             |                       | imbrication (SELECT)                                           |
 |  |        |                             |                       | JOIN, alias, inner join (ANSI-Style, Theta), Cartesian Product |
