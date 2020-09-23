@@ -1,2 +1,2 @@
 --Marequete sql
-select * from country join film_country USING (film_id)
+SELECT * FROM sakila.country join sakila.film_country USING (film_id)
