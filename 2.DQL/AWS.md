@@ -4,4 +4,4 @@
 
 - [ ] Ouvrir le port :three::three::zero::six: sur le `Firewall`
 
-- [ ] [Créer la base de données](../2.DQL)
+- [ ] [Créer la base de données et se connecter](../2.DQL)
