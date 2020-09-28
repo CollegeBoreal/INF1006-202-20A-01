@@ -89,3 +89,5 @@ PS > choco install mysql.workbench
 - [x] Dans le fichier :id:`.sql` y mettre une requete SQL correspondant au modèle Sakila
 
 # [Participation](.scripts/Participation.md)
+
+## [AWS](AWS.md)
