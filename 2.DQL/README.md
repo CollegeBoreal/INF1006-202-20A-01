@@ -30,7 +30,7 @@ $ docker container exec --interactive --tty some-mysql \
 
 ```
 $ docker container exec --interactive some-mysql  \
-              mysql --user root -ppassword --execute \
+              mysql --user root --password=password --execute \
               "CREATE USER 'etudiants'@'%' IDENTIFIED BY 'etudiants_1';"
 ```
 
@@ -38,7 +38,7 @@ $ docker container exec --interactive some-mysql  \
 
 ```
 $ docker container exec --interactive some-mysql  \
-              mysql --user root -ppassword --execute \
+              mysql --user root --password=password --execute \
               "GRANT ALL ON sakila.* TO 'etudiants'@'%';"
 ```
 
@@ -49,14 +49,14 @@ $ docker container exec --interactive some-mysql  \
 
 ```
 $ docker container exec  --interactive some-mysql \
-               mysql --user root -ppassword sakila < ~/Downloads/sakila-db/sakila-schema.sql
+               mysql --user root --password=password sakila < ~/Downloads/sakila-db/sakila-schema.sql
 ```
 
 - Charger les données
 
 ```
 $ docker exec  --interactive some-mysql \
-               mysql --user root -ppassword sakila < ~/Downloads/sakila-db/sakila-data.sql
+               mysql --user root --password=password sakila < ~/Downloads/sakila-db/sakila-data.sql
 ```
 
 ### Se connecter à [MySQL WorkBench](https://www.mysql.com/fr/products/workbench/)
