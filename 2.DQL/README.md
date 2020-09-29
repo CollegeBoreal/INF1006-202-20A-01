@@ -16,7 +16,7 @@ $ unzip ~/Downloads/sakila-db.zip  -d ~/Downloads
 
 - [x] Création de la base de données `sakila` dans `Docker`
 
-:bulb: S'assurer que le conteneur `some-mysql` est créé
+:bulb: S'assurer que le conteneur [`some-mysql`](0.Docker) est créé
 
 * Créer la base de données sakila
 
