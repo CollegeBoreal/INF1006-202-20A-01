@@ -22,7 +22,7 @@ $ unzip ~/Downloads/sakila-db.zip  -d ~/Downloads
 
 ```
 $ docker container exec --interactive --tty some-mysql \
-              mysql --user root -ppassword --execute \
+              mysql --user root --password=password --execute \
               "CREATE DATABASE sakila;"
 ```
 
