@@ -1,6 +1,6 @@
 # Deploiement sur Azure
 
-- [ ] [Créer et pointer vers la machine](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/1.AWS/deployment)
+- [ ] [Créer et pointer vers la machine](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/2.Azure)
 
 - [ ] Ouvrir le port :three::three::zero::six: sur le `Firewall`
 
