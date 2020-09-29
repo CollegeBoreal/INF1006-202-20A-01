@@ -94,4 +94,4 @@ PS > choco install mysql.workbench
 
 ## :m: [AWS](AWS.md)
 
-## :m: [Azure](https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Virtualisation/4.Cloud/2.Public/2.Azure)
+## :m: [Azure](AZ.md)
