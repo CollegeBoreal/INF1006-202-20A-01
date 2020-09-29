@@ -4,6 +4,6 @@
 
 - [ ] Ouvrir le port :three::three::zero::six: sur le `Firewall`
 
-<img src="images/AZ-Firewall-3306.png" width="" height=""></img>
+<img src="images/AZ-Firewall-3306.png" width="577" height="721"></img>
 
 - [ ] [Créer la base de données et se connecter](../2.DQL)
