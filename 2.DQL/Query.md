@@ -1,6 +1,6 @@
 # :ab: Query
 
-## :bookmark: [Participation](Participation.md)
+## :bookmark: [Participation](.scripts/Participation.md)
 
 ## :one: Votre Modele
 
