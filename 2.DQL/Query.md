@@ -4,9 +4,7 @@
 
 ## :one: Votre Modele
 
-:pushpin: En utilisant votre propre modèle, créer des rapports utiles à vos utilisateurs 
-
-### Examples:
+:pushpin: En utilisant Sakila comme base de données, créer les rapports suivant: 
 
 1. Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
 2. Imprimer le nom et le montant de factures des personnes habitant le Congo et l'algerie (ANSI-92)
@@ -62,7 +60,7 @@ WHERE country.country = 'Italy';
 
 -- SELECT NOTES.note FROM NOTES
 -- INNER JOIN ETUDIANTS USING (etudiant)
--- WHERE ETUDIANTS.nom = 'Thiam';
+-- WHERE ETUDIANTS.nom = 'Siakam';
 
 SELECT * FROM ETUDIANTS, NOTES; -- Theta
 ```
