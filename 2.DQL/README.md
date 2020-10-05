@@ -86,7 +86,7 @@ PS > choco install mysql.workbench
 
 - [x] Créer un fichier :id:`.sql` dans votre répertoire :id:
 
-- [x] Dans le fichier :id:`.sql` y mettre une requete SQL correspondant au modèle Sakila
+- [x] Dans le fichier :id:`.sql` y mettre des requetes SQL suivant les [rapports](Query.md) suivants:
 
 # [Participation](.scripts/Participation.md)
 
