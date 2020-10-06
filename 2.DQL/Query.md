@@ -33,6 +33,9 @@ The difference is mostly syntactic sugar, but with a couple interesting notes.
 To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
 ```
 
+### Examples
+
+- [ ] Projection - SELECT, Jointure - FROM/JOIN, Condition - WHERE
 
 ```sql
 SELECT * FROM city;
@@ -50,17 +53,27 @@ INNER JOIN country USING (country_id)
 WHERE country.country = 'Italy';
 ```
 
+:three: Revision de quelques mots clés 
 
-```sql
--- SELECT * FROM ETUDIANTS;
+```
+keyword - mots clés
 
--- SELECT NOTES.note FROM NOTES
--- INNER JOIN ETUDIANTS ON (ETUDIANTS.etudiant = NOTES.etudiant)
--- WHERE ETUDIANTS.nom = 'Thiam';
+— Imprimer les noms des étudiants admis
+SELECT nom FROM etudiants WHERE  notes >= 60 ;
 
--- SELECT NOTES.note FROM NOTES
--- INNER JOIN ETUDIANTS USING (etudiant)
--- WHERE ETUDIANTS.nom = 'Siakam';
+- Selection SELECT
 
-SELECT * FROM ETUDIANTS, NOTES; -- Theta
+- Table FROM
+
+- Condition WHERE
+
+- Tri ORDER BY
+
+- JOIN Jointure
+
+- Groupement GROUP BY
+
+- HAVING
+
+SUM, AVG, COUNT
 ```
