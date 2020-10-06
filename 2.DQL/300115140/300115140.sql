@@ -30,13 +30,13 @@ OR country = "Algeria"
 GROUP BY country.country, customer.last_name;
 
 -- Quel(le) acteur(rice) est apparu(e) dans le plus de films?
-
-SELECT film.film_id, actor.actor_id FROM film
-JOIN film_actor USING film_id
-JOIN actor USING actor_id
-GROUP BY actor.last_name
-ORDER BY COUNT (*)
+SELECT COUNT(*), actor.first_name, actor.last_name
+FROM film
+JOIN film_actor USING (film_id)
+JOIN actor USING  (actor_id)
+GROUP BY actor.first_name
 LIMIT 1;
+  
 
 
 -- Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
