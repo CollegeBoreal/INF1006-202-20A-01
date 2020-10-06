@@ -1,23 +1,17 @@
 -- Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
 
-SELECT 
-    m.last_name AS 'Nom',
-    SUM(p.amount) AS 'Montant Total de la Facture'
-FROM
-    customer m,
-    payment p,
-    address a,
-    city c
-WHERE
-    a.address_id = m.address_id AND    
-    p.customer_id = m.customer_id AND
-    c.city_id = a.city_id
-        AND c.city LIKE 'Lubumbashi'
-GROUP BY m.last_name;
-
+SELECT city.city, customer.last_name, SUM(payment.amount) FROM city 
+JOIN address USING (city_id) 
+JOIN customer USING (address_id)
+JOIN payment USING (customer_id)
+WHERE city = "Lubumbashi"
+GROUP BY city.city, customer.last_name;
 
 
 -- Imprimer le nom et le montant de factures des personnes habitant le Congo et l'algerie (ANSI-92)
+
+
+
 
 
 -- Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
