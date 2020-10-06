@@ -9,16 +9,18 @@ GROUP BY city.city, customer.last_name;
 
 -- Imprimer le nom et le montant de factures des personnes habitant le Congo et l'algerie (ANSI-92)
 
+
+
+-- Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
+
 SELECT country.country, customer.last_name, SUM(payment.amount) FROM country
 JOIN city USING (country_id) 
 JOIN address USING (city_id)
 JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
-WHERE country = "Congo%" OR country = "Algeria"
+WHERE country LIKE "Congo%" 
+OR country = "Algeria"
 GROUP BY country.country, customer.last_name;
-
--- Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
-
 
 -- Quel(le) acteur(rice) est apparu(e) dans le plus de films?
 
