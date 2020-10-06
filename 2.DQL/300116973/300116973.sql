@@ -15,7 +15,6 @@ GROUP BY city.city, customer.last_name;
 
 -- Imprimer le nom et le montant de factures des personnes habitant le Congo et l'algerie (ANSI-92)
 
-
 SELECT country.country, customer.first_name, payment.amount
 FROM country
 JOIN city USING (country_id) 
