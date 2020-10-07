@@ -21,7 +21,7 @@ JOIN city USING (country_id)
 JOIN address USING (city_id) 
 JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
-WHERE country = "Algerie(ANSI-92)" OR country LIKE "Congo%";
+WHERE country = "Algeria" OR country LIKE "Congo%";
 
 -- Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
 
@@ -31,7 +31,7 @@ JOIN city USING (country_id)
 JOIN address USING (city_id) 
 JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
-WHERE country = "Algerie" OR country LIKE "Congo%"
+WHERE country = "Algeria" OR country LIKE "Congo%"
 GROUP BY country.country, customer.first_name;
 
 -- Quel(le) acteur(rice) est apparu(e) dans le plus de films?
