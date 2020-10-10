@@ -29,5 +29,14 @@ WHERE country LIKE "congo%" OR country = "algeria"
 GROUP BY country.country, customer.first_name;
 ;
 -- Quel(le) acteur(rice) est apparu(e) dans le plus de films?
--- Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
+SELECT actor.first_name, COUNT(*)
+FROM film 
+JOIN film_actor USING (film_id)
+JOIN actor USING (actor_id)
+
+GROUP BY actor.first_name LIMIT 1;
+
+
+
+--Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne 
 -- Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenne
