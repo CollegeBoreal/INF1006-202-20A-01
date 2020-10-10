@@ -1,7 +1,6 @@
   
 --Marequete sql
-
-SELECT * FROM sakila.country join sakila.film_country USING (film_id);
+SELECT * FROM sakila.actor WHERE first_name = 'NICK' ;
 -- Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
 SELECT city.city, customer.first_name, SUM(payment.amount)
 FROM city
