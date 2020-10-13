@@ -55,6 +55,39 @@ WHERE country.country = 'Italy';
 
 :three: Revision de quelques mots clés 
 
+
+| Mots Clés                                                                      |  Utilisations                                                           |
+|--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
+| ORDER BY                                                                       | 
+| WHERE
+| SELECT DISTINCT
+| AND
+| OR
+| IN
+| BETWEEN
+| LIKE
+| LIMIT
+| IS NULL
+| Table & Column Aliases
+| Joins
+| INNER JOIN
+| LEFT JOIN
+| RIGHT JOIN
+| Self Join
+| CROSS JOIN
+| GROUP BY
+| HAVING
+| ROLLUP
+| Subquery
+| Derived Tables
+| EXISTS
+| UNION
+| MINUS
+| INTERSECT
+
+
+
 ```
 keyword - mots clés
 
