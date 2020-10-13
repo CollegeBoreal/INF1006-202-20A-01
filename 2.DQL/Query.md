@@ -58,16 +58,17 @@ WHERE country.country = 'Italy';
 
 | Mots Clés                                                                      |  Utilisations                                                           |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| :one: Projections                                                              |                                                                         |
 | [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
 | [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
 | [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
-| Conditions                                                                     |                                                                         |
+| :tow: Conditions (Filtre)                                                      |                                                                         |
 | [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
-| AND
-| OR
-| IN
-| BETWEEN
-| LIKE
+| [AND](https://www.mysqltutorial.org/mysql-and)                             |                                                                         |
+| [OR](https://www.mysqltutorial.org/mysql-or)                             |                                                                         |
+| [IN](https://www.mysqltutorial.org/mysql-in)                             |                                                                         |
+| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                             |                                                                         |
+| [LIKE](https://www.mysqltutorial.org/mysql-like)                             |                                                                         |
 | LIMIT
 | IS NULL
 | Table & Column Aliases
