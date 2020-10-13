@@ -65,7 +65,7 @@ WHERE country.country = 'Italy';
 | [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
 | [LIKE](https://www.mysqltutorial.org/mysql-like)                               |                                                                         |
 | [IS NULL](https://www.mysqltutorial.org/mysql-like)                            |                                                                         |
-| [IN](https://www.mysqltutorial.org/mysql-in)                                   |                                                                         |
+| [IN](https://www.mysqltutorial.org/sql-in.aspx)                                |                                                                         |
 | [AND](https://www.mysqltutorial.org/mysql-and)                                 |                                                                         |
 | [OR](https://www.mysqltutorial.org/mysql-or)                                   |                                                                         |
 | [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
