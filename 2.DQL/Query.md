@@ -58,36 +58,36 @@ WHERE country.country = 'Italy';
 
 | Mots Clés                                                                      |  Utilisations                                                           |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| :one: [Projections](https://dzone.com/articles/math-and-sql-part-5-projection) |                                                                         |
+| :one: [Projections](https://dzone.com/articles/math-and-sql-part-5-projection) |  Sous-ens                                                               |
 | [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
 | [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
 | :two: Conditions                                                               |                                                                         |
 | [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
-| [AND](https://www.mysqltutorial.org/mysql-and)                             |                                                                         |
-| [OR](https://www.mysqltutorial.org/mysql-or)                             |                                                                         |
-| [IN](https://www.mysqltutorial.org/mysql-in)                             |                                                                         |
-| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                             |                                                                         |
-| [LIKE](https://www.mysqltutorial.org/mysql-like)                             |                                                                         |
-| IS NULL
-| :three: Filtre                                                      |                                                                         |
+| [AND](https://www.mysqltutorial.org/mysql-and)                                 |                                                                         |
+| [OR](https://www.mysqltutorial.org/mysql-or)                                   |                                                                         |
+| [IN](https://www.mysqltutorial.org/mysql-in)                                   |                                                                         |
+| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
+| [LIKE](https://www.mysqltutorial.org/mysql-like)                               |                                                                         |
+| IS NULL](https://www.mysqltutorial.org/mysql-like)                             |                                                                         |
+| :three: Filtre                                                                 |                                                                         |
 | [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
-| [LIMIT](https://www.mysqltutorial.org/mysql-limit)                       |                                                                         |
-| Table & Column Aliases
-| Joins
-| INNER JOIN
-| LEFT JOIN
-| RIGHT JOIN
-| Self Join
-| CROSS JOIN
-| GROUP BY
-| HAVING
-| ROLLUP
-| Subquery
-| Derived Tables
-| EXISTS
-| UNION
-| MINUS
-| INTERSECT
+| [LIMIT](https://www.mysqltutorial.org/mysql-limit)                             |                                                                         |
+| Table & Column Aliases                                                         |                                                                         |
+| Joins                                                         |                                                                         |
+| INNER JOIN                                                         |                                                                         |
+| LEFT JOIN                                                         |                                                                         |
+| RIGHT JOIN                                                         |                                                                         |
+| Self Join                                                         |                                                                         |
+| CROSS JOIN                                                         |                                                                         |
+| GROUP BY                                                         |                                                                         |
+| HAVING                                                         |                                                                         |
+| ROLLUP                                                         |                                                                         |
+| Subquery                                                         |                                                                         |
+| Derived Tables                                                         |                                                                         |
+| EXISTS                                                         |                                                                         |
+| UNION                                                         |                                                                         |
+| MINUS                                                         |                                                                         |
+| INTERSECT                                                         |                                                                         |
 
 
 
