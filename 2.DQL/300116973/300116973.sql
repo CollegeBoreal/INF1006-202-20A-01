@@ -53,8 +53,9 @@ GROUP BY category.name
  
 -- Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenne
 
-SELECT name, AVG(length) as Moy FROM film 
+SELECT category.name, COUNT(length) > AVG(film.length)
+FROM film
 JOIN film_category USING (film_id)
 JOIN category USING (category_id)
-group by name
-having avg(length)>(SELECT avg(length) from film);
+GROUP BY category.name; 
+
