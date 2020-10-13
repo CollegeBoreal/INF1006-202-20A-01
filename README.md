@@ -3,8 +3,9 @@ Système de gestion de bases de données
 
 ## Devoirs:
 
-| Date   |                                                     |     Commentaires                                                      |
-|:------:|:----------------------------------------------------|:----------------------------------------------------------------------|
+| Date   | énoncé                    |     Commentaires                                                      |
+|:------:|:--------------------------|:----------------------------------------------------------------------|
+|20-10-20| [:note:](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL) | [:bookmark:](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/.scripts/Participation.md)
 
 
 
