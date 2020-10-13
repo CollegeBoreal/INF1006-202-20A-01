@@ -61,16 +61,17 @@ WHERE country.country = 'Italy';
 | :one: Projections                                                              |                                                                         |
 | [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
 | [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
-| [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
-| :tow: Conditions (Filtre)                                                      |                                                                         |
+| :two: Conditions                                                               |                                                                         |
 | [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
 | [AND](https://www.mysqltutorial.org/mysql-and)                             |                                                                         |
 | [OR](https://www.mysqltutorial.org/mysql-or)                             |                                                                         |
 | [IN](https://www.mysqltutorial.org/mysql-in)                             |                                                                         |
 | [BETWEEN](https://www.mysqltutorial.org/mysql-between)                             |                                                                         |
 | [LIKE](https://www.mysqltutorial.org/mysql-like)                             |                                                                         |
-| LIMIT
 | IS NULL
+| :three: Filtre                                                      |                                                                         |
+| [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
+| [LIMIT](https://www.mysqltutorial.org/mysql-limit)                       |                                                                         |
 | Table & Column Aliases
 | Joins
 | INNER JOIN
