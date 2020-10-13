@@ -68,7 +68,7 @@ WHERE country.country = 'Italy';
 | [IN](https://www.mysqltutorial.org/mysql-in)                                   |                                                                         |
 | [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
 | [LIKE](https://www.mysqltutorial.org/mysql-like)                               |                                                                         |
-| IS NULL](https://www.mysqltutorial.org/mysql-like)                             |                                                                         |
+| [IS NULL](https://www.mysqltutorial.org/mysql-like)                            |                                                                         |
 | :three: Filtre                                                                 |                                                                         |
 | [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
 | [LIMIT](https://www.mysqltutorial.org/mysql-limit)                             |                                                                         |
@@ -79,15 +79,17 @@ WHERE country.country = 'Italy';
 | RIGHT JOIN                                                         |                                                                         |
 | Self Join                                                         |                                                                         |
 | CROSS JOIN                                                         |                                                                         |
+| :four: Statistiques                                                                 |                                                                         |
 | GROUP BY                                                         |                                                                         |
 | HAVING                                                         |                                                                         |
 | ROLLUP                                                         |                                                                         |
-| Subquery                                                         |                                                                         |
-| Derived Tables                                                         |                                                                         |
+| :five: Statistiques                                                                 |                                                                         |
 | EXISTS                                                         |                                                                         |
 | UNION                                                         |                                                                         |
 | MINUS                                                         |                                                                         |
 | INTERSECT                                                         |                                                                         |
+| Subquery                                                         |                                                                         |
+| Derived Tables                                                         |                                                                         |
 
 
 
