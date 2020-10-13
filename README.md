@@ -16,12 +16,12 @@ Système de gestion de bases de données
 |01|20-09-07|                                                | Rentrée des classes                     |                   |
 |02|20-09-14| [0.Docker](0.Docker)                                | Install MySQL with Docker                                          |
 |03|20-09-21| [1.3NF](1.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                                     |
-|04|20-09-28| [2.DQL](2.DQL)                                        | Data Query Language                                               |
-|05|20-10-05| [DCL]() & [DDL]()                                   | Data Control Language   & Data Description Language               |
-|06|20-10-12| [DML](4.DML)                                        | Data Manipulation Language                                         |
+|04|20-09-28| [DCL]() & [DDL]()                                   | Data Control Language   & Data Description Language               |
+|05|20-10-05| [2.DQL](2.DQL)                                        | Data Query Language                                               |
+|06|20-10-12|                                                |                                         |                   |
 |07|20-10-19| :x:                                                 |                                           |
 |08|20-10-26| Autumn Break                                   |                                         |                   |
-|09|20-11-02| [DQL]()                                             | Data Query Language                                               |
+|09|20-11-02| [DML](4.DML)                                        | Data Manipulation Language                                         |
 |10|20-11-09| [AWS RDS](R.RDS)                                    | Test                                                               |
 |11|20-11-16|| [C.Constraints](C.Constraints)                      | Constraints & Index                                                 |
 |12|20-11-23|                                                |                                         |                   |
