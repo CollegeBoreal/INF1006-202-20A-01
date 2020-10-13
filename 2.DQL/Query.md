@@ -59,9 +59,10 @@ WHERE country.country = 'Italy';
 | Mots Clés                                                                      |  Utilisations                                                           |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
-| ORDER BY                                                                       | 
-| WHERE
-| SELECT DISTINCT
+| [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
+| [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
+| Conditions                                                                     |                                                                         |
+| [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
 | AND
 | OR
 | IN
