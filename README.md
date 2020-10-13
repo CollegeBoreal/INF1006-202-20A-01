@@ -5,7 +5,7 @@ Système de gestion de bases de données
 
 | Date   | énoncé                    |     Commentaires                                                      |
 |:------:|:--------------------------|:----------------------------------------------------------------------|
-|20-10-20| [2.DQL](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL) | [:bookmark: Participation](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/.scripts/Participation.md)
+|20-10-20| [2.DQL](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/Query.md) | [:bookmark: Participation](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/.scripts/Participation.md)
 
 
 
