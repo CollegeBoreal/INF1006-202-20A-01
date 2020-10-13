@@ -74,11 +74,11 @@ WHERE country.country = 'Italy';
 | [LIMIT](https://www.mysqltutorial.org/mysql-limit)                             |                                                                         |
 | [Table & Column Aliases](https://www.mysqltutorial.org/mysql-alias/)           |                                                                         |
 | [Joins](https://www.mysqltutorial.org/mysql-join/)                             |                                                                         |
-| [INNER JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
-| [LEFT JOIN](https://www.mysqltutorial.org/mysql-join/)                         |                                                                         |
-| [RIGHT JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
-| [Self Join](https://www.mysqltutorial.org/mysql-join/)                         |                                                                         |
-| [CROSS JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
+| [INNER JOIN](https://www.mysqltutorial.org/mysql-inner-join/)                  |                                                                         |
+| [LEFT JOIN](https://www.mysqltutorial.org/mysql-left-join/)                    |                                                                         |
+| [RIGHT JOIN](https://www.mysqltutorial.org/mysql-right-join/)                  |                                                                         |
+| [Self Join](https://www.mysqltutorial.org/mysql-self-join/)                    |                                                                         |
+| [CROSS JOIN](https://www.mysqltutorial.org/mysql-cross-join/)                  |                                                                         |
 | :four: Aggrégation                                                 |                                                                         |
 | GROUP BY                                                         |                                                                         |
 | HAVING                                                         |                                                                         |
