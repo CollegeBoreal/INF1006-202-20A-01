@@ -58,7 +58,7 @@ WHERE country.country = 'Italy';
 
 | Mots Clés                                                                      |  Utilisations                                                           |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| :one: Projections                                                              |                                                                         |
+| :one: [Projections](https://dzone.com/articles/math-and-sql-part-5-projection) |                                                                         |
 | [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
 | [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
 | :two: Conditions                                                               |                                                                         |
