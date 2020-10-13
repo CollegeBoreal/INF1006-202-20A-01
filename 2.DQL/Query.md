@@ -63,22 +63,22 @@ WHERE country.country = 'Italy';
 | [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
 | :two: Conditions                                                               |                                                                         |
 | [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
-| [AND](https://www.mysqltutorial.org/mysql-and)                                 |                                                                         |
-| [OR](https://www.mysqltutorial.org/mysql-or)                                   |                                                                         |
-| [IN](https://www.mysqltutorial.org/mysql-in)                                   |                                                                         |
-| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
 | [LIKE](https://www.mysqltutorial.org/mysql-like)                               |                                                                         |
 | [IS NULL](https://www.mysqltutorial.org/mysql-like)                            |                                                                         |
+| [IN](https://www.mysqltutorial.org/mysql-in)                                   |                                                                         |
+| [AND](https://www.mysqltutorial.org/mysql-and)                                 |                                                                         |
+| [OR](https://www.mysqltutorial.org/mysql-or)                                   |                                                                         |
+| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
 | :three: Filtre                                                                 |                                                                         |
 | [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
 | [LIMIT](https://www.mysqltutorial.org/mysql-limit)                             |                                                                         |
 | [Table & Column Aliases](https://www.mysqltutorial.org/mysql-alias/)           |                                                                         |
 | [Joins](https://www.mysqltutorial.org/mysql-join/)                             |                                                                         |
-| INNER JOIN                                                         |                                                                         |
-| LEFT JOIN                                                         |                                                                         |
-| RIGHT JOIN                                                         |                                                                         |
-| Self Join                                                         |                                                                         |
-| CROSS JOIN                                                         |                                                                         |
+| [INNER JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
+| [LEFT JOIN](https://www.mysqltutorial.org/mysql-join/)                         |                                                                         |
+| [RIGHT JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
+| [Self Join](https://www.mysqltutorial.org/mysql-join/)                         |                                                                         |
+| [CROSS JOIN](https://www.mysqltutorial.org/mysql-join/)                        |                                                                         |
 | :four: Aggrégation                                                 |                                                                         |
 | GROUP BY                                                         |                                                                         |
 | HAVING                                                         |                                                                         |
