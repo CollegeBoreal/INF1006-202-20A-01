@@ -44,19 +44,21 @@ LIMIT 1;
 
 -- Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
 
-SELECT category.name,  AVG(film.length) 
+SELECT name AS categorie, AVG(length) AS long_moyenne
 FROM film
 JOIN film_category USING (film_id)
 JOIN category USING (category_id)
-GROUP BY category.name
- ;
+GROUP BY name;
  
 -- Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenne
 
-SELECT NAME, AVG(length) AS moyenne FROM film 
-JOIN film_category USING (film_id)
+SELECT name AS categories, COUNT(film.length) AS long_film,
+AVG(film.length) AS long_moyenne
+FROM film
+JOIN film_category USING (film_id) 
 JOIN category USING (category_id)
-GROUP BY NAME
-HAVING AVG (length) > (SELECT AVG(length) from film);
+GROUP BY name
+HAVING (SELECT COUNT(film.length)
+FROM film) > AVG(film.length) ;
  
 
