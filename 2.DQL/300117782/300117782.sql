@@ -8,6 +8,13 @@ WHERE country  LIKE "congo%"
 GROUP BY first_name, country;
 
 -- Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
+SELECT city.city, first_name, SUM(amount)
+FROM city
+JOIN address USING (city_id)
+JOIN customer USING (address_id)
+JOIN payment USING  (customer_id)
+WHERE city = "Lubumbashi"
+GROUP BY city.city, first_name;
 
 -- Imprimer le nom et le montant de factures des personnes habitant le Congo ou l'algerie (ANSI-92)
 
