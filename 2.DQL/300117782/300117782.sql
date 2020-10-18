@@ -1,4 +1,11 @@
--- Ma premiere requete
+-- Ma premiere requete 
+SELECT first_name, country
+FROM country 
+JOIN city USING (country_id)
+JOIN address using (city_id)
+JOIN customer using (address_id)
+WHERE country  LIKE "congo%"
+GROUP BY first_name, country;
 
 -- Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
 
