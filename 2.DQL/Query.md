@@ -84,9 +84,9 @@ WHERE country.country = 'Italy';
 | ROLLUP                                                         |                                                                         |
 | :five: Théorie des ensembles                                   |                                                                         |
 | EXISTS                                                         |                                                                         |
-| UNION                                                         |                                                                         |
-| MINUS                                                         |                                                                         |
-| INTERSECT                                                         |                                                                         |
+| [UNION](https://www.mysqltutorial.org/mysql-union)                                                         |                                                                         |
+| [MINUS](https://www.mysqltutorial.org/mysql-minus/)                                                         |                                                                         |
+| [INTERSECT](https://www.mysqltutorial.org/mysql-intersect/)                                                         |                                                                         |
 | Subquery                                                         |                                                                         |
 | Derived Tables                                                         |                                                                         |
 
