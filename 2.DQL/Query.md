@@ -78,7 +78,6 @@ WHERE country.country = 'Italy';
 | [LEFT JOIN](https://www.mysqltutorial.org/mysql-left-join/)                    |                                                                         |
 | [RIGHT JOIN](https://www.mysqltutorial.org/mysql-right-join/)                  |                                                                         |
 | [Self Join](https://www.mysqltutorial.org/mysql-self-join/)                    |                                                                         |
-| [CROSS JOIN](https://www.mysqltutorial.org/mysql-cross-join/)                  |                                                                         |
 | :four: Aggrégation                                                 |                                                                         |
 | GROUP BY                                                         |                                                                         |
 | HAVING                                                         |                                                                         |
