@@ -81,9 +81,7 @@ WHERE country.country = 'Italy';
 | :four: Aggrégation                                                 |                                                                         |
 | GROUP BY                                                         |                                                                         |
 | HAVING                                                         |                                                                         |
-| ROLLUP                                                         |                                                                         |
 | :five: Théorie des ensembles                                   |                                                                         |
-| EXISTS                                                         |                                                                         |
 | [UNION](https://www.mysqltutorial.org/mysql-union)                                                         |                                                                         |
 | Subquery                                                         |                                                                         |
 | Derived Tables                                                         |                                                                         |
