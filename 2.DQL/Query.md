@@ -85,8 +85,6 @@ WHERE country.country = 'Italy';
 | :five: Théorie des ensembles                                   |                                                                         |
 | EXISTS                                                         |                                                                         |
 | [UNION](https://www.mysqltutorial.org/mysql-union)                                                         |                                                                         |
-| [MINUS](https://www.mysqltutorial.org/mysql-minus/)                                                         |                                                                         |
-| [INTERSECT](https://www.mysqltutorial.org/mysql-intersect/)                                                         |                                                                         |
 | Subquery                                                         |                                                                         |
 | Derived Tables                                                         |                                                                         |
 
