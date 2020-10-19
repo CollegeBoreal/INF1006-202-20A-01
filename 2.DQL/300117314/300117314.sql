@@ -21,6 +21,8 @@ WHERE country like "Congo%" OR "Algeri%";
 
 
 --Imprimer le nom et le montant de la facture totale des personnes habitant le Congo ou l'Algerie (ANSI-92)
+
+
 SELECT country, customer.last_name, SUM(payment.amount) FROM country
 JOIN city USING (country_id)
 JOIN address USING (city_id)
@@ -28,6 +30,15 @@ JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
 WHERE country like "Congo%" OR "Algeri%"
 GROUP BY country, customer.last_name;
+
+--Quel(le) acteur(rice) est apparu(e) dans le plus de films?
+
+SELECT actor.last_name, actor_id, COUNT(*) FROM film
+JOIN film_actor USING (film_id)
+JOIN actor USING  (actor_id)
+GROUP BY actor.last_name, actor_id LIMIT 1;
+
+
 
 
 
