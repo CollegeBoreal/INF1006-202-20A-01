@@ -38,6 +38,13 @@ JOIN film_actor USING (film_id)
 JOIN actor USING  (actor_id)
 GROUP BY actor.last_name, actor_id LIMIT 1;
 
+--Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
+
+SELECT category.name , AVG(film.length) FROM film
+JOIN film_category USING (film_id)
+JOIN category USING (category_id)
+GROUP BY category.name;
+
 
 
 
