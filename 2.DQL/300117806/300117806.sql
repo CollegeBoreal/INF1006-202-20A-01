@@ -5,13 +5,20 @@ JOIN address USING (city_id)
 JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
 WHERE city = 'Lubumbashi'
-GROUP BY city.city, customer.last_name
+GROUP BY city.city, customer.last_name;
 
 
 
 
 Imprimer le nom et le montant de factures des personnes habitant le Congo ou l'algerie (ANSI-92)
 
+SELECT country.country, customer.first_name, payment.amount
+FROM country 
+JOIN city USING (country_id)
+JOIN address USING (city_id)
+JOIN customer USING (address_id)
+JOIN payment USING ( customer_id)
+WHERE country LIKE "congo%" OR country = "algeria";
 
 
 
