@@ -16,7 +16,7 @@ JOIN address USING (city_id)
 JOIN customer USING (address_id)
 JOIN payment USING (customer_id)
 WHERE country LIKE "Congo%" 
-OR country = "Algeria"
+OR country = "Algeria";
 
 -- Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
 
