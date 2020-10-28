@@ -10,13 +10,6 @@ GROUP BY city.city, customer.last_name;
 
 Imprimer le nom et le montant de factures des personnes habitant le Congo ou l'algerie (ANSI-92)
 
-SELECT first_name,last_name,amount as facture FROM customer
-JOIN address USING ( address_id)
-join city USING (city_id)
-JOIN country USING (country_id)
-JOIN payment USING (customer_id)
-WHERE country ='Congo, The Democratic Republic of the' or country ='Algeria';
-
 
 
 
@@ -50,6 +43,21 @@ Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenn
 
 
 
-Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenne
+Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenn
+
+(SELECT AVG(length) from film)SELECT name AS categories, AVG(length) AS moyenne,
+COUNT(length) AS longeur_film FROM film
+JOIN film_category USING (film_id)
+JOIN category USING (category_id)
+GROUP BY name
+HAVING (SELECT COUNT(length) FROM film) >
+ORDER BY AVG(length);
+
+
+
+
+
+
+
 
 
