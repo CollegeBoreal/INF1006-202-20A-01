@@ -40,11 +40,12 @@ Quel(le) acteur(rice) est apparu(e) dans le plus de films?
 
 
 Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
-
-
-
-
-
+SELECT name AS categories, AVG(length) AS long_moyenne
+FROM film
+JOIN film_category USING (film_id)
+JOIN category USING (category_id)
+GROUP BY name
+ORDER BY AVG(length) ;
 
 
 
