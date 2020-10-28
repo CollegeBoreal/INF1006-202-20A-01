@@ -27,13 +27,11 @@ WHERE country like "Congo%" OR "Algeria%"
 GROUP BY country, customer.last_name;
 
 Quel(le) acteur(rice) est apparu(e) dans le plus de films?
-
-
-
-
-
-
-
+SELECT actor.last_name, COUNT(*)
+FROM film
+JOIN film_actor USING (film_id)
+JOIN actor USING (actor_id)
+GROUP BY actor.last_name LIMIT 1;
 
 Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
 SELECT name AS categories, AVG(length) AS long_moyenne
@@ -42,8 +40,6 @@ JOIN film_category USING (film_id)
 JOIN category USING (category_id)
 GROUP BY name
 ORDER BY AVG(length) ;
-
-
 
 
 Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenn
@@ -55,12 +51,3 @@ JOIN category USING (category_id)
 GROUP BY name
 HAVING (SELECT COUNT(length) FROM film) >
 ORDER BY AVG(length);
-
-
-
-
-
-
-
-
-
