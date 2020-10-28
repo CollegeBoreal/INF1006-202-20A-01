@@ -18,11 +18,7 @@ JOIN city USING (country_id)
 JOIN address USING (city_id)
 JOIN customer USING (address_id)
 JOIN payment USING ( customer_id)
-WHERE country LIKE "congo%" OR country = "algeria";
-
-
-
-
+WHERE country LIKE "congo%" OR country = "algeria"
 
 
 
