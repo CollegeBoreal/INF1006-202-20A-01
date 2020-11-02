@@ -1,4 +1,4 @@
-# Quizz (2019-11-19)
+# DDL
 
 
 
@@ -35,14 +35,14 @@
 ##### :m: DATABASE
 
 ```SQL
-> CREATE DATABASE <name>;
+mysql> CREATE DATABASE <name>;
 ```
 
 
 ##### :m: TABLE [🎥](https://www.linkedin.com/learning/decouvrir-mysql/comprendre-les-commandes-ddl-sur-une-table?u=56968449)
 
 ```SQL
-> CREATE TABLE <name> ( 
+mysql> CREATE TABLE <name> ( 
     <nom_champ1> <type1> <option1>, 
     <nom_champ2> <type1> <option2>, 
     ...
