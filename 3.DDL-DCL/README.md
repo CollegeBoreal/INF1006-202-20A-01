@@ -2,7 +2,7 @@
 
 
 
-## Normalisation  [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/normalization-2?u=56968449)
+## Normalisation  [:video:](https://www.linkedin.com/learning/programming-foundations-databases-2/normalization-2?u=56968449)
 
 :pushpin: 1NF [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/first-normal-form?u=56968449)
 
