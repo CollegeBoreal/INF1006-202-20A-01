@@ -32,7 +32,9 @@
 
 :one: CREATE {DATABASE/TABLE/USER} (target);
 
-##### :m: DATABASE
+##### :m: DATABASE 
+
+:bulb: Remplacer les mots entre crochets (en incluant les crochets) par exemple `<name>` par `nom
 
 ```SQL
 mysql> CREATE DATABASE <name>;
