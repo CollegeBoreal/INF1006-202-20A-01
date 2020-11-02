@@ -1,7 +1,7 @@
 ### Docker
 
 
-:o: Installation 
+##### :o: Installation 
 
 Installer [Docker-Desktop](https://github.com/CollegeBoreal/Tutoriels/blob/master/2.Virtualisation/1.Containers/2.Docker/1.Engine/1.Desktop)
 
@@ -22,7 +22,7 @@ $ docker container exec --interactive --tty some-mysql bash
 ```
 
 
-:b: Manipulation de la base de données `MySQL`
+##### :b: Manipulation de la base de données `MySQL`
 
 - [ ] Lancer le CLI (Command Level Interface) de MySQL
 
