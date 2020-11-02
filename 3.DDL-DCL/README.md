@@ -34,7 +34,7 @@
 
 ##### :m: DATABASE 
 
-:bulb: Remplacer les mots entre crochets (en incluant les crochets) par exemple `<name>` par `nom`
+:bulb: Remplacer les mots entre crochets (en incluant les crochets) par exemple `<name>` par `etudiants`
 
 ```SQL
 mysql> CREATE DATABASE <name>;
