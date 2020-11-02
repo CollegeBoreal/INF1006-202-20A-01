@@ -211,12 +211,12 @@ mysql> USE <database>;
 ##### :m:  mysql.user
 
 ```mysql
-mysql> SELECT host, user, password FROM mysql.user;
-+------+-----------+-------------------------------------------+
-| host | user      | password                                  |
-+------+-----------+-------------------------------------------+
-| %    | root      | *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19 |
-| %    | etudiants | *DAFBEF26A36FED36DEDC56E4B03974353E90F522 |
-+------+-----------+-------------------------------------------+
+mysql> SELECT host, user FROM mysql.user;
++------+-----------+
+| host | user      |
++------+-----------+
+| %    | root      |
+| %    | etudiants |
++------+-----------+
 2 rows in set (0.00 sec)
 ```
