@@ -26,5 +26,5 @@ CREATE TABLE fournisseurs (
 -- CRÉER TABLE CONNEXION
 CREATE TABLE connexion (
     connexion_cable BOOLEAN,
-    connexion_DSL BOOLEAN,
+    connexion_DSL BOOLEAN
     );
