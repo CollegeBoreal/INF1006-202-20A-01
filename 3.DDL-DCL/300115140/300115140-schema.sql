@@ -30,7 +30,7 @@ CREATE TABLE Ventes (
   Id_clients INT(5),
   Type VARCHAR (15),
   Prix INT(10),
-  Date_de_vente DATE,
+  Date_de_vente DATE
   );
   
 CREATE TABLE Clients (
@@ -44,13 +44,13 @@ CREATE TABLE Clients (
  CREATE TABLE Produits (
    Id_produits INT(5),
    Nom_du_produit VARCHAR(15),
-   Id_clients INT(10),
+   Id_clients INT(10)
    );
    
   CREATE TABLE Services (
     Id_services INT(5),
     Nom_du_service VARCHAR(15),
-    Id_fournisseur INT (5),
+    Id_fournisseur INT (5)
     );
    
   
