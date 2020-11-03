@@ -18,19 +18,21 @@ USE ETREBIEN;
 -- ********************************
 
 CREATE TABLE Fournisseur (
-  Id_fournisseur INT(5),
+  Id_fournisseur INT AUTO_INCREMENT,
   Nom VARCHAR(20),
   Adresse VARCHAR(35),
-  Telephone INT(10),
+  Telephone INT,
   Nature_du_fournisseur VARCHAR(15)
+  PRIMARY KEY (Id_fournisseur)
   );
 
 CREATE TABLE Ventes (
-  Id_ventes INT(5),
-  Id_clients INT(5),
+  id_ventes INT AUTO_INCREMENT,
+  id_clients INT AUTO_INCREMENT,
   Type VARCHAR (15),
-  Prix INT(10),
+  Prix INT,
   Date_de_vente DATE
+  PRIMARY KEY (id_ventes, id_clients)
   );
   
 CREATE TABLE Clients (
@@ -42,15 +44,15 @@ CREATE TABLE Clients (
   );
   
  CREATE TABLE Produits (
-   Id_produits INT(5),
+   Id_produits INT AUTO_INCREMENT,
    Nom_du_produit VARCHAR(15),
-   Id_clients INT(10)
+   Id_clients INT
    );
    
   CREATE TABLE Services (
-    Id_services INT(5),
+    Id_services INT AUTO_INCREMENT,
     Nom_du_service VARCHAR(15),
-    Id_fournisseur INT (5)
+    Id_fournisseur INT 
     );
    
   
