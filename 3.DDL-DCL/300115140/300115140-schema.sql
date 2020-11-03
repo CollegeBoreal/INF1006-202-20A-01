@@ -5,6 +5,14 @@
 
 CREATE DATABASE ETREBIEN;
 
+--*********************************
+-- Donner les autorisations
+--*********************************
+CREATE USER 'zack'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON ETREBIEN.* TO 'zack'@'%';
+
+USE ETREBIEN;
+
 -- *********************************
 --  Création des TABLES 
 -- ********************************
@@ -12,8 +20,8 @@ CREATE DATABASE ETREBIEN;
 CREATE TABLE Fournisseur (
   Id_fournisseur INT(5),
   Nom VARCHAR(20),
-  Adresse VARCHAR(35)
-  Telephone INT(10)
+  Adresse VARCHAR(35),
+  Telephone INT(10),
   Nature_du_fournisseur VARCHAR(15)
   );
 
@@ -22,7 +30,7 @@ CREATE TABLE Ventes (
   Id_clients INT(5),
   Type VARCHAR (15),
   Prix INT(10),
-  Date DATE(15),
+  Date_de_vente DATE,
   );
   
 CREATE TABLE Clients (
