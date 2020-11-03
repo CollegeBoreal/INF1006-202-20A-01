@@ -28,7 +28,7 @@ CREATE TABLE Fournisseur (
 
 CREATE TABLE Ventes (
   id_ventes INT AUTO_INCREMENT,
-  id_clients INT AUTO_INCREMENT,
+  id_clients INT,
   Type VARCHAR (15),
   Prix INT,
   Date_de_vente DATE
@@ -36,23 +36,27 @@ CREATE TABLE Ventes (
   );
   
 CREATE TABLE Clients (
+  id_client
   Nom VARCHAR(20),
   Prenom VARCHAR(20),
   Adresse VARCHAR(35),
   Code_postale VARCHAR (10),
   Telephone VARCHAR(10),
+  PRIMARY KEY (id_client)
   );
   
  CREATE TABLE Produits (
-   Id_produits INT AUTO_INCREMENT,
+   id_produit INT AUTO_INCREMENT,
+   id_client INT,
    Nom_du_produit VARCHAR(15),
-   Id_clients INT
+   PRIMARY KEY (id_produit, id_client)
    );
    
   CREATE TABLE Services (
-    Id_services INT AUTO_INCREMENT,
+    id_services INT AUTO_INCREMENT,
+    id_fournisseur INT 
     Nom_du_service VARCHAR(15),
-    Id_fournisseur INT 
+    PRIMARY KEY (id_services, id_fournisseur)
     );
    
   
