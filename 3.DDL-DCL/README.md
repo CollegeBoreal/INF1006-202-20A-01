@@ -40,6 +40,11 @@
 mysql> CREATE DATABASE <name>;
 ```
 
+* pour utiliser la base de données:
+
+```SQL
+mysql> use <name>;
+```
 
 ##### :m: TABLE [🎥](https://www.linkedin.com/learning/decouvrir-mysql/comprendre-les-commandes-ddl-sur-une-table?u=56968449)
 
