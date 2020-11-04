@@ -62,6 +62,23 @@ mysql> CREATE TABLE Instruments
 uery OK, 0 rows affected (0.54 sec)
 
 
+--pour vérifier notre nouvelle table:
+
+mysql> DESCRIBE Instruments;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| Instrument_id | int          | NO   | PRI | NULL    | auto_increment |
+| nom           | varchar(40)  | NO   |     | NULL    |                |
+| MAC_Address   | varchar(30)  | NO   |     | NULL    |                |
+| date_de_achat | date         | NO   |     | NULL    |                |
+| vendeur       | varchar(20)  | YES  |     | NULL    |                |
+| commentaire   | varchar(100) | YES  |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql>
+
 
 
 
