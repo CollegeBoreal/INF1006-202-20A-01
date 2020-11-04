@@ -20,10 +20,12 @@ mysql> SHOW DATABASES;
 6 rows in set (0.00 sec)
 
 
+
 -- Comment créer un utilsateur pour l'utilisation à distance:
 
 mysql> CREATE USER 'morti'@'%' IDENTIFIED BY 'morti_123';
 Query OK, 0 rows affected (0.08 sec)
+
 
 -- comment lui donner les autorités:
 
@@ -38,6 +40,26 @@ Query OK, 0 rows affected (0.04 sec)
 
 
 
+--COMMENT CHOISIR UNE SPECIFIQUE BASE DE DONNEES (DANS CE CAS LA BASE DE DONNEES MORTIMAINTENANCE):
+
+mysql> USE MORTIMAINTENANCE
+Database changed
+mysql>
+
+
+--Comment créer une nouvelle table aves des différents chambres:
+
+
+mysql> CREATE TABLE Instruments
+    -> (Instrument_id INT AUTO_INCREMENT,
+    -> nom VARCHAR(40) NOT NULL,
+    -> MAC_Address VARCHAR(30) NOT NULL,
+    -> date_de_achat DATE NOT NULL,
+    -> vendeur VARCHAR(20),
+    -> commentaire VARCHAR(100),
+    -> PRIMARY KEY (Instrument_id)
+    ->  );
+uery OK, 0 rows affected (0.54 sec)
 
 
 
