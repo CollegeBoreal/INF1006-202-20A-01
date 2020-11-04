@@ -77,8 +77,42 @@ mysql> DESCRIBE Instruments;
 +---------------+--------------+------+-----+---------+----------------+
 6 rows in set (0.00 sec)
 
-mysql>
 
+
+
+--Créer d'autre table: 
+
+mysql> CREATE TABLE Clients
+    -> (client_id INT AUTO_INCREMENT,
+    -> prenom VARCHAR(20) NOT NULL,
+    -> nom VARCHAR(20) NOT NULL,
+    -> adresse_email VARCHAR(20) NOT NULL,
+    -> telephone INT NOT NULL,
+    -> adresse VARCHAR(20),
+    -> nom_de_entreprise VARCHAR(20),
+    -> PRIMARY KEY(client_id)
+    -> );
+Query OK, 0 rows affected (0.30 sec)
+
+
+
+
+--pour vérifier notre nouvelle table:
+
+
+mysql>  DESCRIBE Clients;
++-------------------+-------------+------+-----+---------+----------------+
+| Field             | Type        | Null | Key | Default | Extra          |
++-------------------+-------------+------+-----+---------+----------------+
+| client_id         | int         | NO   | PRI | NULL    | auto_increment |
+| prenom            | varchar(20) | NO   |     | NULL    |                |
+| nom               | varchar(20) | NO   |     | NULL    |                |
+| adresse_email     | varchar(20) | NO   |     | NULL    |                |
+| telephone         | int         | NO   |     | NULL    |                |
+| adresse           | varchar(20) | YES  |     | NULL    |                |
+| nom_de_entreprise | varchar(20) | YES  |     | NULL    |                |
++-------------------+-------------+------+-----+---------+----------------+
+7 rows in set (0.00 sec)
 
 
 
