@@ -28,7 +28,7 @@ CREATE TABLE cLient (
   );
   
   
-  CREATE TABLE Fournisseur (
+ CREATE TABLE Fournisseur (
     Id_fournisseur INT AUTO_INCREMENT,
     Nom VARCHAR(20),
     Adresse VARCHAR(30),
@@ -37,7 +37,7 @@ CREATE TABLE cLient (
     );
     
     
-    CREATE TABLE Produit (
+   CREATE TABLE Produit (
       Id_produit INT AUTO_INCREMENT,
       Nom VARCHAR(20),
       Marque VARCHAR(20),
