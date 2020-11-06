@@ -29,20 +29,20 @@ CREATE TABLE cLient (
   
   
  CREATE TABLE Fournisseur (
-    Id_fournisseur INT AUTO_INCREMENT,
+   Id_fournisseur INT AUTO_INCREMENT,
+   Nom VARCHAR(20),
+   Adresse VARCHAR(30),
+   Telephone INT,
+   Type_de_societe VARCHAR(20)
+   );
+    
+    
+  CREATE TABLE Produit (
+    Id_produit INT AUTO_INCREMENT,
     Nom VARCHAR(20),
-    Adresse VARCHAR(30),
-    Telephone INT,
-    Type_de_societe VARCHAR(20)
+    Marque VARCHAR(20),
+    Prix INT
     );
-    
-    
-   CREATE TABLE Produit (
-      Id_produit INT AUTO_INCREMENT,
-      Nom VARCHAR(20),
-      Marque VARCHAR(20),
-      Prix INT
-      );
       
       
       
