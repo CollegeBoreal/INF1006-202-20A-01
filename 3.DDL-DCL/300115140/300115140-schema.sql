@@ -23,7 +23,7 @@ CREATE TABLE FOURNISSEURS (
   Adresse VARCHAR(35),
   Telephone INT NOT NULL,
   Nature_du_fournisseur VARCHAR(15),
-  PRIMARY KEY (fournisseur)
+  PRIMARY KEY(fournisseur)
   );
 
 
@@ -34,7 +34,7 @@ CREATE TABLE CLIENTS (
   Adresse VARCHAR(35),
   Code_postale VARCHAR (10),
   Telephone VARCHAR(10) NOT NULL,
-  PRIMARY KEY (client)
+  PRIMARY KEY(client)
   );
 
 
@@ -45,8 +45,8 @@ CREATE TABLE VENTES (
   Type VARCHAR (15),
   Prix INT NOT NULL,
   Date_de_vente DATE,
-  PRIMARY KEY (vente),
-  FOREIGN KEY (client)
+  PRIMARY KEY(vente),
+  FOREIGN KEY(client)
      REFERENCES CLIENTS(client)
   );
   
@@ -56,16 +56,17 @@ CREATE TABLE VENTES (
    produit INT AUTO_INCREMENT,
    client INT,
    Nom_du_produit VARCHAR(15) NOT NULL,
-   PRIMARY KEY (produit),
-   FOREIGN KEY (client)
+   fournisseur VARCHAR(20),
+   PRIMARY KEY(produit),
+   FOREIGN KEY(client)
       REFERENCES CLIENTS(client)
    );
    
-  CREATE TABLE Services (
+  CREATE TABLE SERVICES (
     service INT AUTO_INCREMENT,
     fournisseur INT, 
     Nom_du_service VARCHAR(15) NOT NULL,
-    PRIMARY KEY (service),
+    PRIMARY KEY(service),
     FOREIGN KEY(fournisseur)
        REFERENCES FOURNISSEURS(fournisseur)
     );
