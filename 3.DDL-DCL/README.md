@@ -1,6 +1,6 @@
 # DDL
 
-
+## [Participation](.scripts/Participation.md)
 
 ## Normalisation  [🎥](https://www.linkedin.com/learning/programming-foundations-databases-2/normalization-2?u=56968449)
 
