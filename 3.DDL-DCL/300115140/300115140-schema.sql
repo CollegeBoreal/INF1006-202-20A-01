@@ -47,7 +47,7 @@ CREATE TABLE VENTES (
   Date_de_vente DATE,
   PRIMARY KEY (vente),
   FOREIGN KEY (client)
-     REFERENCES clients(client)
+     REFERENCES CLIENTS(client)
   );
   
   
