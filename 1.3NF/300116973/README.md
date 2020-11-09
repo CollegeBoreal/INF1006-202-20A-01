@@ -1,2 +1,2 @@
 
-![image](superette.jpeg)
+![image](superette.jpg)
