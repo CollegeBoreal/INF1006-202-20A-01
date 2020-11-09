@@ -63,3 +63,5 @@ PRIMARY KEY (Id_facture),
 FOREIGN KEY (Id_client) REFERENCES client (Id_client),
 FOREIGN KEY (Id_commande) REFERENCES commande (Id_commande)
 );
+
+  
