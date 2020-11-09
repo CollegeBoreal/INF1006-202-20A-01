@@ -2,7 +2,7 @@
 
 ## Leçon
 
-[Document](lesson.md)
+[Document](Lesson.md)
 
 ## [Participation](.scripts/Participation.md)
 
