@@ -3,12 +3,12 @@
 -- Création de ma DATABASE
 -- *********************************
 
-CREATE DATABASE ETREBIEN;
+CREATE DATABASE IF NOT EXISTS ETREBIEN;
 
 --*********************************
 -- Donner les autorisations
 --*********************************
-CREATE USER 'zack'@'%' IDENTIFIED BY 'password';
+CREATE USER IF NOT EXISTS 'zack'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON ETREBIEN.* TO 'zack'@'%';
 
 USE ETREBIEN;
@@ -17,46 +17,57 @@ USE ETREBIEN;
 --  Création des TABLES 
 -- ********************************
 
-CREATE TABLE Fournisseur (
-  id_fournisseur INT AUTO_INCREMENT,
+CREATE TABLE FOURNISSEURS (
+  fournisseur INT AUTO_INCREMENT,
   Nom VARCHAR(20) NOT NULL,
   Adresse VARCHAR(35),
   Telephone INT NOT NULL,
   Nature_du_fournisseur VARCHAR(15),
-  PRIMARY KEY (Id_fournisseur)
+  PRIMARY KEY (fournisseur)
   );
 
-CREATE TABLE Ventes (
-  id_ventes INT AUTO_INCREMENT,
-  id_clients INT,
-  Type VARCHAR (15),
-  Prix INT NOT NULL,
-  Date_de_vente DATE,
-  PRIMARY KEY (id_ventes, id_clients)
-  );
-  
-CREATE TABLE Clients (
-  id_client INT AUTO_INCREMENT,
+
+CREATE TABLE CLIENTS (
+  client INT AUTO_INCREMENT,
   Nom VARCHAR(20) NOT NULL,
   Prenom VARCHAR(20),
   Adresse VARCHAR(35),
   Code_postale VARCHAR (10),
   Telephone VARCHAR(10) NOT NULL,
-  PRIMARY KEY (id_client)
+  PRIMARY KEY (client)
+  );
+
+
+
+CREATE TABLE VENTES (
+  vente INT AUTO_INCREMENT,
+  client INT,
+  Type VARCHAR (15),
+  Prix INT NOT NULL,
+  Date_de_vente DATE,
+  PRIMARY KEY (vente),
+  FOREIGN KEY (client)
+     REFERENCES clients(client)
   );
   
- CREATE TABLE Produits (
-   id_produit INT AUTO_INCREMENT,
-   id_client INT,
+  
+  
+ CREATE TABLE PRODUITS (
+   produit INT AUTO_INCREMENT,
+   client INT,
    Nom_du_produit VARCHAR(15) NOT NULL,
-   PRIMARY KEY (id_produit, id_client)
+   PRIMARY KEY (produit),
+   FOREIGN KEY (client)
+      REFERENCES CLIENTS(client)
    );
    
   CREATE TABLE Services (
-    id_services INT AUTO_INCREMENT,
-    id_fournisseur INT, 
+    service INT AUTO_INCREMENT,
+    fournisseur INT, 
     Nom_du_service VARCHAR(15) NOT NULL,
-    PRIMARY KEY (id_services, id_fournisseur)
+    PRIMARY KEY (service),
+    FOREIGN KEY(fournisseur)
+       REFERENCES FOURNISSEURS(fournisseur)
     );
    
   
