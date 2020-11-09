@@ -1,6 +1,6 @@
 # DDL
 
-## Leçon
+## [Leçon]
 
 Suivre le [document](Lesson.md) sur le cours
 
