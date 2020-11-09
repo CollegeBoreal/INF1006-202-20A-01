@@ -1,7 +1,7 @@
 ==============================================
-                 DJIB-12
+ --               DJIB-12
 ==============================================
-Table employe 
+--Table employe 
 ===============================================
 CREATE TABLE 'table_employe'
 (
@@ -16,7 +16,7 @@ CREATE TABLE 'table_employe'
   `table_employeecol` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idTable_employee`)
 ============================================================
-Table fournisseur 
+--Table fournisseur 
 =============================================================
 CREATE TABLE 'fournisseur'
  (
@@ -28,7 +28,7 @@ CREATE TABLE 'fournisseur'
   `Delai_livraison` VARCHAR(45) NULL,
   PRIMARY KEY (`idFournisseur`)); 
 =================================================================
-Table Produits 
+--Table Produits 
 =================================================================
 CREATE TABLE `table_produits` 
 (
