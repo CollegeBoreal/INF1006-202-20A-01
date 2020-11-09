@@ -3,30 +3,31 @@ Système de gestion de bases de données
 
 ## Devoirs:
 
-| Date   |                                                     |     Commentaires                                                      |
-|:------:|:----------------------------------------------------|:----------------------------------------------------------------------|
+| Date   | énoncé                    |     Commentaires                                                      |
+|:------:|:--------------------------|:----------------------------------------------------------------------|
+|20-10-20| [2.DQL](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/Query.md) | [:bookmark: Participation](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/.scripts/Participation.md)
 
 
 
 ## Déroulement de cours:
 
-|No| Date   | Cours                                          | Intitulé                                |  Commentaires     |
-|--|:------:|:-----------------------------------------------|:----------------------------------------|:------------------|
-|01|20-09-07|                                                | Rentrée des classes                     |                   |
-|02|20-09-14| [0.Docker](0.Docker)                                | Install MySQL with Docker                                          |
-|03|20-09-21| [1.3NF](1.3NF)                                      | * Domaine, * 1NF, * 2NF, * 3NF                                     |
-|04|20-09-28| [2.DQL](2.DQL)                                        | Data Query Language                                               |
-|05|20-10-05| [DCL]() & [DDL]()                                   | Data Control Language   & Data Description Language               |
-|06|20-10-12| [DML](4.DML)                                        | Data Manipulation Language                                         |
-|07|20-10-19| :x:                                                 |                                           |
-|08|20-10-26| Autumn Break                                   |                                         |                   |
-|09|20-11-02| [DQL]()                                             | Data Query Language                                               |
-|10|20-11-09| [AWS RDS](R.RDS)                                    | Test                                                               |
-|11|20-11-16|| [C.Constraints](C.Constraints)                      | Constraints & Index                                                 |
-|12|20-11-23|                                                |                                         |                   |
-|13|20-12-30|                                                |                                         |                   |
-|14|20-12-07|                                                |                                         |                   |
-|15|20-12-14| Fin des cours                                  |                                         |                   |
+|No| Date   | Cours                                          | Intitulé                                |
+|--|:------:|:-----------------------------------------------|:----------------------------------------|
+|01|20-09-07|                                                | Rentrée des classes                     |
+|02|20-09-14| [0.Docker](0.Docker)                           | Install MySQL with Docker               |
+|03|20-09-21| [1.3NF](1.3NF)                                 | * Domaine, * 1NF, * 2NF, * 3NF          |
+|04|20-09-28| [DDL & DCL](0.Docker/README.md#b-manipulation-de-la-base-de-donn%C3%A9es-mysql) | Data Control Language   & Data Description Language   |
+|05|20-10-05| [2.DQL](2.DQL)                                 | Data Query Language                     |
+|06|20-10-12|                                                |                                         |
+|07|20-10-19|                                                |                                         |
+|08|20-10-26| Autumn Break                                   |                                         |
+|09|20-11-02| [3.DDL & DCL](3.DDL-DCL)                       | Data Control Language   & Data Description Language   |
+|10|20-11-09| [AWS RDS](R.RDS)                               | Test                                    |
+|11|20-11-16| [C.Constraints](C.Constraints)                 | Constraints & Index                     |
+|12|20-11-23|                                                |                                         |
+|13|20-12-30|                                                |                                         |
+|14|20-12-07|                                                |                                         |
+|15|20-12-14| Fin des cours                                  |                                         |
 
 
 

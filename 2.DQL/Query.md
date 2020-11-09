@@ -7,8 +7,8 @@
 :pushpin: En utilisant Sakila comme base de données, créer les rapports suivant: 
 
 1. Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
-2. Imprimer le nom et le montant de factures des personnes habitant le Congo et l'algerie (ANSI-92)
-3. Imprimer le nom et le montant de la facture totale des personnes habitant le Congo et l'Algerie (ANSI-92)
+2. Imprimer le nom et le montant de factures des personnes habitant le Congo ou l'algerie (ANSI-92)
+3. Imprimer le nom et le montant de la facture totale des personnes habitant le Congo ou l'Algerie (ANSI-92)
 4. Quel(le) acteur(rice) est apparu(e) dans le plus de films?
 5. Quel est la longueur moyenne des films par catégorie? Trié par longueur moyenne
 6. Quel sont les catégories qui ont les plus longs films (i.e. dépassant la longueur moyenne) ? Trié par longueur moyenne
@@ -33,6 +33,9 @@ The difference is mostly syntactic sugar, but with a couple interesting notes.
 To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
 ```
 
+### Examples
+
+- [ ] Projection - SELECT, Jointure - FROM/JOIN, Condition - WHERE
 
 ```sql
 SELECT * FROM city;
@@ -50,17 +53,58 @@ INNER JOIN country USING (country_id)
 WHERE country.country = 'Italy';
 ```
 
+:three: Revision de quelques mots clés 
 
-```sql
--- SELECT * FROM ETUDIANTS;
 
--- SELECT NOTES.note FROM NOTES
--- INNER JOIN ETUDIANTS ON (ETUDIANTS.etudiant = NOTES.etudiant)
--- WHERE ETUDIANTS.nom = 'Thiam';
+| Mots Clés                                                                      |  Utilisations                                                           |
+|--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| :one: [Projections](https://dzone.com/articles/math-and-sql-part-5-projection) |  Sous-ensemble Vertical d'une relation                                  |
+| [SELECT](https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx) |                                                                         |
+| [DISTINCT](https://www.mysqltutorial.org/mysql-distinct.aspx)                  |                                                                         |
+| :two: Conditions                                                               |                                                                         |
+| [WHERE](https://www.mysqltutorial.org/mysql-where)                             |                                                                         |
+| [LIKE](https://www.mysqltutorial.org/mysql-like)                               |                                                                         |
+| [IS NULL](https://www.mysqltutorial.org/mysql-like)                            |                                                                         |
+| [IN](https://www.mysqltutorial.org/sql-in.aspx)                                |                                                                         |
+| [AND](https://www.mysqltutorial.org/mysql-and)                                 |                                                                         |
+| [OR](https://www.mysqltutorial.org/mysql-or)                                   |                                                                         |
+| [BETWEEN](https://www.mysqltutorial.org/mysql-between)                         |                                                                         |
+| :three: Filtre                                                                 |                                                                         |
+| [ORDER BY](https://www.mysqltutorial.org/mysql-order-by)                       |                                                                         |
+| [LIMIT](https://www.mysqltutorial.org/mysql-limit)                             |                                                                         |
+| [Table & Column Aliases](https://www.mysqltutorial.org/mysql-alias/)           |                                                                         |
+| [Joins](https://www.mysqltutorial.org/mysql-join/)                             |                                                                         |
+| [INNER JOIN](https://www.mysqltutorial.org/mysql-inner-join/)                  |                                                                         |
+| [LEFT JOIN](https://www.mysqltutorial.org/mysql-left-join/)                    |                                                                         |
+| [RIGHT JOIN](https://www.mysqltutorial.org/mysql-right-join/)                  |                                                                         |
+| [Self Join](https://www.mysqltutorial.org/mysql-self-join/)                    |                                                                         |
+| :four: Aggrégation                                                 |                                                                         |
+| GROUP BY                                                         |                                                                         |
+| HAVING                                                         |                                                                         |
+| :five: Théorie des ensembles                                   |                                                                         |
+| [UNION](https://www.mysqltutorial.org/mysql-union)                                                         |                                                                         |
+| Subquery                                                         |                                                                         |
 
--- SELECT NOTES.note FROM NOTES
--- INNER JOIN ETUDIANTS USING (etudiant)
--- WHERE ETUDIANTS.nom = 'Siakam';
 
-SELECT * FROM ETUDIANTS, NOTES; -- Theta
+```
+keyword - mots clés
+
+— Imprimer les noms des étudiants admis
+SELECT nom FROM etudiants WHERE  notes >= 60 ;
+
+- Selection SELECT
+
+- Table FROM
+
+- Condition WHERE
+
+- Tri ORDER BY
+
+- JOIN Jointure
+
+- Groupement GROUP BY
+
+- HAVING
+
+SUM, AVG, COUNT
 ```

@@ -33,7 +33,6 @@ GROUP BY country.country, customer.last_name;
 
 
 -- Quel(le) acteur(rice) est apparu(e) dans le plus de films?
--- https://www.w3resource.com/sql/aggregate-functions/count-with-group-by.php
 SELECT actor.last_name, COUNT(*)
 FROM film
 JOIN film_actor USING (film_id)

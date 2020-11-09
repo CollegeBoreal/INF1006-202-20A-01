@@ -1,4 +1,3 @@
-  
 --Marequete sql
 SELECT * FROM sakila.actor WHERE first_name = 'NICK' ;
 -- Imprimer le nom et le montant de la facture totale des personnes habitant la ville de Lubumbashi
@@ -55,7 +54,3 @@ FROM film
 JOIN film_category USING (film_id)
 JOIN category USING (category_id)
 GROUP BY category.name; 
-
-
-
-
