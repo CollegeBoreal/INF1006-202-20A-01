@@ -9,6 +9,5 @@
 Voici le schéma des relations entre tables
 
 
-![image](300115140/etrebien.png)
 https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/etrebien.PNG?raw=true
 
