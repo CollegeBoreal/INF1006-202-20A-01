@@ -18,8 +18,8 @@ USE SKINCARE;
 -- **********************
 
 
-CREATE TABLE cLient (
-  Id_client INT AUTO_INCREMENT,
+CREATE TABLE CLIENTS (
+  clients INT AUTO_INCREMENT,
   Nom VARCHAR(20) NOT NULL,
   Prenom VARCHAR(20) NOT NULL,
   Adresse VARCHAR (30) NOT NULL,
@@ -28,8 +28,8 @@ CREATE TABLE cLient (
   );
   
   
- CREATE TABLE Fournisseur (
-   Id_fournisseur INT AUTO_INCREMENT,
+ CREATE TABLE FOURNISSEURS (
+   fournisseurs INT AUTO_INCREMENT,
    Nom VARCHAR(20),
    Adresse VARCHAR(30),
    Telephone INT,
@@ -37,8 +37,8 @@ CREATE TABLE cLient (
    );
     
     
-  CREATE TABLE Produit (
-    Id_produit INT AUTO_INCREMENT,
+  CREATE TABLE PRODUITS (
+    produits INT AUTO_INCREMENT,
     Nom VARCHAR(20),
     Marque VARCHAR(20),
     Prix INT
