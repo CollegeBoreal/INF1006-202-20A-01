@@ -9,5 +9,5 @@
 Voici le schéma des relations entre tables
 
 
-![image](/etrebien.png)
+<img width="563" alt="etrebien" src="https://user-images.githubusercontent.com/54910329/98611681-634d2f00-22c0-11eb-9056-c0d1899ebd05.PNG">
 
