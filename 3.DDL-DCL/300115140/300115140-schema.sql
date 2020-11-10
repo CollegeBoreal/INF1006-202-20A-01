@@ -42,11 +42,11 @@ CREATE TABLE CLIENTS (
 CREATE TABLE VENTES (
   vente INT AUTO_INCREMENT,
   client INT,
-  Type VARCHAR (15),
+  produit VARCHAR (15),
   Prix INT NOT NULL,
   Date_de_vente DATE,
-  PRIMARY KEY(vente),
-  FOREIGN KEY(client)
+  PRIMARY KEY(produit, client, date),
+  FOREIGN KEY(client, poduit)
      REFERENCES CLIENTS(client)
   );
   
