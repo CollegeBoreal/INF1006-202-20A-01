@@ -53,11 +53,8 @@ CREATE TABLE CLIENTS (
       REFERENCES CLIENTS(client)
    );
    
-     
-     
-     
+      
    -- creation de la table commande 
-    
     
      CREATE TABLE commande (
 Id_commande INT AUTO_INCREMENT NOT NULL,
