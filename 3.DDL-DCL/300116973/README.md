@@ -1,7 +1,11 @@
-:zap: # superette_2S_plus 
+ # superette_2S_plus 
 
-La superette_2S_plus est specialisee dans la vente et l'achat des marchandises en details plus buvettes
+:zap: La superette_2S_plus est specialisee:
 
-:white_check_mark: ## Representation de notre base de donnee
+:white_check_mark: Dans la vente et l'achat des marchandises en details
+:white_check_mark: Dans la buvettes
 
-![image](mcd.JPG)
+ ## Representation de notre base de donnee
+ 
+
+![image](images/mcd.JPG)
