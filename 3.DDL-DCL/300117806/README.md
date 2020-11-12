@@ -1,2 +1,2 @@
-![images](images/table.PNG)
+![images](images/tables.PNG)
 
