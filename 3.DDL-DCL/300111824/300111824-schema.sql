@@ -40,7 +40,14 @@ CREATE TABLE FOURNISSEURS (
      );
      
      
-  
+   CREATE TANLE VENTES (
+     vente INT AUTO_INCREMENT,
+     client INT,
+     produit VARCHAR (10),
+     Prix INT,
+     Date_et_heure DATE,
+     PRIMARY KEY(vente)
+     );
 
 
 
