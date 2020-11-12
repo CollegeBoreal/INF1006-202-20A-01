@@ -10,57 +10,77 @@ GRANT ALL ON Restaurant_Mamamiya.* TO 'Erna'@'%';
 -- ACCÉDER À MA DATABASE 
 USE Restaurant_Mamamiya;
 
+-- Creation de la table plats
+
+CREATE TABLE PLATS (
+plat INT AUTO_INCREMENT NOT NULL,
+Nom_du_plat VARCHAR(30) NOT NULL,
+Montant INT (40,00) NULL,
+PRYMARY KEY (plat)
+);
+
+--cretion de la table ingrediEns
+
+CREATE TABLE INGREDEINTS (
+ingredent INT AUTO_INCEMENT NOT NULL,
+Nom_de_l'ingredient VARCHAR (20) NOT NULL,
+PRYMARY KEY (ingredient)
+FOREIGN KEY (plats) REFERENCES PLATS (plat)
+FIREIGN KEY (menu) REFERENCES INGREDIENTS (menu)
+);
+
 -- creation de la table Menu
 
-CREATE TABLE Menu (
-Id_menu INT AUTO_INCREMENT NOT NULL,
-Nom_du_Menu VARCHAR(25) NOT NULL,
-PRIMARY KEY(Id_Menu)
+CREATE TABLE MENUS (
+menu INT AUTO_INCREMENT NOT NULL,
+Nom_du_menu VARCHAR(25) NOT NULL,
+PRIMARY KEY (menu) 
+);
   
   -- creation de la table commande
 
-CREATE TABLE commande (
-Id_commande INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE COMMANDES (
+commande INT AUTO_INCREMENT NOT NULL,
 Date_et_heure_de_commande DATETIME NOT NULL,
-Id_Menu INT,
-PRIMARY KEY (Id_commande),
-FOREIGN KEY (Id_Menu) REFERENCES Menu (Id_Menu)
+menu INT,
+PRIMARY KEY (commande),
+FOREIGN KEY (menu) REFERENCES MENUS(menu)
 ); 
   
   -- creation de la table client
 
-CREATE TABLE client (
-Id_client INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE CLIENTS (
+client INT AUTO_INCREMENT NOT NULL,
 Nom TEXT(25) NOT NULL,
-Id_commande INT,
-PRIMARY KEY (Id_client),
-FOREIGN KEY (Id_commande) REFERENCES commande (Id_commande)
+commande INT,
+PRIMARY KEY (client),
+FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
   
   -- creation de la table paiement
 
-CREATE TABLE paiement(
-Id_paiement INT NOT NULL,
+CREATE TABLE PAIEMENTS(
+paiement INT NOT NULL,
 Montant FLOAT(100) NULL,
 Date_et_heure_de_Paiement DATETIME NOT NULL,
-Id_client INT,
-Id_facture INT,
-Id_commande INT,
-FOREIGN KEY (Id_client) REFERENCES client (Id_client),
-FOREIGN KEY (Id_facture) REFERENCES facture (Id_facture),
-FOREIGN KEY (Id_commande) REFERENCES commande (Id_commande)
+client INT,
+facture INT,
+commande INT,
+FOREIGN KEY (client) REFERENCES CLIENTS (client),
+FOREIGN KEY (facture) REFERENCES FACTURES (facture),
+FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
   
   -- creation de la table facture
 
-CREATE TABLE facture(
-Id_facture INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE FACTURES(
+facture INT AUTO_INCREMENT NOT NULL,
 Montant INT(100) NULL,
 Quantites INT(20) NULL,
-Id_client INT,
-Id_commande INT,
-PRIMARY KEY (Id_facture),
-FOREIGN KEY (Id_client) REFERENCES client (Id_client),
-FOREIGN KEY (Id_commande) REFERENCES commande (Id_commande)
+Client INT,
+ommande INT,
+PRIMARY KEY (facture),
+FOREIGN KEY (client) REFERENCES CLIENTS (client),
+FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
 
