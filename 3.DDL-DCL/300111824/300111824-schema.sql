@@ -31,23 +31,23 @@ CREATE TABLE FOURNISSEURS (
    );
    
    
-   CREATE TABLE PRODUITS (
-     produit INT AUTO_INCREMENT,
-     Nom VARCHAR(10),
-     Client INT,
-     Fournisseur VARCHAR(10),
-     PRIMARY KEY(produit)
-     );
+  CREATE TABLE PRODUITS (
+    produit INT AUTO_INCREMENT,
+    Nom VARCHAR(10),
+    Client INT,
+    Fournisseur VARCHAR(10),
+    PRIMARY KEY(produit)
+    );
      
      
-   CREATE TANLE VENTES (
-     vente INT AUTO_INCREMENT,
-     client INT,
-     produit VARCHAR (10),
-     Prix INT,
-     Date_et_heure DATE,
-     PRIMARY KEY(vente)
-     );
+  CREATE TABLE VENTES (
+    vente INT AUTO_INCREMENT,
+    client INT,
+    produit VARCHAR (10),
+    Prix INT,
+    Date_et_heure DATE,
+    PRIMARY KEY(vente)
+    );
 
 
 
