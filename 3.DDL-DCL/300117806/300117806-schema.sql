@@ -19,12 +19,14 @@ USE SKINCARE;
 
 
 CREATE TABLE CLIENTS (
-  clients INT AUTO_INCREMENT,
+  client INT AUTO_INCREMENT,
   Nom VARCHAR(20) NOT NULL,
   Prenom VARCHAR(20) NOT NULL,
   Adresse VARCHAR (30) NOT NULL,
   Telephone INT NOT NULL, 
-  PRIMARY KEY (Id_client)
+  produit INT,
+  PRIMARY KEY (client),
+  FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
   );
   
   
@@ -33,16 +35,20 @@ CREATE TABLE CLIENTS (
    Nom VARCHAR(20),
    Adresse VARCHAR(30),
    Telephone INT,
-   Type_de_societe VARCHAR(20)
+   Type_de_societe VARCHAR(20),
+   PRIMARY KEY (fournisseurs )
    );
     
     
   CREATE TABLE PRODUITS (
-    produits INT AUTO_INCREMENT,
+    produit INT AUTO_INCREMENT,
     Nom VARCHAR(20),
     Marque VARCHAR(20),
-    Prix INT
-    );
+    Prix INT,
+    fournisseurs INT,
+    PRIMARY KEY (produit, fournisseurs),
+    FOREIGN KEY (fournisseurs) REFERENCES FOURNISSEURS(fournisseurs)
+     );
       
       
       
