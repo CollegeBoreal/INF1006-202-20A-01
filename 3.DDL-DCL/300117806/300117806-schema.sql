@@ -50,7 +50,17 @@ CREATE TABLE CLIENTS (
     FOREIGN KEY (fournisseurs) REFERENCES FOURNISSEURS(fournisseurs)
      );
       
-      
+  CREATE TABLE VENTES (
+   ventes INT AUTO_INCREMENT,
+   Nom VARCHAR(20)
+   Prix INT,
+   Date DATE,
+   client VARCHAR(20),
+   PRIMARY KEY (ventes, client),
+   FOREIGN KEY (client) REFERENCES CLIENTS(client)
+   );
+   
+   
       
   
   
