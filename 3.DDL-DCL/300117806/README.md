@@ -1,2 +1,2 @@
-![images](images/capture 20.PNG)
+![image](images/capture 20.PNG)
 
