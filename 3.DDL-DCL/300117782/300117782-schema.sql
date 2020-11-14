@@ -15,18 +15,8 @@ USE Restaurant_Mamamiya;
 CREATE TABLE PLATS (
 plat INT AUTO_INCREMENT NOT NULL,
 Nom_du_plat VARCHAR(30) NOT NULL,
-Montant INT (40,00) NULL,
-PRYMARY KEY (plat)
-);
-
---cretion de la table ingrediEns
-
-CREATE TABLE INGREDEINTS (
-ingredent INT AUTO_INCEMENT NOT NULL,
-Nom_de_l'ingredient VARCHAR (20) NOT NULL,
-PRYMARY KEY (ingredient)
-FOREIGN KEY (plats) REFERENCES PLATS (plat)
-FIREIGN KEY (menu) REFERENCES INGREDIENTS (menu)
+Montant INT (40) NULL,
+PRIMARY KEY (plat)
 );
 
 -- creation de la table Menu
@@ -34,53 +24,64 @@ FIREIGN KEY (menu) REFERENCES INGREDIENTS (menu)
 CREATE TABLE MENUS (
 menu INT AUTO_INCREMENT NOT NULL,
 Nom_du_menu VARCHAR(25) NOT NULL,
-PRIMARY KEY (menu) 
+plat INT,  
+PRIMARY KEY (menu),
+FOREIGN KEY (plat) REFERENCES PLATS (plat)  
 );
-  
-  -- creation de la table commande
+
+-- creation de la table commande
 
 CREATE TABLE COMMANDES (
 commande INT AUTO_INCREMENT NOT NULL,
 Date_et_heure_de_commande DATETIME NOT NULL,
 menu INT,
-PRIMARY KEY (commande),
+PRIMARY KEY (commande, menu),
 FOREIGN KEY (menu) REFERENCES MENUS(menu)
 ); 
-  
+--creation de la table ingredient
+
+CREATE TABLE INGREDIENTS (
+ingredient INT AUTO_INCREMENT NOT NULL,
+Nom_ingredient VARCHAR(20) NOT NULL,
+menu INT,
+plat INT,
+PRIMARY KEY (ingredient, plat, menu),
+FOREIGN KEY (plat) REFERENCES PLATS (plat),
+FOREIGN KEY (menu) REFERENCES MENUS (menu)
+);
+
   -- creation de la table client
 
 CREATE TABLE CLIENTS (
 client INT AUTO_INCREMENT NOT NULL,
 Nom TEXT(25) NOT NULL,
 commande INT,
-PRIMARY KEY (client),
+PRIMARY KEY (client, commande),
 FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
   
+   -- creation de la table facture
+   
+CREATE TABLE FACTURES(
+facture INT AUTO_INCREMENT NOT NULL,
+Montant INT(100) NULL,
+Quantites INT(20) NULL,
+client INT,
+commande INT,
+PRIMARY KEY (facture, client, commande),
+FOREIGN KEY (client) REFERENCES CLIENTS (client),
+FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
+);
   -- creation de la table paiement
 
 CREATE TABLE PAIEMENTS(
 paiement INT NOT NULL,
-Montant FLOAT(100) NULL,
+Montant FLOAT(200,00) NULL,
 Date_et_heure_de_Paiement DATETIME NOT NULL,
 client INT,
 facture INT,
 commande INT,
 FOREIGN KEY (client) REFERENCES CLIENTS (client),
-FOREIGN KEY (facture) REFERENCES FACTURES (facture),
-FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
-);
-  
-  -- creation de la table facture
-
-CREATE TABLE FACTURES(
-facture INT AUTO_INCREMENT NOT NULL,
-Montant INT(100) NULL,
-Quantites INT(20) NULL,
-Client INT,
-ommande INT,
-PRIMARY KEY (facture),
-FOREIGN KEY (client) REFERENCES CLIENTS (client),
-FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
+FOREIGN KEY (facture) REFERENCES FACTURES (facture)
 );
 
