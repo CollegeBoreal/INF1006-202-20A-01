@@ -32,29 +32,13 @@ CREATE TABLE CLIENTS (
   Nom VARCHAR(20) NOT NULL,
   Prenom VARCHAR(20),
   Adresse VARCHAR(35),
-  Code_postale VARCHAR (10),
+  Code_postal VARCHAR (10),
   Telephone VARCHAR(10) NOT NULL,
-  vente INT,
-  PRIMARY KEY(client, vente),
-  FOREIGN KEY (vente)
-     REFERENCES VENTES (vente)
+  date_de_vente DATE,
+  PRIMARY KEY(client)
   );
 
 
-
-CREATE TABLE VENTES (
-  vente INT AUTO_INCREMENT,
-  client INT,
-  produit VARCHAR (15),
-  Prix INT NOT NULL,
-  Date_de_vente DATE,
-  PRIMARY KEY(produit, client, date),
-  FOREIGN KEY(client, poduit)
-     REFERENCES CLIENTS(client)
-  );
-  
-  
-  
  CREATE TABLE PRODUITS (
    produit INT AUTO_INCREMENT,
    client INT,
@@ -62,9 +46,9 @@ CREATE TABLE VENTES (
    fournisseur VARCHAR(20),
    PRIMARY KEY(produit),
    FOREIGN KEY(client)
-      REFERENCES CLIENTS(client)
    );
-   
+
+
   CREATE TABLE SERVICES (
     service INT AUTO_INCREMENT,
     fournisseur INT, 
@@ -73,6 +57,39 @@ CREATE TABLE VENTES (
     FOREIGN KEY(fournisseur)
        REFERENCES FOURNISSEURS(fournisseur)
     );
+
+
+CREATE TABLE VENTES_DE_SERV (
+  vente_de_serv INT AUTO_INCREMENT,
+  client INT,
+  Prix INT NOT NULL,
+  Date_de_vente DATE,
+  service INT,
+  PRIMARY KEY(vente_de_serv, client, service),
+  FOREIGN KEY(client)
+     REFERENCES CLIENTS(client)
+  FOREIGN KEY(date_de_vente)
+     REFERENCES SERVICES(service)
+  );
+  
+  
+  CREATE TABLE VENTES_DE_PROD (
+  vente_de_prod INT AUTO_INCREMENT,
+  client INT,
+  produit INT,
+  Prix INT NOT NULL,
+  Date_de_vente DATE,
+  PRIMARY KEY(vente_de_prod, client, produit),
+  FOREIGN KEY(client)
+     REFERENCES CLIENTS(client)
+  FOREIGN KEY(produit)
+     REFERENCES PRODUITS(produit)
+  );
+  
+  
+
+   
+
    
   
 
