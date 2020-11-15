@@ -78,7 +78,7 @@ mysql> CREATE TABLE Clients
 
 --Créer la table employé: 
 
-CREATE TABLE employes
+CREATE TABLE Employes
 (employe INT AUTO_INCREMENT,
 prenom VARCHAR(20) NOT NULL,
 nom VARCHAR(20) NOT NULL,
@@ -101,16 +101,24 @@ PRIMARY KEY(departement)
 
 --Créer la table sérvices:
 
+
 CREATE TABLE Services
 (service INT AUTO_INCREMENT,
-Instrument
-detail VARCHAR(20)
-prix VARCHAR(20)
-employe
+detail VARCHAR(20),
+prix VARCHAR(20),
 date_de_reception DATE NOT NULL,
 date_de_livraison DATE ,
-PRIMARY KEY(service)
+Instrument INT, 
+employe INT,
+PRIMARY KEY(service),
+FOREIGN KEY(Instrument)
+      REFERENCES Instruments(Instrument),
+FOREIGN KEY(employe)
+      REFERENCES Employes(employe)
 );
+
+
+
 
 
 
