@@ -48,7 +48,7 @@ CREATE TABLE CLIENTS (
    FOREIGN KEY(client)
       REFERENCES CLIENTS(client),
    FOREIGN KEY (fournisseur)
-      REFERENCES FOURNISSEUR(fournisseur)
+      REFERENCES FOURNISSEURS(fournisseur)
    );
 
 
