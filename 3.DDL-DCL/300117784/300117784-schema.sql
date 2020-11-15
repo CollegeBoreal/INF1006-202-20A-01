@@ -4,7 +4,7 @@ CREATE TABLE Clients(
 Nom_Client varchar (32) primary key,
 Prenom_Client varchar(32),
 Address_Client varchar (32) not null,
-Tel_Client int
+Tel_Client long
 
 );
 
@@ -12,7 +12,7 @@ CREATE TABLE Fournisseurs(
 Id_Fournisseur int primary key,
 Nom_Fournisseur varchar (32),
 Address_Fournisseur varchar (32) not null,
-Tel_Client int
+Tel_Client long 
 
 
 
