@@ -34,7 +34,10 @@ CREATE TABLE CLIENTS (
   Adresse VARCHAR(35),
   Code_postale VARCHAR (10),
   Telephone VARCHAR(10) NOT NULL,
-  PRIMARY KEY(client)
+  vente INT,
+  PRIMARY KEY(client, vente),
+  FOREIGN KEY (vente)
+     REFERENCES VENTES (vente)
   );
 
 
