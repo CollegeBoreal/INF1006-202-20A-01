@@ -1,4 +1,4 @@
-#ETRE BIEN
+#ÊTRE BIEN
 
 ## Description:
 
