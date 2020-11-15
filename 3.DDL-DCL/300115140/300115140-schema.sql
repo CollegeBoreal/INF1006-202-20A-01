@@ -43,10 +43,12 @@ CREATE TABLE CLIENTS (
    produit INT AUTO_INCREMENT,
    client INT,
    Nom_du_produit VARCHAR(15) NOT NULL,
-   fournisseur VARCHAR(20),
-   PRIMARY KEY(produit),
+   fournisseur INT,
+   PRIMARY KEY(produit, client, fournisseur),
    FOREIGN KEY(client)
-      REFERENCES CLIENTS(client)
+      REFERENCES CLIENTS(client),
+   FOREIGN KEY (fournisseur)
+      REFERENCES FOURNISSEUR(fournisseur)
    );
 
 
