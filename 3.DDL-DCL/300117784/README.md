@@ -1,2 +1,2 @@
 # BMOlineGaming 
-<img src="SchemaBMOG.png" height="800" widht="900"></img> 
+<img src="SchemaBMOG.PNG" height="800" witdth="900"></img> 
