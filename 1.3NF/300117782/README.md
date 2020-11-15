@@ -1,4 +1,4 @@
 # Restaurant Mamamiya
 
 
-![image](3fn.GPN)
+![image](3fn.JPG)
