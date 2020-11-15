@@ -55,7 +55,7 @@ nom VARCHAR(40) NOT NULL,
 vendeur VARCHAR(20),
 Address_physique VARCHAR(30) NOT NULL,
 date_de_reception DATE NOT NULL,
-date_de_livraison DATE NOT NULL,
+date_de_livraison DATE ,
 commentaire VARCHAR(100),
 PRIMARY KEY (Instrument)
 );
@@ -105,10 +105,12 @@ CREATE TABLE Services
 (service INT AUTO_INCREMENT,
 Instrument
 detail VARCHAR(20)
-
-
-
-
+prix VARCHAR(20)
+employe
+date_de_reception DATE NOT NULL,
+date_de_livraison DATE ,
+PRIMARY KEY(service)
+);
 
 
 
