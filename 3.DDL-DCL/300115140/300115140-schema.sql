@@ -46,6 +46,7 @@ CREATE TABLE CLIENTS (
    fournisseur VARCHAR(20),
    PRIMARY KEY(produit),
    FOREIGN KEY(client)
+      REFERENCES CLIENTS(client)
    );
 
 
@@ -67,8 +68,8 @@ CREATE TABLE VENTES_DE_SERV (
   service INT,
   PRIMARY KEY(vente_de_serv, client, service),
   FOREIGN KEY(client)
-     REFERENCES CLIENTS(client)
-  FOREIGN KEY(date_de_vente)
+     REFERENCES CLIENTS(client),
+  FOREIGN KEY(service)
      REFERENCES SERVICES(service)
   );
   
@@ -81,7 +82,7 @@ CREATE TABLE VENTES_DE_SERV (
   Date_de_vente DATE,
   PRIMARY KEY(vente_de_prod, client, produit),
   FOREIGN KEY(client)
-     REFERENCES CLIENTS(client)
+     REFERENCES CLIENTS(client),
   FOREIGN KEY(produit)
      REFERENCES PRODUITS(produit)
   );
