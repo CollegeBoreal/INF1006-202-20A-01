@@ -1,4 +1,4 @@
-#ETRE BIEN
+# ÊTRE BIEN
 
 ## Description:
 
@@ -13,9 +13,6 @@ Nous enregistrons les ventes, les données des clients et informations des fourn
 Voici le schéma des relations entre tables selon le procédé Reverse Engineer:
 
 :lion:
-
-
-
 
 ![image](images/MySQLetrebien.PNG) 
 
