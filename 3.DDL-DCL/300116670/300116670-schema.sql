@@ -26,18 +26,9 @@ Addresse_electronique VARCHAR(50)
 PRIMARY KEY (fournisseur)
 );
 
--- Ma table COMMANDES
-CREATE TABLE COMMANDES(
-commande INT AUTO_INCREMNT,
-Nom du produit VARCHAR(40) NOT NULL,
-Date_et_heure_de_la_commande DATETIME NOT NULL, 
-Date_et_heure_de_livraison DATETIME NOT NULL,
-PRIMARY KEY (commande)
-);
-
 -- Ma table CLIENTS
-CREATE TABLE CLIENTS
-client INT AUTO_
+CREATE TABLE CLIENTS(
+client INT AUTO_INCREMENT,
 Nom VARCHAR(35) NOT NULL,
 Coordonnees VARCHAR(13) NOT NULL,
 Addresse VARCHAR(39) NOT NULL,
@@ -46,13 +37,18 @@ PRIMARY KEY (client)
 );
 
 -- Ma table VENTES
+CREATE TABLE VENTES(
+vente INT AUTO_INCREMNT,
+Nom_du_produit VARCHAR(40) NOT NULL,
+Date_et_heure_de_la_vente DATETIME NOT NULL, 
+Date_et_heure_de_livraison DATETIME NOT NULL,
+PRIMARY KEY (vente)
+);
 
-
-
--- Ma table PRIX
 
 
 -- Ma table PRODUITS
+CREATE TABLE PRODUITS(
+Nom_du_produit 
 
 
--- Ma table LOCATIONS
