@@ -8,7 +8,7 @@ CREATE IF NO EXISTS DATABASE MOTOSPORT;
 -- Creation des utilisateurs et don-
 -- ner les autorisations
 -- *********************************
-CREATE USER 'Auriane'@'%' IDENTIFIED BY 'password';
+CREATE IF NO EXISTS USER 'Auriane'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON MOTOSPORT.* TO 'Auriane'@'%';
 
 
