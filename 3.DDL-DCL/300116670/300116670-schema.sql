@@ -30,8 +30,8 @@ PRIMARY KEY (fournisseur)
 CREATE TABLE COMMANDES(
 commande INT AUTO_INCREMNT,
 Nom du produit VARCHAR(40) NOT NULL,
-Date_et_heure_de_la_commande DATETIME , 
-Date_et_heure_de_livraison DATETIME,
+Date_et_heure_de_la_commande DATETIME NOT NULL, 
+Date_et_heure_de_livraison DATETIME NOT NULL,
 PRIMARY KEY (commande)
 );
 
@@ -41,7 +41,7 @@ client INT AUTO_
 Nom VARCHAR(35) NOT NULL,
 Coordonnees VARCHAR(13) NOT NULL,
 Addresse VARCHAR(39) NOT NULL,
-Addresse_electronique VARCHAR(50),
+Addresse_electronique VARCHAR(50) NOT NULL,
 PRIMARY KEY (client)
 );
 
