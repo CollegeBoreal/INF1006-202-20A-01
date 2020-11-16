@@ -20,7 +20,7 @@ GRANT ALL ON MOTOSPORT.* TO 'Auriane'@'%';
 CREATE TABLE FOURNISSEURS(
 fournisseur INT AUTO_INCREMENT,
 Nom VARCHAR(35) NOT NULL,
-Coordonnees  VARCHAR(13) NOT NULL,
+Coordonnees VARCHAR(13) NOT NULL,
 Addresse VARCHAR(39) NOT NULL,
 Addresse_electronique VARCHAR(50)
 PRIMARY KEY (fournisseur)
@@ -30,12 +30,29 @@ PRIMARY KEY (fournisseur)
 CREATE TABLE COMMANDES(
 commande INT AUTO_INCREMNT,
 Nom du produit VARCHAR(40) NOT NULL,
-Date de la commande, 
-Date de livraison,
+Date_et_heure_de_la_commande DATETIME , 
+Date_et_heure_de_livraison DATETIME,
 PRIMARY KEY (commande)
 );
 
 -- Ma table CLIENTS
 CREATE TABLE CLIENTS
+client INT AUTO_
+Nom VARCHAR(35) NOT NULL,
+Coordonnees VARCHAR(13) NOT NULL,
+Addresse VARCHAR(39) NOT NULL,
+Addresse_electronique VARCHAR(50),
+PRIMARY KEY (client)
+);
+
+-- Ma table VENTES
 
 
+
+-- Ma table PRIX
+
+
+-- Ma table PRODUITS
+
+
+-- Ma table LOCATIONS
