@@ -1,7 +1,7 @@
 ##africaMusic
 
- CREATE USER 'boris'@'*' IDENTIFIED BY 'boris_1';
- GRANT ALL ON boris.* TO 'boris'@'*';
+ CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
+ GRANT ALL ON boris.* TO 'boris'@'%';
  
  use  AfricaMusic;
 
