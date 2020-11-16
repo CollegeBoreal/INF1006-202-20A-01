@@ -42,7 +42,7 @@ do
    if [ -f "$F_SCHEMA" ]; then
        OK_SCHEMA="[:heavy_check_mark:](../${F_SCHEMA})"
    else
-       OK_SCHEMA="[:X:]"
+       OK_SCHEMA="[:x:]"
    fi
    OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | "
    echo ${OK}
