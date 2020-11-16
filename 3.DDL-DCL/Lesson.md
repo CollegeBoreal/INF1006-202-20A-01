@@ -71,6 +71,7 @@ mysql> CREATE TABLE <name> (
 | NOT NULL           | Le champ ne peut etre nul sinon Erreur                       |
 | PRIMARY KEY        | :bulb: Peut etre placé ailleurs                              |
 | DEFAULT `<valeur>` | :question:                                                   |
+| UNIQUE             | la valeur du champ n'apparait qu'une fois                     |
 
 ##### :m: USER 
 
