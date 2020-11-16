@@ -49,6 +49,11 @@ PRIMARY KEY (vente)
 
 -- Ma table PRODUITS
 CREATE TABLE PRODUITS(
-Nom_du_produit 
+produit INT AUTO_INCREMENT,
+Nom_du_produit VARCHAR(20),
+Numero_de_reference VARCHAR(30),
+Prix_du_produit INT
+PRIMARY KEY (produit)
+);
 
 
