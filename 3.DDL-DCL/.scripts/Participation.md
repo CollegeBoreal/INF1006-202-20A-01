@@ -16,7 +16,7 @@
 
 |:hash:| Boréal :id:                | SQL Schema    |
 |------|----------------------------|---------------|
-| 0 | [300111441](../300111441) - <image src='https://avatars0.githubusercontent.com/u/55207099?s=460&v=4' width=20 height=20></image> | [:heavy_check_mark:](../300111441/300111441-schema.sql) |
+| 0 | [300111441](../300111441) - <image src='https://avatars0.githubusercontent.com/u/55207099?s=460&v=4' width=20 height=20></image> | [:x:] |
 | 1 | [300111824](../300111824) - <image src='https://avatars0.githubusercontent.com/u/54911706?s=460&v=4' width=20 height=20></image> | [:heavy_check_mark:](../300111824/300111824-schema.sql) |
 | 2 | [300115065](../300115065) - <image src='https://avatars0.githubusercontent.com/u/54910778?s=460&v=4' width=20 height=20></image> | [:heavy_check_mark:](../300115065/300115065-schema.sql) |
 | 3 | [300115140](../300115140) - <image src='https://avatars0.githubusercontent.com/u/54910329?s=460&v=4' width=20 height=20></image> | [:heavy_check_mark:](../300115140/300115140-schema.sql) |
