@@ -37,10 +37,11 @@ i=0
 
 for id in "${ETUDIANTS[@]}"
 do
-   FILE=${id}/${id}-schema.sql
-   OK="| ${i} | [${id}](../${FILE}) - <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :heavy_check_mark: | "
-   KO="| ${i} | [${id}](../${FILE}) - <image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image> | :x: | "
-   if [ -f "$FILE" ]; then
+   U_AVATAR="<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
+   F_SCHEMA=${id}/${id}-schema.sql
+   OK="| ${i} | [${id}](../${F_SCHEMA}) - ${U_AVATAR} | :heavy_check_mark: | "
+   KO="| ${i} | [${id}](../${F_SCHEMA}) - ${U_AVATAR} | :x: | "
+   if [ -f "$F_SCHEMA" ]; then
        echo ${OK}
    else
        echo ${KO}
