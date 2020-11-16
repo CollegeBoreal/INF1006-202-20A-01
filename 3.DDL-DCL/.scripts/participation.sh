@@ -30,7 +30,7 @@ echo "| :x:                | Projet inexistant             |"
 echo ""
 echo "## :a: Présence"
 echo ""
-echo "|:hash:| Boréal :id:                | SQL Schema  |"
+echo "|:hash:| Boréal :id:                | SQL Schema    |"
 echo "|------|----------------------------|---------------|"
 
 i=0
@@ -39,12 +39,12 @@ for id in "${ETUDIANTS[@]}"
 do
    U_AVATAR="<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
    F_SCHEMA=${id}/${id}-schema.sql
-   OK="| ${i} | [${id}](../${F_SCHEMA}) - ${U_AVATAR} | :heavy_check_mark: | "
-   KO="| ${i} | [${id}](../${F_SCHEMA}) - ${U_AVATAR} | :x: | "
    if [ -f "$F_SCHEMA" ]; then
-       echo ${OK}
+       OK_SCHEMA="[:heavy_check_mark:](../${F_SCHEMA})"
    else
-       echo ${KO}
+       OK_SCHEMA="[:X:]"
    fi
+   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | "
+   echo ${OK}
    let "i++"
 done
