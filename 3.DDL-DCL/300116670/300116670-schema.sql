@@ -16,13 +16,26 @@ GRANT ALL ON MOTOSPORT.* TO 'Auriane'@'%';
 -- CREATION DES TABLES
 -- *********************************
 
--- Ma table fournisseurs
-CREATE TABLE FOURNISSEURS
+-- Ma table FOURNISSEURS
+CREATE TABLE FOURNISSEURS(
 fournisseur INT AUTO_INCREMENT,
 Nom VARCHAR(35) NOT NULL,
 Coordonnees  VARCHAR(13) NOT NULL,
-Addresse VARCHAR(39) NOT NULL;
+Addresse VARCHAR(39) NOT NULL,
+Addresse_electronique VARCHAR(50)
+PRIMARY KEY (fournisseur)
+);
 
--- Ma table Services
-CREATE TABLE SERVICES
+-- Ma table COMMANDES
+CREATE TABLE COMMANDES(
+commande INT AUTO_INCREMNT,
+Nom du produit VARCHAR(40) NOT NULL,
+Date de la commande, 
+Date de livraison,
+PRIMARY KEY (commande)
+);
+
+-- Ma table CLIENTS
+CREATE TABLE CLIENTS
+
 
