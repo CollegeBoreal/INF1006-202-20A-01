@@ -21,9 +21,9 @@ Rules
 ### Chart C
 ```{r}
 ```
-## Quarterly Results {.tabset}
+## Quarterly Results {.tabset .tabset-fade .tabset-pills}
 ### By Product
 (tab content)
 ### By Region
 (tab content)
-## Quarterly Results {.tabset .tabset-fade .tabset-pills}
+
