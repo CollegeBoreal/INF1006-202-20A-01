@@ -34,19 +34,15 @@ CREATE TABLE CLIENTS (
   Adresse VARCHAR(35),
   Code_postal VARCHAR (10),
   Telephone VARCHAR(10) NOT NULL,
-  date_de_vente DATE,
   PRIMARY KEY(client)
   );
 
 
  CREATE TABLE PRODUITS (
    produit INT AUTO_INCREMENT,
-   client INT,
    Nom_du_produit VARCHAR(15) NOT NULL,
    fournisseur INT,
-   PRIMARY KEY(produit, client, fournisseur),
-   FOREIGN KEY(client)
-      REFERENCES CLIENTS(client),
+   PRIMARY KEY(produit),
    FOREIGN KEY (fournisseur)
       REFERENCES FOURNISSEURS(fournisseur)
    );
