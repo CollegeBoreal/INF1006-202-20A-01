@@ -1,18 +1,18 @@
 # AfricaMusic
 
 ---
- "Gestion AfricaMusic"
+ Gestion AfricaMusic
 ---
 ```{r setup, include=FALSE}
-library(flexdashboard)
+
 ```
-Column 1
+MCD
 --------------------------------------------------
 ### Chart A
 <img src="MCD.JPG" witdth="900" height="900"></img>
 ```{r}
 ```
-Column 2
+Description
 --------------------------------------------------
 ### Chart B
 ```{r}
