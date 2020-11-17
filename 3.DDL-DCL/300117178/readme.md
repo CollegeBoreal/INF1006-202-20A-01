@@ -1,8 +1,7 @@
 # AfricaMusic
 
 ---
-title: "Gestion AfricaMusic"
-output: flexdashboard::flex_dashboard
+ "Gestion AfricaMusic"
 ---
 ```{r setup, include=FALSE}
 library(flexdashboard)
