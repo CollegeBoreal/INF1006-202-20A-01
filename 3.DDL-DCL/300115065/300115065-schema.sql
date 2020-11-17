@@ -11,16 +11,13 @@ use wydad;
 
 -- Mes Tables
 
-CREATE TABLE FOURNISSEURS(
-    id INT PRIMARY KEY NOT NULL,
-    nom VARCHAR(100),
-    prenom VARCHAR(100),
-    email VARCHAR(255),
-    date_naissance DATE,
-    pays VARCHAR(255),
-    ville VARCHAR(255),
-    code_postal VARCHAR(5),
-    nombre_achat INT
+CREATE TABLE FOURNISSEURS (
+fournisseur INT AUTO_INCREMENT,
+Nom_du_fournisseur VARCHAR(25) NOT NULL,
+Numero_de_telephone INT NOT NULL,
+Email VARCHAR(25) NULL,
+Adresse VARCHAR(25) NULL,
+PRIMARY KEY(fournisseur)
 );
 
   -- creation de la table client
@@ -53,14 +50,16 @@ FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
       
    -- creation de la table commande 
     
-     CREATE TABLE commande (
-Id_commande INT AUTO_INCREMENT NOT NULL,
-Date_et_heure_de_commande DATETIME NOT NULL,
-Id_Menu INT,
-PRIMARY KEY (Id_commande),
-FOREIGN KEY (Id_Menu) REFERENCES Menu (Id_Menu)
+CREATE TABLE COMMANDES(
+commande INT AUTO_INCREMENT,
+Date_de_commande DATE DEFAULT NULL,
+Date_et_heure_de_livraison DATETIME,
+quantite INT NOT NULL,
+produit INT,
+PRIMARY KEY (commande, produit),
+FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
 ); 
-     
+
   -- creation de la table prix     
      
      CREATE TABLE prix(
