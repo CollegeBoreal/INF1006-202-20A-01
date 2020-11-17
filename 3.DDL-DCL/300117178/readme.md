@@ -1,7 +1,7 @@
 # AfricaMusic
 
 ---
-title: "Get Started"
+title: "DESCRIPTION"
 output: flexdashboard::flex_dashboard
 ---
 ```{r setup, include=FALSE}
