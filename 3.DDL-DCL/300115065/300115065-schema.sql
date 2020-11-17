@@ -35,23 +35,20 @@ CREATE TABLE CLIENTS (
   PRIMARY KEY(client)
   );
   
-  SELECT DISTINCT CLIENT.C#
-     FROM COMMANDE, FOURNISSEUR, CLIENT
-     WHERE COMMANDE.F# = FOURNISSEUR.F#
-     AND COMMANDE.C# = CLIENT.C#
-     AND CLIENT.VILLE <> FOURNISSEUR.VILLE;
-     
+  
       -- creation de la table produit
-     
- CREATE TABLE PRODUITS (
-   produit INT AUTO_INCREMENT,
-   client INT,
-   Nom_du_produit VARCHAR(15) NOT NULL,
-   fournisseur VARCHAR(20),
-   PRIMARY KEY(produit),
-   FOREIGN KEY(client)
-      REFERENCES CLIENTS(client)
-   );
+      
+CREATE TABLE PRODUITS(
+produit INT AUTO_INCREMENT,
+Nom_du_produit VARCHAR(25) NOT NULL,
+Numero_de_reference VARCHAR(25),
+Date_de_peremption DATE DEFAULT NULL,
+fournisseur INT,
+PRIMARY KEY (produit, fournisseur),
+FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
+(fournisseur)
+ );
+
    
       
    -- creation de la table commande 
