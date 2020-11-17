@@ -6,13 +6,13 @@
 ```{r setup, include=FALSE}
 
 ```
-Column A
+Column 1
 --------------------------------------------------
 ### Chart A
 <img src="MCD.JPG" witdth="900" height="900"></img>
 ```{r}
 ```
-Column B
+Column 2
 --------------------------------------------------
 ### Chart B
 ```{r}
