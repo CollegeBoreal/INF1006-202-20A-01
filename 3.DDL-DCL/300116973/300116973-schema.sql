@@ -30,7 +30,7 @@ CREATE TABLE PRODUITS(
 produit INT AUTO_INCREMENT,
 Nom_du_produit VARCHAR(25) NOT NULL,
 Numero_de_reference VARCHAR(25),
-Date_de_peremption DATE DEFAULT '1990-01-01' NULL,
+Date_de_peremption DATE DEFAULT NULL,
 fournisseur INT,
 PRIMARY KEY (produit, fournisseur),
 FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
@@ -41,7 +41,7 @@ FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
 
 CREATE TABLE COMMANDES(
 commande INT AUTO_INCREMENT,
-Date_de_commande DATE DEFAULT '1990-01-01' NULL,
+Date_de_commande DATE DEFAULT NULL,
 Date_et_heure_de_livraison DATETIME,
 quantite INT NOT NULL,
 produit INT,
@@ -69,7 +69,7 @@ CREATE TABLE ACHATS(
 achat INT AUTO_INCREMENT,
 Montant INT NOT NULL,
 Quantites INT NOT NULL,
-Date_dachat DATE DEFAULT '1990-01-01',
+Date_dachat DATETIME,
 produit INT,
 PRIMARY KEY (achat, produit),
 FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
@@ -82,7 +82,7 @@ CREATE TABLE FACTURES(
 facture INT AUTO_INCREMENT NOT NULL,
 Montant INT NOT NULL,
 Quantites INT NULL,
-Date_facturation DATE DEFAULT '1990-01-01' NULL,
+Date_facturation DATE DEFAULT NULL,
 PRIMARY KEY (facture)
 );
 
@@ -93,7 +93,7 @@ Matricule INT AUTO_INCREMENT,
 Nom VARCHAR(25) NOT NULL,
 prenom VARCHAR(25) NULL,
 Numero_de_telephone INT NOT NULL,
-Sexe_feminin BOOLEAN DEFAULT TRUE NULL,
+Sexe_feminin BOOLEAN DEFAULT NULL,
 achat INT,
 PRIMARY KEY (Matricule),
 FOREIGN KEY (achat) REFERENCES ACHATS (achat)
