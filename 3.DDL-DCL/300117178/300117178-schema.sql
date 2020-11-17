@@ -1,50 +1,60 @@
 ##africaMusic
 
  CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
- GRANT ALL ON boris.* TO 'boris'@'%';
+ GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
  
- use  AfricaMusic;
-
-
 CREATE DATABASE AfricaMusic;
 use AfricaMusic;
 
-CREATE TABLE Artists(
-Name_Artist VARCHAR(20) PRIMARY KEY NOT NULL,
-Country_Artist VARCHAR(20),
-Image_Artist VARCHAR(20)
+
+CREATE TABLE COUNTRIES(
+country INT PRIMARY KEY AUTO_INCREMENT,
+Name_Country VARCHAR(30)
 );
-CREATE TABLE Albums(
-Title_Album VARCHAR(20) PRIMARY KEY NOT NULL,
+
+CREATE TABLE ARTISTS(
+artist INT PRIMARY KEY AUTO_INCREMENT,
+Name_Artist VARCHAR(30)  NOT NULL UNIQUE,
+Image_Artist VARCHAR(20),
+country INT,
+FOREIGN KEY (country) REFERENCES COUNTRIES(country)
+);
+
+
+CREATE TABLE ALBUMS(
+album INT PRIMARY KEY AUTO_INCREMENT,
+Title_Album VARCHAR(20)NOT NULL UNIQUE,
 Release_date date,
 Cover_Album VARCHAR(20)
 );
 
-CREATE TABLE Genres(
-Title_Genre VARCHAR(20)PRIMARY KEY
+CREATE TABLE GENRES(
+genre INT PRIMARY KEY AUTO_INCREMENT,
+Title_Genre VARCHAR(20)
 );
 
-CREATE TABLE Songs(
-Name_Music VARCHAR(20) PRIMARY KEY NOT NULL,
+CREATE TABLE SONGS(
+song INT PRIMARY KEY AUTO_INCREMENT,
+Name_Music VARCHAR(20) NOT NULL,
 Source_Music VARCHAR(20) NOT NULL,
-Title_Genre VARCHAR(20),
-FOREIGN KEY (Title_Genre) REFERENCES Genres(Title_Genre)
+genre INT,
+FOREIGN KEY (genre) REFERENCES GENRES(genre)
 
 );
 
 CREATE TABLE ArtistAlbum(
-Name_Artist VARCHAR(20), 
-Title_Album VARCHAR(20), 
-PRIMARY KEY(Name_Artist,Title_Album),
-FOREIGN KEY (Name_Artist) REFERENCES Artists(Name_Artist),
-FOREIGN KEY (Title_Album) REFERENCES Albums(Title_Album)
+artist INT, 
+album INT, 
+PRIMARY KEY(artist,album),
+FOREIGN KEY (artist) REFERENCES ARTISTS(artist),
+FOREIGN KEY (album) REFERENCES ALBUMS(album)
 );
 
 CREATE TABLE AlbumMusic(
-Name_Music VARCHAR(20) REFERENCES Songs(Name_Music),
-Title_Album VARCHAR(20) REFERENCES Albums(Title_Album),
-PRIMARY KEY(Name_Music,Title_Album),
-FOREIGN KEY (Name_Music) REFERENCES Songs(Name_Music),
-FOREIGN KEY (Title_Album) REFERENCES Albums(Title_Album)
+song int,
+album int,
+PRIMARY KEY(song,album),
+FOREIGN KEY (song) REFERENCES SONGS(song),
+FOREIGN KEY (album) REFERENCES AlBUMS(album)
 
 );
