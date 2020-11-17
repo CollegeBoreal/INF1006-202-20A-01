@@ -1,14 +1,5 @@
 # AfricaMusic
 
-
----
-title: "Habits"
-output:
-html_document:
-toc: true
-toc_float: true
----
-
 ---
  Gestion AfricaMusic
 ---
