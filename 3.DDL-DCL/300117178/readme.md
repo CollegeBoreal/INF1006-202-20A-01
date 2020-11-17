@@ -1,7 +1,7 @@
 # AfricaMusic
 
 ---
-title: "DESCRIPTION"
+title: "Gestion AfricaMusic"
 output: flexdashboard::flex_dashboard
 ---
 ```{r setup, include=FALSE}
