@@ -16,13 +16,13 @@ Rules
 --------------------------------------------------
 ### Chart B
 ```{r}
+
+```
+### Chart C
+```{r}
+```
 ## Quarterly Results {.tabset}
 ### By Product
 (tab content)
 ### By Region
 (tab content)
-```
-### Chart C
-```{r}
-```
-
