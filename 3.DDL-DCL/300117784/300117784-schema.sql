@@ -1,3 +1,5 @@
+CREATE USER 'Bertrand'@'%' IDENTIFIED BY 'Bertrand_1';
+GRANT ALL ON BMOnlineGaming.* TO 'Bertrand'@'%';
 CREATE database BMOnlineGaming;
 use BMOnlineGaming;
 
