@@ -1,139 +1,78 @@
 CREATE database BMOnlineGaming;
 use BMOnlineGaming;
-CREATE TABLE Clients( 
-Nom_Client varchar (32) primary key,
-Prenom_Client varchar(32),
-Address_Client varchar (32) not null,
-Tel_Client long
+
+CREATE TABLE CLIENTS(
+clients INT AUTO_INCREMENT Primary Key,
+Nom_Client varchar (32),
+Address_Client varchar (50),
+Tel_Client  long
 
 );
 
-CREATE TABLE Fournisseurs( 
-Id_Fournisseur int primary key,
+CREATE TABLE FOUNISSEURS(
+Founisseur INT AUTO_INCREMENT primary key,
 Nom_Fournisseur varchar (32),
-Address_Fournisseur varchar (32) not null,
-Tel_Client long 
+Address_Founisseur varchar (50),
+Tel_Fournisseur long
+);
 
-
+CREATE TABLE TYPESARTICLES(
+Type_Article INT AUTO_INCREMENT primary key,
+Nom_Type_Article varchar (50)
 
 );
 
-CREATE TABLE Accessoires( 
-Nom_Accessoire varchar (32) primary Key
-);
-
-CREATE TABLE Consoles( 
-Nom_Console varchar (32) primary key
-
+CREATE TABLE ARTICLES(
+Article INT AUTO_INCREMENT primary key,
+Nom_Article varchar (50),
+Type_Article INT,
+foreign key(Type_Article) references TYPESARTICLES (Type_Article)
 
 );
 
-CREATE TABLE TypedeJeux( 
-Title_JEUX varchar (32) primary KEY
-
-);
-
-CREATE TABLE Jeux(
-Nom_jeux varchar (32), 
-Nom_Console varchar (32),
-Title_JEUX varchar (32),
-foreign key (Nom_Console) references Consoles (Nom_Console),
-foreign key (Title_JEUX) references TypedeJeux (Title_JEUX),
-primary Key(Nom_jeux)
-
-);
-
-CREATE TABLE Vente_Jeux(
-
-Nom_Client varchar (32),
-Nom_jeux varchar (32),
-Prix_Jeux int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_jeux) references Jeux  (Nom_jeux),
-primary key (Nom_Client,Nom_jeux)
-
-);
-
-CREATE TABLE Vente_Consoles(
-Nom_Client varchar (32),
-Nom_Console varchar (32),
+CREATE TABLE VENTES(
+clients INT,
+Article INT,
+foreign key(clients) references CLIENTS (clients),
+foreign key(Article) references ARTICLES (Article),
 Date_Vente date,
-Prix_Console int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Console) references Jeux  (Nom_Console),
-primary key (Nom_Client,Nom_Console)
-
+primary key(clients,Article)
 
 );
 
-
-CREATE TABLE Vente_Accessoires(
-Nom_Client varchar (32),
-Nom_Accessoire varchar (32),
-Date_Vente date,
-Prix_Accessoire int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Accessoire) references Accessoires  (Nom_Accessoire),
-primary key (Nom_Client,Nom_Accessoire)
-
-);
-CREATE TABLE Location_Accessoires(
-Nom_Client varchar (32),
-Nom_Accessoire varchar (32),
-Date_Location date,
-Date_retour date,
-Prix_Accessoire int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Accessoire) references Accessoires  (Nom_Accessoire),
-primary key (Nom_Client,Nom_Accessoire)
-
-);
-
-
-
-CREATE TABLE Location_Jeux(
-Nom_Client varchar (32),
-Nom_jeux varchar (32),
+CREATE TABLE LOCATIONS(
+clients INT,
+Article INT,
+foreign key(clients) references CLIENTS (clients),
+foreign key(Article) references ARTICLES (Article),
 Date_Location date,
 Date_Retour date,
-Prix_Location_Jeux int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_jeux) references Jeux  (Nom_jeux),
-primary key (Nom_Client,Nom_jeux)
+primary key(clients,Article)
 
 );
 
-CREATE TABLE Location_Console(
-Nom_Client varchar (32),
-Nom_Console varchar (32),
-Date_Location date,
-Date_Retour date,
-Prix_Location_Console int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Console) references Jeux  (Nom_Console),
-primary key (Nom_Client,Nom_Console)
-
-);
-
-CREATE TABLE Depanage_Consoles(
-Nom_Client varchar (32),
-Nom_Console varchar (32),
-Date_Depannage  date,
-Prix_Depannage_Console int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Console) references Jeux  (Nom_Console),
-primary key (Nom_Client,Nom_Console)
-
-);
-
-CREATE TABLE Depannage_Accessoires(
-Nom_Client varchar (32),
-Nom_Accessoire varchar (32),
+CREATE TABLE DEPANNAGE(
+clients INT,
+Article INT,
+foreign key(clients) references CLIENTS (clients),
+foreign key(Article) references ARTICLES (Article),
 Date_Depannage date,
-Prix_Depannage_Accessoire int ,
-foreign key (Nom_Client) references Clients (Nom_Client),
-foreign key (Nom_Accessoire) references Accessoires  (Nom_Accessoire),
-primary key (Nom_Client,Nom_Accessoire)
+primary key(clients,Article)
 
 );
+
+CREATE TABLE PAIEMENTS(
+Paiement INT AUTO_INCREMENT,
+clients INT,
+Article INT,
+Montant INT,
+Date_Paiement date,
+foreign key(clients) references CLIENTS (clients),
+foreign key(Article) references ARTICLES (Article),
+primary key(Paiement,clients,Article)
+
+);
+
+
+
 
