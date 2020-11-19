@@ -19,34 +19,69 @@ CREATE TABLE FOURNISSEURS (
   Telephone INT,
   PRIMNARY KEY(fournisseur)
   );
-  
-  
- CREATE TABLE CLIENTS (
-   client INT AUTO_INCREMENT,
+ 
+ 
+ CREATE TABLE CLIENTS_DETAIL (
+   client_detail INT AUTO_INCREMENT,
+   Telephone INT,
+   produit INT, 
+   fournisseur INT, 
+   PRIMARY KEY(client_detail)
+   );
+   
+   
+   CREATE TABLE CLIENTS_GROS (
+   client_gros INT AUTO_INCREMENT,
    Nom VARCHAR(10) NOT NULL,
    Prenom VARCHAR(10),
    Adresse VARCHAR(30),
    Telephone INT NOT NULL,
-   PRIMARY KEY(client)
+   fournisseur INT,
+   PRIMARY KEY(client_gros, fournisseur),
+   FOREIGN KEY (fournisseur)
+      REFERENCES FOURNISSEURS (fournisseur)
    );
-   
-   
-  CREATE TABLE PRODUITS (
-    produit INT AUTO_INCREMENT,
-    Nom VARCHAR(10),
-    Client INT,
-    Fournisseur VARCHAR(10),
-    PRIMARY KEY(produit)
-    );
+ 
+ 
+ CREATE TABLE PRODUITS_GROS (
+   produit_gros INT AUTO_INCREMENT,
+   Nom VARCHAR(10),
+   client_gros INT,
+   Fournisseur VARCHAR(10),
+   PRIMARY KEY(produit_gros, client_gros, fournisseur)
+   FOREIGN KEY(client_gros)
+      REFERENCES CLIENTS(client_gros),
+   FOREIGN KEY(fournisseur)
+      REFERENCES FOURNISSEURS (fournisseur)
+   );
+  
+  
+CREATE TABLE PRODUITS_DETAIL (
+   produit_detail INT AUTO_INCREMENT,
+   Nom VARCHAR(10),
+   client_detail INT,
+   Fournisseur INT,
+   PRIMARY KEY(produit, client, fournisseur)
+   FOREIGN KEY(client)
+      REFERENCES CLIENTS_DETAIL(client_detail),
+   FOREIGN KEY(frounisseur)
+      REFERENCES FOURNISSEURS (fournisseur)
+   );
+     
+  
      
      
   CREATE TABLE VENTES (
     vente INT AUTO_INCREMENT,
-    client INT,
-    produit VARCHAR (10),
+    produit_gros INT,
+    produit_detail INT,
     Prix INT,
     Date_et_heure DATE,
-    PRIMARY KEY(vente)
+    PRIMARY KEY(vente, produit_gros, produit_detail)
+    FOREIGN KEY(produit_gros)
+       REFERENCES PRODUITS_GROS(produit_gros),
+    FOREIGN KEY(produit_detail)
+       REFERENCES PRODUITS_DETAIL(produit_detail)
     );
 
 
