@@ -18,6 +18,29 @@ USE SKINCARE;
 -- **********************
 
 
+ CREATE TABLE FOURNISSEURS (
+   fournisseurs INT AUTO_INCREMENT,
+   Nom VARCHAR(20),
+   Adresse VARCHAR(30),
+   Telephone INT,
+   Type_de_societe VARCHAR(20),
+   PRIMARY KEY (fournisseurs )
+   );
+   
+   
+     
+  CREATE TABLE PRODUITS (
+    produit INT AUTO_INCREMENT,
+    Nom VARCHAR(20),
+    Marque VARCHAR(20),
+    Prix INT,
+    fournisseurs INT,
+    PRIMARY KEY (produit),
+    FOREIGN KEY (fournisseurs) REFERENCES FOURNISSEURS(fournisseurs)
+     );
+   
+   
+
 CREATE TABLE CLIENTS (
   client INT AUTO_INCREMENT,
   Nom VARCHAR(20) NOT NULL,
@@ -31,25 +54,9 @@ CREATE TABLE CLIENTS (
   );
   
   
- CREATE TABLE FOURNISSEURS (
-   fournisseurs INT AUTO_INCREMENT,
-   Nom VARCHAR(20),
-   Adresse VARCHAR(30),
-   Telephone INT,
-   Type_de_societe VARCHAR(20),
-   PRIMARY KEY (fournisseurs )
-   );
-    
-    
-  CREATE TABLE PRODUITS (
-    produit INT AUTO_INCREMENT,
-    Nom VARCHAR(20),
-    Marque VARCHAR(20),
-    Prix INT,
-    fournisseurs INT,
-    PRIMARY KEY (produit, fournisseurs),
-    FOREIGN KEY (fournisseurs) REFERENCES FOURNISSEURS(fournisseurs)
-     );
+
+  
+  
       
   CREATE TABLE VENTES (
    ventes INT AUTO_INCREMENT,
@@ -64,7 +71,7 @@ CREATE TABLE CLIENTS (
    client INT,
    Produit INT,
    Montant INT,
-   Date_PAIEMENT dtae,
+   Date_PAIEMENT DATE,
    PRIMARY KEY(paiement),
    FOREIGN KEY(produit)
       REFERENCES PRODUITS(produit),
