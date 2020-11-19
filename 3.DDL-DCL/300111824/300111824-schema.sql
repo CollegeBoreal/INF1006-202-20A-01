@@ -17,7 +17,7 @@ CREATE TABLE FOURNISSEURS (
   Nom VARCHAR(10) NOT NULL,
   Adresse VARCHAR(30),
   Telephone INT,
-  PRIMNARY KEY(fournisseur)
+  PRIMARY KEY(fournisseur)
   );
  
  
@@ -42,15 +42,14 @@ CREATE TABLE FOURNISSEURS (
       REFERENCES FOURNISSEURS (fournisseur)
    );
  
- 
- CREATE TABLE PRODUITS_GROS (
+  CREATE TABLE PRODUITS_GROS (
    produit_gros INT AUTO_INCREMENT,
    Nom VARCHAR(10),
    client_gros INT,
-   Fournisseur VARCHAR(10),
-   PRIMARY KEY(produit_gros, client_gros, fournisseur)
+   Fournisseur INT,
+   PRIMARY KEY(produit_gros, client_gros, fournisseur),
    FOREIGN KEY(client_gros)
-      REFERENCES CLIENTS(client_gros),
+      REFERENCES CLIENTS_GROS(client_gros),
    FOREIGN KEY(fournisseur)
       REFERENCES FOURNISSEURS (fournisseur)
    );
@@ -75,9 +74,9 @@ CREATE TABLE PRODUITS_DETAIL (
     vente INT AUTO_INCREMENT,
     produit_gros INT,
     produit_detail INT,
-    Prix INT,
-    Date_et_heure DATE,
-    PRIMARY KEY(vente, produit_gros, produit_detail)
+    Prix INT NOT NULL,
+    Date_et_heure DATE NOT NULL,
+    PRIMARY KEY(vente, produit_gros, produit_detail),
     FOREIGN KEY(produit_gros)
        REFERENCES PRODUITS_GROS(produit_gros),
     FOREIGN KEY(produit_detail)
