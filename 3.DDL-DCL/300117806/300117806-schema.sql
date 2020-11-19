@@ -25,6 +25,7 @@ CREATE TABLE CLIENTS (
   Adresse VARCHAR (30) NOT NULL,
   Telephone INT NOT NULL, 
   produit INT,
+  Age INT, 
   PRIMARY KEY (client),
   FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
   );
@@ -55,12 +56,21 @@ CREATE TABLE CLIENTS (
    Nom VARCHAR(20)
    Prix INT,
    Date DATE,
-   client VARCHAR(20),
-   PRIMARY KEY (ventes, client),
-   FOREIGN KEY (client) REFERENCES CLIENTS(client)
+   PRIMARY KEY (ventes)
    );
    
-   
+   CREATE TABLE PAIEMENTS (
+   paiement INT AUTO_INCREMENT,
+   client INT,
+   Produit INT,
+   Montant INT,
+   Date_PAIEMENT dtae,
+   PRIMARY KEY(paiement),
+   FOREIGN KEY(produit)
+      REFERENCES PRODUITS(produit),
+   FOREIGN KEY(client)
+      REFERENCES CLIENTS(client)
+    );
       
   
   
