@@ -54,17 +54,23 @@ CREATE TABLE CLIENTS (
   );
   
   
-
+  CREATE TABLE VENTES (
+   ventes INT AUTO_INCREMENT,
+   Nom VARCHAR(20),
+   Prix INT,
+   produit INT,
+   paiement INT,
+   Date DATE,
+   PRIMARY KEY (ventes),
+   FOREIGN KEY (produit) 
+	  REFERENCES PRODUITS(produit),
+   FOREIGN KEY (paiement)
+      REFERENCES PAIEMENTS(paiement)
+   );
   
   
       
-  CREATE TABLE VENTES (
-   ventes INT AUTO_INCREMENT,
-   Nom VARCHAR(20)
-   Prix INT,
-   Date DATE,
-   PRIMARY KEY (ventes)
-   );
+  
    
    CREATE TABLE PAIEMENTS (
    paiement INT AUTO_INCREMENT,
