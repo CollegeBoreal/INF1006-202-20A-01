@@ -46,3 +46,21 @@ CREATE TABLE TABLES_PRODUITS
   prix VARCHAR(45) NULL,
   PRIMARY KEY (table_produit)
   );
+  
+  
+  
+  ====================================================
+  -- Table clients
+  ====================================================
+  CREATE TABLE CLIENTS
+(
+table_client INT AUTO_INCREMENT, 
+nom varchar (45) NULL,
+prenom varchar (45) NULL,
+addresse varchar (45) NULL,
+ville varchar (45) NULL,
+telephone varchar (45) NOT NULL,
+postecode varchar (45) NOT NULL,
+  PRIMARY KEY (table_client)
+  );
+  
