@@ -33,8 +33,10 @@ CREATE TABLE FOURNISSEURS
   Adresse VARCHAR(45) NOT NULL,
   Telephone VARCHAR(45) NOT NULL,
   Interlocuteur VARCHAR(45)  NULL,
-  Delai_livraison VARCHAR(45) NULL,
-  PRIMARY KEY (fournisseur)
+  Delai_livraison INT NULL,
+  Table_employee INT,
+  PRIMARY KEY (fournisseur, Table_employee),
+  FOREIGN KEY (Table_employee ) REFERENCES TABLES_EMPLOYEES  (table_employee)
   );
 =================================================================
 --Table Produits 
@@ -44,7 +46,10 @@ CREATE TABLE TABLES_PRODUITS
   table_produit INT AUTO_INCREMENT ,
   nom_produit VARCHAR(45) NOT NULL,
   prix VARCHAR(45) NULL,
-  PRIMARY KEY (table_produit)
+  fournisseur INT,
+  PRIMARY KEY (table_produit, fournisseur ) ,
+  FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS (fournisseur )
+ 
   );
   
   
@@ -61,6 +66,8 @@ addresse varchar (45) NULL,
 ville varchar (45) NULL,
 telephone varchar (45) NOT NULL,
 postecode varchar (45) NOT NULL,
-  PRIMARY KEY (table_client)
+table_produit INT, 
+PRIMARY KEY (table_client),
+FOREIGN KEY (table_produit) REFERENCES TABLES_PRODUITS (table_produit)
   );
   
