@@ -26,21 +26,23 @@ CREATE TABLE TABLES_EMPLOYEES
 ============================================================
 --Table fournisseur 
 =============================================================
-CREATE TABLE 'fournisseur'
+CREATE TABLE FOURNISSEURS
  (
-  `idFournisseur` INT NOT NULL,
-  `Nom` VARCHAR(45) NOT NULL,
-  `Adresse` VARCHAR(45) NOT NULL,
-  `Telephone` VARCHAR(45) NOT NULL,
-  `Interlocuteur` VARCHAR(45) NOT NULL,
-  `Delai_livraison` VARCHAR(45) NULL,
-  PRIMARY KEY (`idFournisseur`)); 
+  fournisseur INT AUTO_INCREMENT,
+  Nom VARCHAR(45)  NULL,
+  Adresse VARCHAR(45) NOT NULL,
+  Telephone VARCHAR(45) NOT NULL,
+  Interlocuteur VARCHAR(45)  NULL,
+  Delai_livraison VARCHAR(45) NULL,
+  PRIMARY KEY (fournisseur)
+  );
 =================================================================
 --Table Produits 
 =================================================================
-CREATE TABLE `table_produits` 
+CREATE TABLE TABLES_PRODUITS 
 (
-  `idtable_produits` INT NOT NULL,
-  `Description` VARCHAR(45) NOT NULL,
-  `Prix` VARCHAR(45) NULL,
-  PRIMARY KEY (`idtable_produits`));
+  table_produit INT AUTO_INCREMENT ,
+  nom_produit VARCHAR(45) NOT NULL,
+  prix VARCHAR(45) NULL,
+  PRIMARY KEY (table_produit)
+  );
