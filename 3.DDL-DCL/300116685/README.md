@@ -1,2 +1,2 @@
 # DB DJIB_12
-![image](images.Capture12.PNG)
+![image](images/Capture12.PNG)
