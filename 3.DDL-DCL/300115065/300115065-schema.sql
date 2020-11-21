@@ -1,74 +1,87 @@
 -- Mon domaine
-CREATE DATABASE IF NOT EXISTS wydad;
+
+CREATE DATABASE IF NOT EXISTS Carshop;
 
 -- Mon utilisateur
 
-CREATE USER IF NOT EXISTS 'fadde'@'%' IDENTIFIED BY 'wydad_1';
-GRANT ALL ON wydad.* TO 'fadde'@'%';
+CREATE USER IF NOT EXISTS 'abdel'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON Carshop.* TO 'abdel'@'localhost';
 
--- selectionner la base de donnees
-use wydad;
+-- Selectionnet la base de donnees 
+ 
+use Carshop;
 
--- Mes Tables
+-- Mes tables
+  
 
-CREATE TABLE FOURNISSEURS (
-fournisseur INT AUTO_INCREMENT,
-Nom_du_fournisseur VARCHAR(25) NOT NULL,
-Numero_de_telephone INT NOT NULL,
-Email VARCHAR(25) NULL,
-Adresse VARCHAR(25) NULL,
-PRIMARY KEY(fournisseur)
+CREATE TABLE CUSTOMERS(
+  customer AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  shipping_address INT,
+  purchase Date,
+  PRIMARY KEY(customer),
+  FOREIGN KEY(shipping_address) 
+     REFERENCES SHIPPING_ADDRESS(shipping_address) 
+
+);
+  
+CREATE TABLE SHIPPING_ADDRESS (
+  shipping_address AUTO_INCREMENT,
+  city VARCHAR(40) NOT NULL,
+  state VARCHAR(30) NOT NULL,
+  zip_code VARCHAR(30) NOT NULL,
+  PRIMARY KEY(shipping_address)
 );
 
-  -- creation de la table client
-  
-CREATE TABLE CLIENTS (
-  client INT AUTO_INCREMENT,
-  Nom VARCHAR(20) NOT NULL,
-  Prenom VARCHAR(20),
-  Adresse VARCHAR(35),
-  Code_postale VARCHAR (10),
-  Telephone VARCHAR(10) NOT NULL,
-  PRIMARY KEY(client)
+CREATE TABLE PAYMENTS (
+  payment INT AUTO_INCREMENT,
+  customer VARCHAR(30),
+  price INT,
+  PRIMARY KEY(payment),
+     FOREIGN KEY(customer)
+        REFERENCES CUSTOMERS(customer),
+     FOREIGN KEY(price)
+        REFERENCES PRICES(price)
+ );
+ 
+CREATE TABLE  MODELS (
+  model INT AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY(model)
   );
   
   
-      -- creation de la table produit
-      
-CREATE TABLE PRODUITS(
-produit INT AUTO_INCREMENT,
-Nom_du_produit VARCHAR(25) NOT NULL,
-Numero_de_reference VARCHAR(25),
-Date_de_peremption DATE DEFAULT NULL,
-fournisseur INT,
-PRIMARY KEY (produit, fournisseur),
-FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
-(fournisseur)
- );
+CREATE TABLE BRANDS (
+  brand INT AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  PRIMARY KEY(brand)
+  );
 
+  
+CREATE TABLE COLOURS (
+   colour INT AUTO_INCREMENT,
+   name VARCHAR(30) NOT NULL,
+   PRIMARY KEY(colour)
+   );
+
+CREATE TABLE PRICES (
+  price INT AUTO_INCREMENT,
+  value INT NOT NULL,
+  PRIMARY KEY(price)
+  );
+  
+CREATE TABLE PRODUCTS (
+  model INT,
+  brand INT,
+  colour INT,
+  product INT,
+  PRIMARY KEY(model, brand, colour),
+  FOREIGN KEY(model) 
+     REFERENCES MODELS(model),
+  FOREIGN KEY(brand) 
+     REFERENCES BRANDS(brand),
+  FOREIGN KEY(colour) 
+     REFERENCES COLOURS(colour)
    
-      
-   -- creation de la table commande 
-    
-CREATE TABLE COMMANDES(
-commande INT AUTO_INCREMENT,
-Date_de_commande DATE DEFAULT NULL,
-Date_et_heure_de_livraison DATETIME,
-quantite INT NOT NULL,
-produit INT,
-PRIMARY KEY (commande, produit),
-FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
-); 
-
-  -- creation de la table prix     
-     
-     CREATE TABLE prix(
-Id_prix INT AUTO_INCREMENT NOT NULL,
-Montant INT(100) NULL,
-Quantites INT(20) NULL,
-Id_client INT,
-Id_commande INT,
-PRIMARY KEY (Id_prix),
-FOREIGN KEY (Id_client) REFERENCES client (Id_client),
-FOREIGN KEY (Id_commande) REFERENCES commande (Id_commande)
-);
+   );
+ 
