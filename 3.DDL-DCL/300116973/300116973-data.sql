@@ -18,11 +18,11 @@ INSERT INTO PRODUITS (Nom_du_produit, Numero_de_reference, Date_de_peremption, f
 
 -- donnee de la tables commandes
 
-INSERT INTO COMMANDES (Date_de_commande, quantite, produit) VALUES ('2020-10-01', 20, 1);
-INSERT INTO COMMANDES (Date_de_commande, quantite, produit) VALUES ('2020-8-01', 100, 3);
-INSERT INTO COMMANDES (Date_de_commande, quantite, produit) VALUES ('2020-9-01', 60, 2);
-INSERT INTO COMMANDES (Date_de_commande, quantite, produit) VALUES ('2020-11-01', 20, 6);
-INSERT INTO COMMANDES (Date_de_commande, quantite, produit) VALUES ('2020-11-01', 40, 5);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-10-01', '2020-10-05' '06:20:00', 20, 1);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-8-01', '2020-8-05''07:30:55', 100, 3);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-9-01', '2020-09-05''11:15:09', 59, 2);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-11-01', '2020-11-05''10:15:40', 20, 6);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-11-01', '2020-11-05''09:19:45', 40, 5);
 
 -- donnee de la table clients
 
@@ -35,27 +35,38 @@ INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('quentin
 
 -- donnee de la table achats
 
-INSERT INTO ACHATS (Montant, quantites, produit) VALUES (100000, 20, 1);
-INSERT INTO ACHATS (Montant, quantites, produit) VALUES (1200000, 60, 3);
-INSERT INTO ACHATS (Montant, quantites, produit) VALUES (11100000, 60, 2);
-INSERT INTO ACHATS (Montant, quantites, produit) VALUES (50000, 20, 6);
-INSERT INTO ACHATS (Montant, quantites, produit) VALUES (4000, 40, 5);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (100000, 20, '2020-11-05''09:19:45', 1);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (1200000, 60, '2020-11-05''09:19:45', 3);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (11100000, 60, '2020-11-05''09:19:45', 2);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (50000, 20, '2020-11-05''09:19:45', 6);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (4000, 40, '2020-11-05''09:19:45', 5);
 
 -- donnee de la table facture
 
-INSERT INTO FACTURES (Montant, quantites) VALUES (1000, 3);
-INSERT INTO FACTURES (Montant, quantites) VALUES (2000, 10);
-INSERT INTO FACTURES (Montant, quantites) VALUES (6000, 11);
-INSERT INTO FACTURES (Montant, quantites) VALUES (7000, 6);
-INSERT INTO FACTURES (Montant, quantites) VALUES (12000, 20);
-INSERT INTO FACTURES (Montant, quantites) VALUES (6000, 11);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (1000, 3, 1);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (2000, 10, 2);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 1);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (7000, 6, 2);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (12000, 20, 3);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 4);
 
 -- donnee de la table employes
 
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone) VALUES ('Noumsi', 'Pascaline', 983344556);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone) VALUES ('tuekam', 'suzanne', 783344556);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone) VALUES ('kameni', 'Andree', 983345500);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone) VALUES ('lago', 'Nathalie', 683344556);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone) VALUES ('tuedjo', 'cristiane', 773344556);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone, Sexe_feminin) VALUES ('Noumsi', 'Pascaline', 983344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuekam', 'suzanne', 783344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('kameni', 'Andree', 983345500, FALSE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('lago', 'Nathalie', 683344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuedjo', 'cristiane', 773344556, TRUE);
+
+-- donnee de la table paiements
+
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 1);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 2);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (500.366, 3);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (500.97, 4);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (8000.99, 5);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (5950.3878, 6);
+
+
 
 
