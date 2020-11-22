@@ -52,10 +52,10 @@ CREATE TABLE  MODELS (
   );
   
   
-CREATE TABLE BRANDS (
-  brand INT AUTO_INCREMENT,
+CREATE TABLE MAKES (
+  make INT AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
-  PRIMARY KEY(brand)
+  PRIMARY KEY(make)
   );
 
   
@@ -73,14 +73,14 @@ CREATE TABLE PRICES (
   
 CREATE TABLE PRODUCTS (
   model INT,
-  brand INT,
+  make INT,
   colour INT,
   product INT,
-  PRIMARY KEY(model, brand, colour),
+  PRIMARY KEY(model, make, colour),
   FOREIGN KEY(model) 
      REFERENCES MODELS(model),
-  FOREIGN KEY(brand) 
-     REFERENCES BRANDS(brand),
+  FOREIGN KEY(make) 
+     REFERENCES MAKEs(make),
   FOREIGN KEY(colour) 
      REFERENCES COLOURS(colour)
    
