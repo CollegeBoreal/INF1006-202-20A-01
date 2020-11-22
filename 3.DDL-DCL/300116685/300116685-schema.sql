@@ -20,7 +20,7 @@ CREATE TABLE TABLES_EMPLOYEES
   Salaire varchar(45) NOT NULL,
   Commission varchar(45) DEFAULT NULL,
   Embauche varchar(45) DEFAULT NULL,
-  table_employeecol varchar(45) DEFAULT NULL,
+  table_employee varchar(45) DEFAULT NULL,
   PRIMARY KEY (Table_employee)
   );
 ============================================================
