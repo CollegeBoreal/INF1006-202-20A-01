@@ -35,6 +35,7 @@ CREATE TABLE SHIPPING_ADDRESS (
 
 CREATE TABLE PAYMENTS (
   payment INT AUTO_INCREMENT,
+  payment_method VARCHAR(40) NOT NULL,
   customer VARCHAR(30),
   price INT,
   PRIMARY KEY(payment),
