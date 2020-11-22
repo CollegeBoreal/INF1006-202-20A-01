@@ -87,7 +87,7 @@ CREATE TABLE PRODUCTS (
   FOREIGN KEY(model) 
      REFERENCES MODELS(model),
   FOREIGN KEY(make) 
-     REFERENCES MAKEs(make),
+     REFERENCES MAKES(make),
   FOREIGN KEY(colour) 
      REFERENCES COLOURS(colour)
    
