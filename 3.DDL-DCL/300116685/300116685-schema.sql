@@ -17,12 +17,11 @@ CREATE TABLE TABLES_EMPLOYEES
   Nom varchar(45) NOT NULL,
   Poste varchar(45)  NULL,
   Bureau varchar(45)  NULL,
-  Salaire varchar(45) NOT NULL,
-  Commission varchar(45) DEFAULT NULL,
-  Embauche varchar(45) DEFAULT NULL,
-  table_employee varchar(45) DEFAULT NULL,
-  PRIMARY KEY (Table_employee)
-  );
+  Salaire INT NOT NULL,
+  Commission INT  NULL,
+  Embauche DATE DEFAULT NULL ,
+  PRIMARY KEY (Table_employee) 
+);
 ============================================================
 --Table fournisseur 
 =============================================================
@@ -31,9 +30,9 @@ CREATE TABLE FOURNISSEURS
   fournisseur INT AUTO_INCREMENT,
   Nom VARCHAR(45)  NULL,
   Adresse VARCHAR(45) NOT NULL,
-  Telephone VARCHAR(45) NOT NULL,
+  Telephone INT NOT NULL,
   Interlocuteur VARCHAR(45)  NULL,
-  Delai_livraison INT NULL,
+  Delai_livraison DATE DEFAULT NULL,
   Table_employee INT,
   PRIMARY KEY (fournisseur, Table_employee),
   FOREIGN KEY (Table_employee ) REFERENCES TABLES_EMPLOYEES  (table_employee)
@@ -45,7 +44,7 @@ CREATE TABLE TABLES_PRODUITS
 (
   table_produit INT AUTO_INCREMENT ,
   nom_produit VARCHAR(45) NOT NULL,
-  prix VARCHAR(45) NULL,
+  prix INT NULL,
   fournisseur INT,
   PRIMARY KEY (table_produit, fournisseur ) ,
   FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS (fournisseur )
@@ -64,7 +63,7 @@ nom varchar (45) NULL,
 prenom varchar (45) NULL,
 addresse varchar (45) NULL,
 ville varchar (45) NULL,
-telephone varchar (45) NOT NULL,
+telephone INT  NOT NULL,
 postecode varchar (45) NOT NULL,
 table_produit INT, 
 PRIMARY KEY (table_client),
