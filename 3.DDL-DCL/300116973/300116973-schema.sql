@@ -83,7 +83,9 @@ facture INT AUTO_INCREMENT NOT NULL,
 Montant INT NOT NULL,
 Quantites INT NULL,
 Date_facturation DATE DEFAULT NULL,
-PRIMARY KEY (facture)
+commande INT,
+PRIMARY KEY (facture, commande),
+FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
 
 -- creation de la table employes
@@ -105,9 +107,7 @@ FOREIGN KEY (achat) REFERENCES ACHATS (achat)
 CREATE TABLE PAIEMENTS(
 paiement INT AUTO_INCREMENT,
 Montant FLOAT NULL,
-commande INT,
 facture INT,
-PRIMARY KEY (paiement, commande, facture),
-FOREIGN KEY (commande) REFERENCES COMMANDES (commande),
+PRIMARY KEY (paiement, facture),
 FOREIGN KEY (facture) REFERENCES FACTURES (facture)
 );
