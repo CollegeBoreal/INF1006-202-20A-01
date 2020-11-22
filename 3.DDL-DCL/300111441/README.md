@@ -1,3 +1,3 @@
 # mon domain
 
-!image (empire.png)
+! [image] (empire.png)
