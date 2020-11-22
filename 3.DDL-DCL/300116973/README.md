@@ -8,4 +8,4 @@
  ## Representation de notre base de donnee
  
 
-![image](images/mcd1.JPG)
+![image](images/mcd2.JPG)
