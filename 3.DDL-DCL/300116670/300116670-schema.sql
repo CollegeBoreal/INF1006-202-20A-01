@@ -23,8 +23,7 @@ Numero_de_reference VARCHAR(30),
 Prix_du_produit INT NOT NULL,
 Type_du_produit VARCHAR(15),
 PRIMARY KEY (produit),
-FOREIGN KEY (fourniseur
-) REFERENCES FOURNISSEURS(fournisseur)
+FOREIGN KEY (fourniseur) REFERENCES FOURNISSEURS(fournisseur)
 );
 
 CREATE TABLE FOURNISSEURS(
@@ -53,23 +52,24 @@ vente INT AUTO_INCREMENT,
 Nom_du_produit VARCHAR(40) NOT NULL,
 Date_et_heure_de_la_vente DATETIME NOT NULL, 
 Date_et_heure_de_livraison DATETIME NOT NULL,
-PRIMARY KEY (vente)
+PRIMARY KEY (vente),
+FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
 );
 
 CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
 type_de_location INT AUTO_INCREMENT,
-date_de_sortie DATETIME NOT NULL,
-date_de_retour DATETIME NOT NULL ,
 PRIMARY KEY (location),
 FOREIGN KEY (vente) REFERENCES VENTES(vente),
 FOREIGN KEY (client) REFERENCES CLIENTS(client)
 );
 
 
+
+
 CREATE TABLE SERVICES_LOCATIONS(
 service_location INT AUTO_INCREMENT,
-client 
+client INT, 
 type_de_location VARCHAR(20) NOT NULL,
 prix_de_la_location INT NOT NULL,
 date_de_sortie DATETIME,
