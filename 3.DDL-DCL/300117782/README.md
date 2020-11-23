@@ -3,4 +3,4 @@
 
 :cake: Cette base de données  représente le Restaurant Mamamiya propose de plats de nourritures variées à different prix :banana:
 
-![image](images/mamamiya.PNG
+![image](images/mamamiya.PNG)
