@@ -118,9 +118,12 @@ date_de_reception DATE NOT NULL,
 date_de_livraison DATE ,
 Instrument INT, 
 employe INT,
+client INT,
 PRIMARY KEY(service),
 FOREIGN KEY(Instrument)
       REFERENCES Instruments(Instrument),
+ FOREIGN KEY(client)
+      REFERENCES Clients(client),
 FOREIGN KEY(employe)
       REFERENCES Employes(employe)
 );
