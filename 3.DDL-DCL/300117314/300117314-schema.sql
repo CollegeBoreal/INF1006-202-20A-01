@@ -26,11 +26,16 @@ mysql> SHOW DATABASES;
 mysql> CREATE USER 'morti'@'%' IDENTIFIED BY 'morti_123';
 Query OK, 0 rows affected (0.08 sec)
 
+mysql> CREATE USER 'morti123'@'%' IDENTIFIED BY 'morti_123';
 
 -- comment lui donner les autorités:
 
 mysql> GRANT ALL ON MORTIMAINTENANCE.* TO 'morti'@'%';
 Query OK, 0 rows affected (0.09 sec)
+GRANT ALL ON mortimaintenance.* TO 'morti123'@'%';
+
+
+
 
 
 -- comment l'activer:
