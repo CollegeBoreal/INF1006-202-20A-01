@@ -15,7 +15,7 @@ use Carshop;
   
 
 CREATE TABLE CUSTOMERS(
-  customer AUTO_INCREMENT,
+  customer INT AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
   shipping_address INT,
   purchase Date,
@@ -27,7 +27,7 @@ CREATE TABLE CUSTOMERS(
 
   
 CREATE TABLE SHIPPING_ADDRESS (
-  shipping_address AUTO_INCREMENT,
+  shipping_address INT AUTO_INCREMENT,
   city VARCHAR(40) NOT NULL,
   state VARCHAR(30) NOT NULL,
   zip_code VARCHAR(30) NOT NULL,
