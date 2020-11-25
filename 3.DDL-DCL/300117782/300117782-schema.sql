@@ -50,7 +50,7 @@ PRIMARY KEY (plat)
   
   CREATE TABLE CLIENTS (
   client INT NOT NULL AUTO_INCREMENT,
-  Nom TINYTEXT NOT NULL,
+  Nom_du _client NOT NULL,
   commande INT NOT NULL,
   PRIMARY KEY (client, commande),
   FOREIGN KEY (commande)
