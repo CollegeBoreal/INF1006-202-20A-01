@@ -40,7 +40,7 @@ PRIMARY KEY (plat)
 
   CREATE TABLE COMMANDES (
   commande INT NOT NULL AUTO_INCREMENT,
-  Date_et_heure_de_commande` DATETIME NOT NULL,
+  Date_et_heure_de_commande DATETIME NOT NULL,
   plat INT NOT NULL,
   PRIMARY KEY (commande, plat),
   FOREIGN KEY (plat)
@@ -69,7 +69,7 @@ PRIMARY KEY (plat)
   
   CREATE TABLE PAIEMENTS (
   paiement INT NOT NULL,
-  montant FLOAT(200,0) NULL DEFAULT NULL,
+  montant FLOAT NULL DEFAULT NULL,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
   client INT NULL DEFAULT NULL,
   facture INT NULL DEFAULT NULL,
