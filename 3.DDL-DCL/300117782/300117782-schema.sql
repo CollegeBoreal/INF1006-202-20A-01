@@ -30,7 +30,7 @@ PRIMARY KEY (plat)
 -- creation de la table recette
   CREATE TABLE RECETTES (
   recette INT NOT NULL AUTO_INCREMENT,
-  Nom_du_recette VARCHAR(25) NOT NULL,
+  Nom_de_la_recette VARCHAR(25) NOT NULL,
   ingredient INT NOT NULL,
   PRIMARY KEY (recette, INGREDIENTS_ingredient),
   FOREIGN KEY (INGREDIENTS_ingredient)
