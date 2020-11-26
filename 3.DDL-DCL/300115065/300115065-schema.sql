@@ -14,7 +14,7 @@ use Carshop;
 -- Mes tables
   
 
-CREATE TABLE CUSTOMERS(
+CREATE TABLE CUSTOMERS (
   customer INT AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
   shipping_address INT,
