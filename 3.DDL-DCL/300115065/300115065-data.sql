@@ -2,12 +2,6 @@
 
 use Carshop;
 
--- Données de la table customers
-
-INSERT INTO CUSTOMERS (name, purchase) VALUES ('Anna_Maeid', '2020-10-03');
-INSERT INTO CUSTOMERS (name, purchase) VALUES ('Trace_Robert', '2020-01-06');
-INSERT INTO CUSTOMERS (name, purchase) VALUES ('Katti_Sheina', '2019-12-13');
-
 -- Données de la table shipping address
 
 INSERT INTO SHIPPING_ADDRESS (city, state, zip_code) VALUES ('Toronto', 'ON','M1S3K2');
@@ -44,6 +38,14 @@ INSERT INTO COLOURS (name) VALUES ('Black');
 INSERT INTO COLOURS (name) VALUES ('Blue');
 INSERT INTO COLOURS (name) VALUES ('Red');
 INSERT INTO COLOURS (name) VALUES ('White');
+
+
+-- Données de la table customers
+
+INSERT INTO CUSTOMERS (name, purchase) VALUES ('Anna_Maeid', '2020-10-03');
+INSERT INTO CUSTOMERS (name, purchase) VALUES ('Trace_Robert', '2020-01-06');
+INSERT INTO CUSTOMERS (name, purchase) VALUES ('Katti_Sheina', '2019-12-13');
+
 
 -- Données de la table products
 
