@@ -13,35 +13,14 @@ use carshop;
 
 -- Mes tables
   
-  
-CREATE TABLE SHIPPING_ADDRESS (
-  shipping_address INT AUTO_INCREMENT,
-  city VARCHAR(40) NOT NULL,
-  state VARCHAR(30) NOT NULL,
-  zip_code VARCHAR(30) NOT NULL,
-  PRIMARY KEY(shipping_address)
-);
-
-
-CREATE TABLE PAYMENTS (
-  payment INT AUTO_INCREMENT,
-  payment_method VARCHAR(40) NOT NULL,
-  customer VARCHAR(30),
-  price INT,
-  PRIMARY KEY(payment),
-     FOREIGN KEY(customer)
-        REFERENCES CUSTOMERS(customer),
-     FOREIGN KEY(price)
-        REFERENCES PRICES(price)
- );
- 
- 
+   
  CREATE TABLE PRICES (
   price INT AUTO_INCREMENT,
   value INT NOT NULL,
   currency VARCHAR(30) NOT NULL,
   PRIMARY KEY(price)
   );
+  
   
   
 CREATE TABLE  MODELS (
@@ -66,29 +45,54 @@ CREATE TABLE COLOURS (
    );
 
 
-CREATE TABLE CUSTOMERS (
-  customer INT AUTO_INCREMENT,
-  name VARCHAR(30) NOT NULL,
-  purchase Date,
-  shipping_address INT,
-  PRIMARY KEY(customer),
-  FOREIGN KEY(shipping_address) 
-     REFERENCES SHIPPING_ADDRESS(shipping_addres)
-  );
-
   
 CREATE TABLE PRODUCTS (
   model INT,
   make INT,
   colour INT,
+  price INT,
   product INT,
-  PRIMARY KEY(model, make, colour),
+  PRIMARY KEY(model, make, colour, price),
   FOREIGN KEY(model) 
      REFERENCES MODELS(model),
   FOREIGN KEY(make) 
      REFERENCES MAKES(make),
   FOREIGN KEY(colour) 
-     REFERENCES COLOURS(colour)
+     REFERENCES COLOURS(colour),
+ FOREIGN KEY(price)
+        REFERENCES PRICES(price)
    
    );
  
+ CREATE TABLE SHIPPING_ADDRESS (
+  shipping_address INT AUTO_INCREMENT,
+  city VARCHAR(40) NOT NULL,
+  state VARCHAR(30) NOT NULL,
+  zip_code VARCHAR(30) NOT NULL,
+  PRIMARY KEY(shipping_address)
+);
+
+ 
+ 
+ CREATE TABLE CUSTOMERS (
+  customer INT AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  purchase Date,
+  shipping_address INT,
+  price INT,
+  PRIMARY KEY(customer),
+  FOREIGN KEY(shipping_address) 
+     REFERENCES SHIPPING_ADDRESS(shipping_address),
+  FOREIGN KEY(price)
+     REFERENCES PRODUCTS(price)
+  );
+  
+  
+CREATE TABLE PAYMENTS (
+  payment INT AUTO_INCREMENT,
+  payment_method VARCHAR(40) NOT NULL,
+  customer INT,
+  PRIMARY KEY(payment),
+     FOREIGN KEY(customer)
+        REFERENCES CUSTOMERS(customer)
+ );
