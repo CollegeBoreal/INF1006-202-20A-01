@@ -69,8 +69,8 @@ CREATE TABLE COLOURS (
 CREATE TABLE CUSTOMERS (
   customer INT AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
-  shipping_address INT,
   purchase Date,
+  shipping_address INT,
   PRIMARY KEY(customer),
   FOREIGN KEY(shipping_address) 
      REFERENCES SHIPPING_ADDRESS(shipping_address) 
