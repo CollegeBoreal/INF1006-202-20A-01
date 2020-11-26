@@ -66,6 +66,7 @@ CREATE TABLE COLOURS (
    );
 
 
+
 CREATE TABLE CUSTOMERS (
   customer INT AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
@@ -73,9 +74,9 @@ CREATE TABLE CUSTOMERS (
   shipping_address INT,
   PRIMARY KEY(customer),
   FOREIGN KEY(shipping_address) 
-     REFERENCES SHIPPING_ADDRESS(shipping_address) 
+     REFERENCES SHIPPING_ADDRESS(shipping_addres)
+  );
 
-);
 
   
 CREATE TABLE PRODUCTS (
