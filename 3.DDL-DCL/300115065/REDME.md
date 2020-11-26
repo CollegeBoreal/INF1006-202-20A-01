@@ -1,4 +1,4 @@
  # :pushpin: Carshop
 
 
-![image](images/schema.png)
+![image](schema.png)
