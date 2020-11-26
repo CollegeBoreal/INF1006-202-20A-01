@@ -4,8 +4,8 @@ CREATE DATABASE IF NOT EXISTS Carshop;
 
 -- Mon utilisateur
 
-CREATE USER IF NOT EXISTS 'abdel'@'%' IDENTIFIED BY 'password';
-GRANT ALL ON Carshop.* TO 'abdel'@'%';
+CREATE USER IF NOT EXISTS 'abdel'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON Carshop.* TO 'abdel'@'localhost';
 
 -- Selectionnet la base de donnees 
  
