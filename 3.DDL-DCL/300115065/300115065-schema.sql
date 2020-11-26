@@ -1,15 +1,15 @@
 -- Mon domaine
 
-CREATE DATABASE IF NOT EXISTS Carshop;
+CREATE DATABASE carshop;
 
 -- Mon utilisateur
 
-CREATE USER IF NOT EXISTS 'abdel'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL ON Carshop.* TO 'abdel'@'localhost';
+CREATE USER 'fadde'@'%' IDENTIFIED BY 'password';
+GRANT ALL ON carshop.* TO 'fadde'@'%';
 
 -- Selectionnet la base de donnees 
  
-use Carshop;
+use carshop;
 
 -- Mes tables
   
