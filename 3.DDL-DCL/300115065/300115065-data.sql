@@ -1,6 +1,6 @@
 - Dans le domaine
 
-use carshop;
+use Carshop;
 
 -- Données de la table customers
 
