@@ -13,16 +13,6 @@ use Carshop;
 
 -- Mes tables
   
-CREATE TABLE CUSTOMERS (
-  customer INT AUTO_INCREMENT,
-  name VARCHAR(30) NOT NULL,
-  purchase Date,
-  shipping_address INT,
-  PRIMARY KEY(customer),
-  FOREIGN KEY(shipping_address) 
-     REFERENCES SHIPPING_ADDRESS(shipping_addres)
-  );
-
   
 CREATE TABLE SHIPPING_ADDRESS (
   shipping_address INT AUTO_INCREMENT,
@@ -74,6 +64,16 @@ CREATE TABLE COLOURS (
    PRIMARY KEY(colour)
    );
 
+
+CREATE TABLE CUSTOMERS (
+  customer INT AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  purchase Date,
+  shipping_address INT,
+  PRIMARY KEY(customer),
+  FOREIGN KEY(shipping_address) 
+     REFERENCES SHIPPING_ADDRESS(shipping_addres)
+  );
 
   
 CREATE TABLE PRODUCTS (
