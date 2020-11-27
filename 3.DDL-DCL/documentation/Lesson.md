@@ -133,7 +133,7 @@ mysql> CREATE TABLE <name> (
 ``` 
 :bulb: Observez le trait `discontinu` entre les :two: tables et le champ pays en rouge dans la table `VILLES`
 
- <img src='images/FK.png' width="170" height="328"></img> |  <img src='images/quiz.png' width="600" height="330"></img>
+ <img src='../images/FK.png' width="170" height="328"></img> |  <img src='../images/quiz.png' width="600" height="330"></img>
  
 ##### :m: composite (Primaire) 
 
@@ -150,7 +150,7 @@ mysql> CREATE TABLE <name> (
 ``` 
 :bulb: Observez le trait `continu` entre les :three: tables
 
-<img src='images/CK.png' width="800" height="328"></img>
+<img src='../images/CK.png' width="800" height="328"></img>
 
 
 ## :b: DCL
