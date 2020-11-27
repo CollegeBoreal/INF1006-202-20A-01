@@ -1,5 +1,7 @@
 CREATE USER 'Bertrand'@'%' IDENTIFIED BY 'Bertrand_1';
 GRANT ALL ON BMOnlineGaming.* TO 'Bertrand'@'%';
+
+DROP BMOnlineGaming IF EXISTS;
 CREATE database BMOnlineGaming;
 use BMOnlineGaming;
 
@@ -11,10 +13,10 @@ Tel_Client  long
 
 );
 
-CREATE TABLE FOUNISSEURS(
-Founisseur INT AUTO_INCREMENT primary key,
+CREATE TABLE FOURNISSEURS(
+Fournisseur INT AUTO_INCREMENT primary key,
 Nom_Fournisseur varchar (32),
-Address_Founisseur varchar (50),
+Address_Fournisseur varchar (50),
 Tel_Fournisseur long
 );
 
@@ -25,56 +27,33 @@ Nom_Type_Article varchar (50)
 );
 
 CREATE TABLE ARTICLES(
-Article INT AUTO_INCREMENT primary key,
+Article INT AUTO_INCREMENT,
+Fournisseur INT,
 Nom_Article varchar (50),
 Type_Article INT,
-foreign key(Type_Article) references TYPESARTICLES (Type_Article)
+quantite_Stock INT,
+foreign key(Type_Article) references TYPESARTICLES (Type_Article),
+foreign key(Fournisseur) references FOURNISSEURS (Fournisseur),
+primary key(Article,Fournisseur)
 
 );
 
-CREATE TABLE VENTES(
+CREATE TABLE TYPESDESERVICES(
+type_Service INT AUTO_INCREMENT primary key,
+nom_du_Service varchar (50)
+);
+CREATE TABLE SERVICES(
 clients INT,
 Article INT,
+type_Service INT,
+montant INT,
+quantite INT,
+Date_Services date,
 foreign key(clients) references CLIENTS (clients),
 foreign key(Article) references ARTICLES (Article),
-Date_Vente date,
-primary key(clients,Article)
+foreign key(type_Service) references TYPESDESERVICES (type_Service),
+primary key(clients,Article,type_Service)
 
 );
-
-CREATE TABLE LOCATIONS(
-clients INT,
-Article INT,
-foreign key(clients) references CLIENTS (clients),
-foreign key(Article) references ARTICLES (Article),
-Date_Location date,
-Date_Retour date,
-primary key(clients,Article)
-
-);
-
-CREATE TABLE DEPANNAGE(
-clients INT,
-Article INT,
-foreign key(clients) references CLIENTS (clients),
-foreign key(Article) references ARTICLES (Article),
-Date_Depannage date,
-primary key(clients,Article)
-
-);
-
-CREATE TABLE PAIEMENTS(
-Paiement INT AUTO_INCREMENT,
-clients INT,
-Article INT,
-Montant INT,
-Date_Paiement date,
-foreign key(clients) references CLIENTS (clients),
-foreign key(Article) references ARTICLES (Article),
-primary key(Paiement,clients,Article)
-
-);
-
-
 
 
