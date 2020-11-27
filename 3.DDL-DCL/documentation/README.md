@@ -1,23 +1,23 @@
 # Liste De vérification
 
+## :zero: Présence des fichiers
 
-## :zero: S'éxécute
+- 0 fichiers présents
+
+- 2 fichiers présents (README, Shema) 
+
+- 4 fichiers présents (README, Schema, Data et Model)
+
+## :one: S'éxécute
 
 - 0 pas
 
-- 1 DDL s'éxécute
+- 1 DDL s'éxécute (Schema)
 
-- 2 DML et DDL s'éxécute
+- 2 DML et DDL s'éxécute (Shema et Data)
 
-- 3 Parfait
+- 3 Parfait (peut etre relancé plusieurs fois - CREATE IF EXISTS)
 
-## :one: Copier les fichiers de 4.DML
-
-- 0 fichiers copiés
-
-- 2 fichiers copiés
-
-- 4 fichiers copiés (Schema, Data, README et Model)
 
 ## :two: Améliorer le DDL
 
@@ -54,11 +54,15 @@
 - 1 avec statistiques (count, having, avg, sum,  )
 
 
-## :five: Nouveau Modèle (README avec image WB)
+## :five: Modèle (README avec image WB)
 
 - Model non affiché
 
 - Afficher Model
+
+- Model est clair et explicite
+
+- Modèle est bien fourni et représente un domaine d'affaire cohérent et plausible (proche du domaine réel)
 
 ## :six: Performances
 
