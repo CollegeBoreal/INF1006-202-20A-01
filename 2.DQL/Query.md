@@ -53,6 +53,10 @@ INNER JOIN country USING (country_id)
 WHERE country.country = 'Italy';
 ```
 
+:pushpin: Produit Cartesien
+
+![image](images/cartesian_product.png)
+
 :three: Revision de quelques mots clés 
 
 
@@ -108,3 +112,5 @@ SELECT nom FROM etudiants WHERE  notes >= 60 ;
 
 SUM, AVG, COUNT
 ```
+
+
