@@ -6,5 +6,5 @@ Suivre le [document](documentation/Lesson.md) sur le cours
 
 ## [Participation](.scripts/Participation.md)
 
-## [:construction: Vérification](documentation/ListeDeVerification.md)
+## [:construction: Vérification](documentation)
 
