@@ -1,9 +1,9 @@
 # INF1006-202-20A-01
 Système de gestion de bases de données
 
-## Épreuves: [:date:](.epreuves)
+## :date: [Épreuves](.epreuves) 
 
-## Devoirs:
+## :one: Devoirs:
 
 | Date   | énoncé                    |     Commentaires                                                      |
 |:------:|:--------------------------|:----------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Système de gestion de bases de données
 |  |                                                                  | * Créer une vue appropriée en fonction du contexte donné       |
 |  |                                                                  | * Définir les relations entre des tables                       |
 
-## Elements de Performance
+## :two: Elements de Performance
 
 |No| Date   | Cours                       | Intitulé              |  Pratique .                                                    |
 |--|--------|:----------------------------|:----------------------|:---------------------------------------------------------------|
