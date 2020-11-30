@@ -1,6 +1,8 @@
 # INF1006-202-20A-01
 Système de gestion de bases de données
 
+## Épreuves: [:date:](.epreuves)
+
 ## Devoirs:
 
 | Date   | énoncé                    |     Commentaires                                                      |
