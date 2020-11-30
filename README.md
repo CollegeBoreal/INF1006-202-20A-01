@@ -27,7 +27,7 @@ Système de gestion de bases de données
 |11|20-11-16|                                                |                                         |
 |12|20-11-23|                                                |                                         |
 |13|20-12-30| [C.Constraints](C.Constraints)                 | Constraints & Index                     |
-|14|20-12-07| [B.Backups]                                    | Administration Backup                   |
+|14|20-12-07| [B.Backups](B.Backups)                         | Administration Backup                   |
 |15|20-12-14| Fin des cours                                  |                                         |
 
 
