@@ -14,8 +14,9 @@ Create Table: CREATE TABLE `VILLES` (
   `ville` int DEFAULT NULL,
   `pays` int DEFAULT NULL,
   INDEX `pay_ind` (`pays`),
-  CONSTRAINT `ville_ibfk_1` FOREIGN KEY (`pays`) 
-  REFERENCES `PAYS` (`pays`) ON DELETE CASCADE
+  CONSTRAINT `ville_ibfk_1` 
+     FOREIGN KEY (`pays`) REFERENCES `PAYS` (`pays`) 
+     ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
