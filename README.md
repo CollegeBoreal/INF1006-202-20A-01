@@ -24,10 +24,10 @@ Système de gestion de bases de données
 |08|20-10-26| Autumn Break                                   |                                         |
 |09|20-11-02| [3.DDL & DCL](3.DDL-DCL)                       | Data Control Language   & Data Description Language   |
 |10|20-11-09| [AWS RDS](R.RDS)                               | Test                                    |
-|11|20-11-16| [C.Constraints](C.Constraints)                 | Constraints & Index                     |
+|11|20-11-16|                                                |                                         |
 |12|20-11-23|                                                |                                         |
-|13|20-12-30| [D.Devops]                                     | Administration Backup                   |
-|14|20-12-07|                                                |                                         |
+|13|20-12-30| [C.Constraints](C.Constraints)                 | Constraints & Index                     |
+|14|20-12-07| [B.Backups]                                    | Administration Backup                   |
 |15|20-12-14| Fin des cours                                  |                                         |
 
 
