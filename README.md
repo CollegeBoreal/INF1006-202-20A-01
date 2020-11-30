@@ -10,11 +10,7 @@ Système de gestion de bases de données
 |20-10-20| [2.DQL](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/Query.md) | [:bookmark: Participation](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/2.DQL/.scripts/Participation.md) | 
 |20-11-24| [3.DDL-DCL](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL) | [:bookmark: Participation](https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/.scripts/Participation.md) | 
 
-
-
-
-
-## Déroulement de cours:
+## :two: Elements de Performance
 
 |No| Date   | Cours                                          | Intitulé                                |
 |--|:------:|:-----------------------------------------------|:----------------------------------------|
@@ -48,16 +44,6 @@ Système de gestion de bases de données
 |  |                                                                  | * Créer une sous-requête en fonction du contexte donné         |
 |  |                                                                  | * Créer une vue appropriée en fonction du contexte donné       |
 |  |                                                                  | * Définir les relations entre des tables                       |
-
-## :two: Elements de Performance
-
-|No| Date   | Cours                       | Intitulé              |  Pratique .                                                    |
-|--|--------|:----------------------------|:----------------------|:---------------------------------------------------------------|
-| 1|        |                             | Rentree des classes   |                                                                |
-| 3|.       | [DQL](./2.DQL#exercices)    | DQL                   | function, alias                                                |
-|  |        |                             |                       | groupement, condition (having), ordonnacement                  |
-|  |        |                             |                       | imbrication (SELECT)                                           |
-|  |        |                             |                       | JOIN, alias, inner join (ANSI-Style, Theta), Cartesian Product |
 
 
 ## References
