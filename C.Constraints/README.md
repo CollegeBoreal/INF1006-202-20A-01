@@ -7,7 +7,7 @@
 :pushpin: [Foreign Key](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-examples)
 
 ```sql
-mysql> SHOW CREATE TABLE VILLES
+mysql> SHOW CREATE TABLE VILLES;
 *************************** 1. row ***************************
        Table: VILLES
 Create Table: CREATE TABLE `VILLES` (
