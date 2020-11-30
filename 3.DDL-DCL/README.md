@@ -6,7 +6,7 @@ Suivre le [document](documentation/Lesson.md) sur le cours
 
 ## [Participation](.scripts/Participation.md)
 
-## [Vérification]
+## Vérification [:construction:](documentation)
 
   - [ ] Liste de vérification pour construire le modéle: [:construction:](documentation)
 
