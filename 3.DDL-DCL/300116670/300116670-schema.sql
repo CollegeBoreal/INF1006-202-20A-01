@@ -26,6 +26,7 @@ PRIMARY KEY (fournisseur)
 
 CREATE TABLE PRODUITS(
 produit INT AUTO_INCREMENT,
+fournisseur INT,
 Nom_du_produit VARCHAR(20),
 Prix_du_produit INT NOT NULL,
 Type_du_produit VARCHAR(15),
@@ -58,9 +59,10 @@ FOREIGN KEY (client) REFERENCES CLIENTS(client)
 
 CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
-type_de_location INT AUTO_INCREMENT
-PRIMARY KEY(location)
-FOREIGN KEY (P
+type_de_location INT AUTO_INCREMENT,
+prix_location INT,
+PRIMARY KEY(location),
+FOREIGN KEY(produit) REFERENCES PRODUITS(produit)
 );
 
 
