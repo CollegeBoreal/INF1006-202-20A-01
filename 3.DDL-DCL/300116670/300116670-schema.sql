@@ -31,7 +31,7 @@ Nom_du_produit VARCHAR(20),
 Prix_du_produit INT NOT NULL,
 Type_du_produit VARCHAR(15),
 PRIMARY KEY (produit),
-FOREIGN KEY (fourniseur) REFERENCES FOURNISSEURS(fournisseur)
+FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS(fournisseur)
 );
 
 CREATE TABLE CLIENTS(
@@ -47,8 +47,8 @@ PRIMARY KEY (client)
 
 CREATE TABLE VENTES(
 vente INT AUTO_INCREMENT,
-Nom_du_produit VARCHAR(40) NOT NULL,
 client INT,
+Nom_du_produit VARCHAR(40) NOT NULL,
 Date_et_heure_de_la_vente DATETIME NOT NULL, 
 Date_et_heure_de_livraison DATETIME NOT NULL,
 PRIMARY KEY (vente),
