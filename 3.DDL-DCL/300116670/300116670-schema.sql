@@ -73,7 +73,7 @@ produit INT,
 prix_location INT NOT NULL,
 date_de_sortie DATETIME,
 date_de_retour DATETIME,
-PRIMARY KEY(service_location)
+PRIMARY KEY(service_location),
 FOREIGN KEY(client) REFERENCES CLIENTS(client),
-FOREIGN KEY(prix_location) REFERENCES PRIX_LOCATIONS(prix_location)
+FOREIGN KEY(location) REFERENCES LOCATIONS(location)
 );
