@@ -77,7 +77,7 @@ CREATE TABLE VENTES_DE_SERV (
   client INT,
   produit INT,
   Prix INT NOT NULL,
-  Date_de_vente DATE,
+  Date_de_vente DATE UNIQUE,
   PRIMARY KEY(vente_de_prod, client, produit),
   FOREIGN KEY(client)
      REFERENCES CLIENTS(client),
