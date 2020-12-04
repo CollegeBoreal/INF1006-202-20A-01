@@ -55,7 +55,7 @@ GROUP BY PRODUITS.produit, VENTES_DE_PROD.Date_de_vente, CLIENTS.Nom;
 
 Résultat:
 
-<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/req1.PNG" width="350">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/req1.PNG" width="450">
 
 
 2. Séléctionner tous les services rendus par BIOCAMP:
