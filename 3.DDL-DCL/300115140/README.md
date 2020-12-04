@@ -46,7 +46,7 @@ CREATE TABLE `VENTES_DE_PROD` (
 
 ## Requêtes liées aux rapports:
 
-**1. Séléctionner tous les clients qui ont achetés des produits au moins de septembre 2020:**
+**1. Séléctionner tous les clients qui ont achetés des produits au moins de septembre 2020, leur nom, et le nombre de produits achetés par client:**
 
 SELECT PRODUITS.produit, VENTES_DE_PROD.Date_de_vente, CLIENTS.Nom, SUM(VENTES_DE_PROD.client) FROM PRODUITS  
 JOIN VENTES_DE_PROD USING (produit)  
