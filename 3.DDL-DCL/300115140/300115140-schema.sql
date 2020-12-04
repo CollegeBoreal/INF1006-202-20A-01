@@ -38,24 +38,24 @@ CREATE TABLE CLIENTS (
   );
 
 
- CREATE TABLE PRODUITS (
-   produit INT AUTO_INCREMENT,
-   Nom_du_produit VARCHAR(15) NOT NULL,
-   fournisseur INT,
-   PRIMARY KEY(produit),
-   FOREIGN KEY (fournisseur)
-      REFERENCES FOURNISSEURS(fournisseur)
-   );
+CREATE TABLE PRODUITS (
+  produit INT AUTO_INCREMENT,
+  Nom_du_produit VARCHAR(15) NOT NULL,
+  fournisseur INT,
+  PRIMARY KEY(produit),
+  FOREIGN KEY (fournisseur)
+     REFERENCES FOURNISSEURS(fournisseur)
+  );
 
 
-  CREATE TABLE SERVICES (
-    service INT AUTO_INCREMENT,
-    fournisseur INT, 
-    Nom_du_service VARCHAR(15) NOT NULL,
-    PRIMARY KEY(service),
-    FOREIGN KEY(fournisseur)
-       REFERENCES FOURNISSEURS(fournisseur)
-    );
+CREATE TABLE SERVICES (
+  service INT AUTO_INCREMENT,
+  fournisseur INT, 
+  Nom_du_service VARCHAR(15) NOT NULL,
+  RIMARY KEY(service),
+  FOREIGN KEY(fournisseur)
+     REFERENCES FOURNISSEURS(fournisseur)
+  );
 
 
 CREATE TABLE VENTES_DE_SERV (
@@ -72,13 +72,14 @@ CREATE TABLE VENTES_DE_SERV (
   );
   
   
-  CREATE TABLE VENTES_DE_PROD (
+CREATE TABLE VENTES_DE_PROD (
   vente_de_prod INT AUTO_INCREMENT,
   client INT,
   produit INT,
   Prix INT NOT NULL,
   Date_de_vente DATE UNIQUE,
   PRIMARY KEY(vente_de_prod, client, produit),
+  CONSTRAINT uc_client_produit UNIQUE (client, produit),
   FOREIGN KEY(client)
      REFERENCES CLIENTS(client),
   FOREIGN KEY(produit)
