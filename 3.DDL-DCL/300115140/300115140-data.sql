@@ -53,11 +53,11 @@ INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (5, 180
 
 -- La table VENTES_DE_PROD
 
-INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente) VALUES (1, 11,'2020-09-12');
-INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente) VALUES (3, 11.20, '2020-09-10');
-INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente) VALUES (2, 12,'2020-09-23');
-INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente) VALUES (2, 13.40,'2020-09-11');
-INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente) VALUES (2, 11.70,'2020-09-30');
 
+INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente, produit) VALUES (1, 11,'2020-09-12', 4);
+INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente, produit) VALUES (3, 11.20, '2020-09-10',5);
+INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente, produit) VALUES (2, 12,'2020-09-23',4);
+INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente, produit) VALUES (2, 13.40,'2020-09-11', 3);
+INSERT INTO VENTES_DE_PROD (client, Prix, Date_de_vente, produit) VALUES (2, 11.70,'2020-09-30',2);
 
 
