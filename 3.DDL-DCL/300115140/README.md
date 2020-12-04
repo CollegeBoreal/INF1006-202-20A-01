@@ -30,20 +30,20 @@ Voici le schéma des relations entre tables selon le procédé Reverse Engineer:
 
 Je fais une contrainte DDL sur la table VENTES_DE_PROD en utilisant CONSTRAINT et la fonction UNIQUE:
 
-CREATE TABLE VENTES_DE_PROD (
-  vente_de_prod INT AUTO_INCREMENT,
-  client INT,
-  produit INT,
-  Prix INT NOT NULL,
-  Date_de_vente DATE UNIQUE,
-  PRIMARY KEY(vente_de_prod, client, produit),
-  CONSTRAINT uc_client_produit UNIQUE (client, produit),
-  FOREIGN KEY(client)
-     REFERENCES CLIENTS(client),
-  FOREIGN KEY(produit)
-     REFERENCES PRODUITS(produit)
-  );
-
+CREATE TABLE VENTES_DE_PROD (  
+  vente_de_prod INT AUTO_INCREMENT,  
+  client INT,  
+  produit INT,  
+  Prix INT NOT NULL,  
+  Date_de_vente DATE UNIQUE,  
+  PRIMARY KEY(vente_de_prod, client, produit),  
+  CONSTRAINT uc_client_produit UNIQUE (client, produit),  
+  FOREIGN KEY(client)  
+     REFERENCES CLIENTS(client),  
+  FOREIGN KEY(produit)  
+     REFERENCES PRODUITS(produit)  
+  );  
+ 
 
 ## Requêtes liées aux rapports:
 
