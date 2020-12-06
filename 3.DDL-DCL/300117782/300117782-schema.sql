@@ -37,8 +37,10 @@ PRIMARY KEY (plat)
   recette INT NOT NULL AUTO_INCREMENT,
   Nom_de_la_recette VARCHAR(25) NOT NULL,
   ingredient INT NOT NULL,
+  plat INT,
   PRIMARY KEY (recette, ingredient),
-  FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient)
+  FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient),
+  FOREING KEY (plat) REFERENCES PLATS (plat)
   );
 
 -- creation de la table commande
