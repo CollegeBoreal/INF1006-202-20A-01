@@ -103,19 +103,4 @@ FOREIGN KEY(employe)
 );
 
 
--- Créer la table COMMANDES:
 
-
-CREATE TABLE COMMANDES
-(commande INT AUTO_INCREMENT,
-client INT,
-instrument INT, 
-service INT,
-PRIMARY KEY(commande),
-FOREIGN KEY(instrument)
-      REFERENCES INSTRUMENTS(instrument),
-FOREIGN KEY(client)
-      REFERENCES CLIENTS(client),
-FOREIGN KEY(service)
-      REFERENCES SERVICES(service)
-);
