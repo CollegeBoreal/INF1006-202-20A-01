@@ -31,6 +31,32 @@ INSERT INTO DEPARTEMENTS (domaine, telephone, responsable, employe) VALUES ( 'Lo
 INSERT INTO DEPARTEMENTS (domaine, telephone, responsable, employe) VALUES ( 'MaterieL', 51425984, 'Maurizio.Moroni', 4);
 
 
+-- remplir la table de COMMANDES:
+
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Routeur', 'Cisco', '5F01:10B::5AC1::1', '1', '2020-11-23', '2020-12-01', "interface G0/0 a ete remplace");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Switch', 'Cisco', '5F01:10B::5AC1::1125', '2', '2020-11-24', '2020-12-02', "ventilateur marchait pas bien");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Firewall', 'Cisco', '5F01:10B::5AC1::1BF4', '3', '2020-11-24', '2020-12-02', "mise a jour des logiciels");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Bridge', 'Mitrotik', '5F01:10B::5ADE::1BCA', '4', '2020-11-25', '2020-12-03', "boite d'alimentation a ete remplace");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Modem', 'TPlink', '5F01:10B::5ADE::1ABE', '5', '2020-11-25', '2020-12-03', "changement de carte mere");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Serveur', 'HP', '5F01:10B::5ADE::1ABE', '6', '2020-12-26', '2020-12-04', "changement de carte reseau");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Routeur', 'Juniper', '5F01:10B::5ADE::1', '7', '2020-12-26', '2020-12-04', "mise a jour des logiciels");
+
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire) VALUES ( 'Switch', 'Facebook', '5F01:10B::5ADE::4BE9', '8', '2020-12-27', '2020-12-05', "mise a jour des logiciels");
+
+-- remplir la table de SERVICES:
+
+
+
+
+
+
 
 
 
