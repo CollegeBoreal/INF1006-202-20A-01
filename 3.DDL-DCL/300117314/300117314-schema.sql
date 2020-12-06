@@ -28,15 +28,15 @@ USE mortimaintenance;
 
 -- Créer la table INSTRUMENTS: 
 
-CREATE TABLE INSTRUMENTS
-(instrument INT AUTO_INCREMENT,
-nom VARCHAR(40) NOT NULL,
+CREATE TABLE COMMANDES
+(commande INT AUTO_INCREMENT,
+nom_de_instrument VARCHAR(40) NOT NULL,
 vendeur VARCHAR(20),
 Address_physique VARCHAR(30) NOT NULL,
 date_de_reception DATE NOT NULL,
 date_de_livraison DATE ,
 commentaire VARCHAR(100),
-PRIMARY KEY (instrument)
+PRIMARY KEY (commande)
 );
 
 
@@ -90,13 +90,13 @@ detail VARCHAR(20),
 prix VARCHAR(20),
 date_de_reception DATE NOT NULL,
 date_de_livraison DATE ,
-Instrument INT, 
+commande INT, 
 employe INT,
 client INT,
 PRIMARY KEY(service, client, employe),
 CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, employe),
-FOREIGN KEY(instrument)
-      REFERENCES INSTRUMENTS(instrument),
+FOREIGN KEY(commande)
+      REFERENCES COMMANDES(commande),
 FOREIGN KEY(client)
       REFERENCES CLIENTS(client),
 FOREIGN KEY(employe)
