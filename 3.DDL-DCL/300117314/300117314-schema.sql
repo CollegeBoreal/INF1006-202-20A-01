@@ -98,7 +98,7 @@ CREATE TABLE SERVICES
 commande INT,
 client INT,
 employe INT,
-detail VARCHAR(20),
+detail VARCHAR(100),
 prix VARCHAR(20),
 PRIMARY KEY(service, client, employe),
 CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, employe),
