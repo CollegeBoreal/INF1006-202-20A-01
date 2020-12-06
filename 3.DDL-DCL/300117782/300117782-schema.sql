@@ -63,14 +63,14 @@ PRIMARY KEY (plat)
     
   -- creation de le table facture
  
-  CREATE TABLE FACTURES (
+ CREATE TABLE FACTURES (
   facture INT NOT NULL AUTO_INCREMENT,
-  montant INT NULL DEFAULT NULL,
-  quantites INT NULL DEFAULT NULL,
+  montant INT NULL,
+  client INT,
+  quantites INT DEFAULT NULL,
   PRIMARY KEY (facture),
-  FOREING key (client)REFERENCES CLIENTS (client)
+  FOREIGN KEY (client) REFERENCES CLIENTS (client)
   );
-
   -- creation de la table paiement
   
   CREATE TABLE PAIEMENTS (
