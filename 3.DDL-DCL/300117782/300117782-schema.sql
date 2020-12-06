@@ -37,8 +37,8 @@ PRIMARY KEY (plat)
   recette INT NOT NULL AUTO_INCREMENT,
   Nom_de_la_recette VARCHAR(25) NOT NULL,
   ingredient INT NOT NULL,
-  PRIMARY KEY (recette, INGREDIENTS_ingredient),
-  FOREIGN KEY (INGREDIENTS_ingredient)
+  PRIMARY KEY (recette, ingredient),
+  FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient)
   );
 
 -- creation de la table commande
@@ -48,17 +48,17 @@ PRIMARY KEY (plat)
   Date_et_heure_de_commande DATETIME NOT NULL,
   plat INT NOT NULL,
   PRIMARY KEY (commande, plat),
-  FOREIGN KEY (plat)
+  FOREIGN KEY (plat) REFERENCES PLATS (plat)
   );
   
    -- creation de la table client
   
-  CREATE TABLE CLIENTS (
+   CREATE TABLE CLIENTS (
   client INT NOT NULL AUTO_INCREMENT,
-  Nom_du _client NOT NULL,
+  Nom_du_client VARCHAR (40) NOT NULL,
   commande INT NOT NULL,
   PRIMARY KEY (client, commande),
-  FOREIGN KEY (commande)
+  FOREIGN KEY (commande) REFERENCES COMMANDES (commande) 
   );
     
   -- creation de le table facture
@@ -79,8 +79,8 @@ PRIMARY KEY (plat)
   client INT NULL DEFAULT NULL,
   facture INT NULL DEFAULT NULL,
   commande INT NULL DEFAULT NULL,
-  FOREIGN KEY (client)
-  FOREIGN KEY (facture)
+  FOREIGN KEY (client) REFERENCES CLIENTS (client),
+  FOREIGN KEY (facture) REFERENCES FACTURES (facture)
   );
       
     
