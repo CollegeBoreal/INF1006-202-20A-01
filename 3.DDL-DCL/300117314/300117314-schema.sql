@@ -1,55 +1,30 @@
 
 -- Comment créer une DATABASE appellée MORTIMAINTENANCE:
 
-mysql> CREATE DATABASE mortimaintenace;
-
-
--- comment vérifier qu'elle a été crée:
-
-mysql> SHOW DATABASES;
-+--------------------+
-| Database           |
-+--------------------+
-| MORTIMAINTENANCE   |
-| etudiants          |
-| information_schema |
-| mysql              |
-| performance_schema |
-| sys                |
-+--------------------+
-6 rows in set (0.00 sec)
-
+mysql> CREATE DATABASE mortimaintenance;
 
 
 -- Comment créer un utilsateur pour l'utilisation à distance:
 
-mysql> CREATE USER 'morti'@'%' IDENTIFIED BY 'morti_123';
-Query OK, 0 rows affected (0.08 sec)
+mysql> CREATE USER IF NOT EXISTS 'morti'@'%' IDENTIFIED BY 'morti_123';
 
-mysql> CREATE USER 'morti123'@'%' IDENTIFIED BY 'morti_123';
 
 -- comment lui donner les autorités:
 
-mysql> GRANT ALL ON MORTIMAINTENANCE.* TO 'morti'@'%';
-Query OK, 0 rows affected (0.09 sec)
-GRANT ALL ON mortimaintenance.* TO 'morti123'@'%';
-
-
-
+mysql> GRANT ALL ON mortimaintenance.* TO 'morti'@'%';
 
 
 -- comment l'activer:
 
 mysql> flush privileges;
-Query OK, 0 rows affected (0.04 sec)
+
 
 
 
 --COMMENT CHOISIR UNE SPECIFIQUE BASE DE DONNEES (DANS CE CAS LA BASE DE DONNEES MORTIMAINTENANCE):
 
-mysql> USE MORTIMAINTENANCE
-Database changed
-mysql>
+mysql> USE mortimaintenence;
+
 
 
 --Comment créer une nouvelle table aves des différents chambres:
