@@ -67,7 +67,8 @@ PRIMARY KEY (plat)
   facture INT NOT NULL AUTO_INCREMENT,
   montant INT NULL DEFAULT NULL,
   quantites INT NULL DEFAULT NULL,
-  PRIMARY KEY (facture)
+  PRIMARY KEY (facture),
+  FOREING key (client)REFERENCES CLIENTS (client)
   );
 
   -- creation de la table paiement
@@ -79,7 +80,6 @@ PRIMARY KEY (plat)
   client INT NULL DEFAULT NULL,
   facture INT NULL DEFAULT NULL,
   commande INT NULL DEFAULT NULL,
-  FOREIGN KEY (client) REFERENCES CLIENTS (client),
   FOREIGN KEY (facture) REFERENCES FACTURES (facture)
   );
       
