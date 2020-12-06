@@ -25,20 +25,33 @@ flush privileges;
 
 USE mortimaintenance;
 
+-- Créer la table EMPLOYES: 
 
--- Créer la table INSTRUMENTS: 
-
-CREATE TABLE COMMANDES
-(commande INT AUTO_INCREMENT,
-nom_de_instrument VARCHAR(40) NOT NULL,
-vendeur VARCHAR(20),
-Address_physique VARCHAR(30) NOT NULL,
-date_de_reception DATE NOT NULL,
-date_de_livraison DATE ,
-commentaire VARCHAR(100),
-PRIMARY KEY (commande)
+CREATE TABLE EMPLOYES
+(employe INT AUTO_INCREMENT,
+prenom VARCHAR(20) NOT NULL,
+nom VARCHAR(20) NOT NULL,
+adresse_email VARCHAR(20) NOT NULL,
+telephone INT NOT NULL,
+adresse VARCHAR(20),
+nom_de_departement VARCHAR(20),
+PRIMARY KEY(employe)
 );
 
+
+
+-- Créer la table DEPARTEMENTS:
+
+CREATE TABLE DEPARTEMENTS
+(departement INT AUTO_INCREMENT,
+domaine VARCHAR(20) NOT NULL,
+telephone INT NOT NULL,
+responsable VARCHAR(20),
+employe INT,
+PRIMARY KEY(departement),
+FOREIGN KEY(employe)
+      REFERENCES EMPLOYES(employe)
+);
 
 
 -- Créer la table CLIENTS: 
@@ -55,31 +68,27 @@ PRIMARY KEY(client)
 );
 
 
--- Créer la table EMPLOYES: 
 
-CREATE TABLE EMPLOYES
-(employe INT AUTO_INCREMENT,
-prenom VARCHAR(20) NOT NULL,
-nom VARCHAR(20) NOT NULL,
-adresse_email VARCHAR(20) NOT NULL,
-telephone INT NOT NULL,
-adresse VARCHAR(20),
-nom_de_departement VARCHAR(20),
-PRIMARY KEY(employe)
+-- Créer la table COMMANDES: 
+
+CREATE TABLE COMMANDES
+(commande INT AUTO_INCREMENT,
+nom_de_instrument VARCHAR(40) NOT NULL,
+vendeur VARCHAR(20),
+Address_physique VARCHAR(30) NOT NULL,
+client INT,
+date_de_reception DATE NOT NULL,
+date_de_livraison DATE ,
+commentaire VARCHAR(100),
+PRIMARY KEY (commande, client),
+FOREIGN KEY(client)
+      REFERENCES CLIENTS(client) 
 );
 
--- Créer la table DEPARTEMENTS:
 
-CREATE TABLE DEPARTEMENTS
-(departement INT AUTO_INCREMENT,
-domaine VARCHAR(20) NOT NULL,
-telephone INT NOT NULL,
-responsable VARCHAR(20),
-employe INT,
-PRIMARY KEY(departement),
-FOREIGN KEY(employe)
-      REFERENCES EMPLOYES(employe)
-);
+
+
+
 
 -- Créer la table SERVICES:
 
