@@ -74,7 +74,7 @@ CREATE TABLE DEPARTEMENTS
 (departement INT AUTO_INCREMENT,
 domaine VARCHAR(20) NOT NULL,
 telephone INT NOT NULL,
-responsible VARCHAR(20),
+responsable VARCHAR(20),
 employe INT,
 PRIMARY KEY(departement),
 FOREIGN KEY(employe)
