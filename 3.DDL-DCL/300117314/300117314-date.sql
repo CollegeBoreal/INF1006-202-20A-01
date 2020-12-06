@@ -53,6 +53,26 @@ INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, dat
 -- remplir la table de SERVICES:
 
 
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '1', '1', '2', 'la carte mere a ete morte', '3500 $');
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '2', '2', '4', 'le ventilateur marche bien, probleme etait cable de alimentation', '150 $');
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '3', '3', '6', 'les logiciels de Firewall avaitent besion de mettre en jour', '280 $'); 
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '4', '4', '3', 'on a remplace des interfaces', '86 $'); 
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '5', '5', '1', 'ce modem marche plus', '0$'); 
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '6', '6', '5', 'on a reinstaller system de exploitation', '220$');
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '7', '7', '2', 'boite de alimentation a ete remplacee','55$' );
+INSERT INTO SERVICES (commande, client, employe, detail, prix) VALUES ( '8', '8', '7', 'mis a jour', '65$'); 
+                                                                       
+
+
+
+
+
+
+
+
+
+
+
 
 
 
