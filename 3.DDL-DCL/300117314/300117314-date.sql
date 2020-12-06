@@ -1,33 +1,15 @@
 --remplir la table de Clients:
 
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Kala', 'Wiliam', 'kala.wiliam.com', 64725625, '24-Tudor-St', 'Rogers');
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Philip', 'Cramer', 'philip.cramer.com', 64725622, '15 Poplar St', "La maison d'asie");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'John', 'Steel', 'john.steel.com', 64725178, '158 Cedar crs', "La maison d'asie");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Franc', 'Wilson', 'franc.wilson.com', 64725256, '1287 Finch St', "Lonesomme restaurant");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Lucia', 'Carvalho', 'lucia.carvalho.com', 64725278, '12 Roxton Ave', "Rancho Grande");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Jose', 'Pavarotti', 'jose.pavarotti.com', 51425224, '74 Barker Ave', "Simson bistro");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Pascale', 'Cartrain', 'pascal.cartrain.com', 51425298, '38 Seaton Dr', "Cracker Box");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Paul', 'Henriot', 'paul.henriot.com', 51425723, '124 Bogert Ave', "Wartian Herku");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Karl', 'Saveley', 'karl.saveley.com', 51425759, '149 Melrose Ave', "Wolski");
-mysql> INSERT INTO Clients (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Rita', 'Mulller', 'rita.muller.com', 51425762, '186 Bayberry Crs', "Reggiani");
-
---pour vérifier:
-mysql> SELECT * FROM Clients;
-+--------+---------+-----------+---------------------+-----------+------------------+----------------------+
-| client | prenom  | nom       | adresse_email       | telephone | adresse          | nom_de_entreprise    |
-+--------+---------+-----------+---------------------+-----------+------------------+----------------------+
-|      1 | Kala    | Wiliam    | kala.wiliam.com     |  64725625 | 24-Tudor-St      | Rogers               |
-|      2 | Philip  | Cramer    | philip.cramer.com   |  64725622 | 15 Poplar St     | La maison d'asie     |
-|      3 | John    | Steel     | john.steel.com      |  64725178 | 158 Cedar crs    | La maison d'asie     |
-|      4 | Franc   | Wilson    | franc.wilson.com    |  64725256 | 1287 Finch St    | Lonesomme restaurant |
-|      5 | Lucia   | Carvalho  | lucia.carvalho.com  |  64725278 | 12 Roxton Ave    | Rancho Grande        |
-|      6 | Jose    | Pavarotti | jose.pavarotti.com  |  51425224 | 74 Barker Ave    | Simson bistro        |
-|      7 | Pascale | Cartrain  | pascal.cartrain.com |  51425298 | 38 Seaton Dr     | Cracker Box          |
-|      8 | Paul    | Henriot   | paul.henriot.com    |  51425723 | 124 Bogert Ave   | Wartian Herku        |
-|      9 | Karl    |           | paul.henriot.com    |  51425723 | 124 Bogert Ave   | Wartian Herku        |
-|     10 | Karl    | Saveley   | karl.saveley.com    |  51425759 | 149 Melrose Ave  | Wolski               |
-|     11 | Rita    | Mulller   | rita.muller.com     |  51425762 | 186 Bayberry Crs | Reggiani             |
-+--------+---------+-----------+---------------------+-----------+------------------+----------------------+
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Kala', 'Wiliam', 'kala.wiliam.com', 64725625, '24-Tudor-St', 'Rogers');
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Philip', 'Cramer', 'philip.cramer.com', 64725622, '15 Poplar St', "La maison d'asie");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'John', 'Steel', 'john.steel.com', 64725178, '158 Cedar crs', "La maison d'asie");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Franc', 'Wilson', 'franc.wilson.com', 64725256, '1287 Finch St', "Lonesomme restaurant");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Lucia', 'Carvalho', 'lucia.carvalho.com', 64725278, '12 Roxton Ave', "Rancho Grande");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Jose', 'Pavarotti', 'jose.pavarotti.com', 51425224, '74 Barker Ave', "Simson bistro");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Pascale', 'Cartrain', 'pascal.cartrain.com', 51425298, '38 Seaton Dr', "Cracker Box");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Paul', 'Henriot', 'paul.henriot.com', 51425723, '124 Bogert Ave', "Wartian Herku");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Karl', 'Saveley', 'karl.saveley.com', 51425759, '149 Melrose Ave', "Wolski");
+INSERT INTO CLIENTS (prenom, nom, adresse_email, telephone, adresse, nom_de_entreprise) VALUES ( 'Rita', 'Mulller', 'rita.muller.com', 51425762, '186 Bayberry Crs', "Reggiani");
 
 
 
