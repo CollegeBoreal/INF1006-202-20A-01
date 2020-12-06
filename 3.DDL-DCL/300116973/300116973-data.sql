@@ -18,7 +18,7 @@ INSERT INTO PRODUITS (Nom_du_produit, Numero_de_reference, Date_de_peremption, f
 
 -- donnee de la tables commandes
 
-INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-10-01', '2020-10-05' '06:20:00', 20, 1);
+INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-10-01', '2020-10-05''06:20:00', 20, 1);
 INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-8-01', '2020-8-05''07:30:55', 100, 3);
 INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-9-01', '2020-09-05''11:15:09', 59, 2);
 INSERT INTO COMMANDES (Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES ('2020-11-01', '2020-11-05''10:15:40', 20, 6);
