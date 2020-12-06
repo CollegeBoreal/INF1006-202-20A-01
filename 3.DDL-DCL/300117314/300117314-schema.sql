@@ -93,14 +93,13 @@ date_de_livraison DATE ,
 Instrument INT, 
 employe INT,
 client INT,
-PRIMARY KEY(service),
+PRIMARY KEY(service, client, employe),
+CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, employe),
 FOREIGN KEY(instrument)
       REFERENCES INSTRUMENTS(instrument),
- FOREIGN KEY(client)
+FOREIGN KEY(client)
       REFERENCES CLIENTS(client),
 FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe)
 );
-
-
 
