@@ -95,13 +95,11 @@ FOREIGN KEY(client)
 
 CREATE TABLE SERVICES
 (service INT AUTO_INCREMENT,
+commande INT,
+client INT,
+employe INT,
 detail VARCHAR(20),
 prix VARCHAR(20),
-date_de_reception DATE NOT NULL,
-date_de_livraison DATE ,
-commande INT, 
-employe INT,
-client INT,
 PRIMARY KEY(service, client, employe),
 CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, employe),
 FOREIGN KEY(commande)
