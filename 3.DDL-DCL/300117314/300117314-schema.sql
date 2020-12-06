@@ -66,7 +66,7 @@ telephone INT NOT NULL,
 adresse VARCHAR(20),
 nom_de_departement VARCHAR(20),
 PRIMARY KEY(employe)
-)
+);
 
 -- Créer la table DEPARTEMENTS:
 
@@ -119,4 +119,3 @@ FOREIGN KEY(client)
 FOREIGN KEY(service)
       REFERENCES SERVICES(service)
 );
-
