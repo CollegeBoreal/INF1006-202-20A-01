@@ -4,7 +4,7 @@
 
 Suivre le [document](documentation/Lesson.md) sur le cours
 
-* Les [contraintes](../C.Contraints) 
+* Les [contraintes](../C.Constraints) 
 
 
 ## [Participation](.scripts/Participation.md)
