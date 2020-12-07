@@ -85,6 +85,7 @@ PRIMARY KEY(service, employe)
 
 -- Créer la table COMMANDES: 
 
+
 CREATE TABLE COMMANDES
 (commande INT AUTO_INCREMENT,
 nom_de_instrument VARCHAR(40) NOT NULL,
@@ -101,9 +102,9 @@ CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, service),
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
 FOREIGN KEY(client)
-      REFERENCES CLIENTS(client)
+      REFERENCES CLIENTS(client),
 FOREIGN KEY(employe)
-      REFERENCES EMPLOYES(emoloye)
+      REFERENCES EMPLOYES(employe)
 );
  
  
