@@ -17,7 +17,7 @@ INSERT INTO CLIENTS (Nom, Prenom, Adresse, Telephone) VALUES ('Rachidou', 'Lelou
 INSERT INTO CLIENTS (Nom, Prenom, Adresse, Telephone) VALUES ('Alala', 'Yvan', '3 rue Legrand', 13401223);
 INSERT INTO CLIENTS (Nom, Prenom, Adresse, Telephone) VALUES ('Melland', 'Marine', '23bis rue Shilling', 33401298);
 INSERT INTO CLIENTS (Nom, Prenom, Adresse, Telephone) VALUES ('Yvano', 'Mohamed', '111 rue Canut', 12401234);
-
+INSERT INTO CLIENTS (Nom, Prenom, Adresse, Telephone) VALUES ('Romain', 'Raloum', '32 rue Seb', 12589631);
 
 -- La TABLE PRODUITS
 
