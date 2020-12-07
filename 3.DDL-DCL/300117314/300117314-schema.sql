@@ -78,9 +78,7 @@ CREATE TABLE SERVICES
 employe INT,
 detail VARCHAR(100),
 prix VARCHAR(20),
-PRIMARY KEY(service, employe),
-FOREIGN KEY(employe)
-      REFERENCES EMPLOYES(employe)
+PRIMARY KEY(service, employe)
 );
 
 
@@ -97,7 +95,8 @@ date_de_livraison DATE,
 commentaire VARCHAR(100),
 client INT,
 service INT,
-PRIMARY KEY(commande, service, client),
+employe INT,
+PRIMARY KEY(commande, service, client, employe),
 CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, service),
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
