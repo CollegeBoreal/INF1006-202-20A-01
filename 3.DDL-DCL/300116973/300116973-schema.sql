@@ -102,7 +102,7 @@ PRIMARY KEY (Matricule),
   CONSTRAINT `Nom_ibfk_1` 
      FOREIGN KEY (achat) REFERENCES ACHATS (achat)
      ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+);
 
 
 -- creation de la table paiements
