@@ -5,9 +5,9 @@
 
 CREATE DATABASE IF NOT EXISTS ETREBIEN;
 
---*********************************
+-- *********************************
 -- Donner les autorisations
---*********************************
+-- *********************************
 CREATE USER IF NOT EXISTS 'zack'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON ETREBIEN.* TO 'zack'@'%';
 
