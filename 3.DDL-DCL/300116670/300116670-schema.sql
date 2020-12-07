@@ -30,7 +30,6 @@ produit INT AUTO_INCREMENT,
 fournisseur INT,
 Nom_du_produit VARCHAR(20),
 Prix_du_produit INT NOT NULL,
-Type_du_produit VARCHAR(15),
 PRIMARY KEY (produit),
 FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS(fournisseur)
 );
@@ -58,23 +57,3 @@ FOREIGN KEY (client) REFERENCES CLIENTS(client)
 );
 
 
-CREATE TABLE LOCATIONS(
-location INT AUTO_INCREMENT,
-type_de_location INT AUTO_INCREMENT,
-prix_location INT,
-PRIMARY KEY(location),
-FOREIGN KEY(produit) REFERENCES PRODUITS(produit)
-);
-
-
-CREATE TABLE SERVICES_LOCATIONS(
-service_location INT AUTO_INCREMENT,
-client INT, 
-produit INT,
-prix_location INT NOT NULL,
-date_de_sortie DATETIME,
-date_de_retour DATETIME,
-PRIMARY KEY(service_location),
-FOREIGN KEY(client) REFERENCES CLIENTS(client),
-FOREIGN KEY(location) REFERENCES LOCATIONS(location)
-);
