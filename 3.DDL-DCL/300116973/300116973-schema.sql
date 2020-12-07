@@ -109,7 +109,7 @@ PRIMARY KEY (Matricule),
 
 CREATE TABLE PAIEMENTS(
 paiement INT AUTO_INCREMENT,
-Montant FLOAT NULL,
+Montant INT NULL,
 facture INT,
 PRIMARY KEY (paiement, facture),
 FOREIGN KEY (facture) REFERENCES FACTURES (facture)
