@@ -1,6 +1,9 @@
-CREATE DATABASE AfricaMusic;
-use AfricaMusic;
 
+CREATE DATABASE AfricaMusic;
+
+CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
+GRANT ALL ON AfricaMusic.* TO 'boris'@'%'
+use AfricaMusic;
 
 CREATE TABLE COUNTRIES(
 country INT PRIMARY KEY AUTO_INCREMENT,
