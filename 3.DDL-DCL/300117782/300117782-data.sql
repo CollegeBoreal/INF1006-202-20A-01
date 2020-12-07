@@ -7,7 +7,7 @@ INSERT INTO PLATS (Nom_du_plat, Montant) VALUES ("Boullir", 15);
 INSERT INTO PLATS (Nom_du_plat, Montant) VALUES ("Rizotto", 25);
 
 
---Creation des données de la table ingredient
+-- Creation des données de la table ingredient
 
 INSERT INTO INGREDIENTS (Nom_ingredient) VALUES ("Farine_de_ble");
 INSERT INTO INGREDIENTS (Nom_ingredient) VALUES ("Haricot");
