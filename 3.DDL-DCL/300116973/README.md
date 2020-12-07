@@ -15,7 +15,7 @@
 
 :ok_hand: Imprimer le nom et le montant des factures des clients ?
 
-:ok_hand: Imprimer le nom et le montant du produit qui a ete le plus vendu?
+:ok_hand: Imprimer le nom  du produit qui a ete le plus vendu?
 
 :ok_hand: Imprimer  le montant des produits acheter le 2020-11-04?
 
@@ -24,6 +24,9 @@
 :ok_hand: Quel est le client qui a le plus acheter les produits?
 
 ## :green_heart: requettes
+
+
+```
 
 -- IMPRIMER le nom et le montant des factures des clients ?
 
@@ -43,3 +46,13 @@ JOIN COMMANDES USING (produit)
 JOIN CLIENTS USING (commande)
 GROUP BY CLIENTS.Nom
 LIMIT 1;
+
+-- Imprimer le nom  du produit qui a ete le plus vendu?
+
+SELECT Nom_du_produit, COUNT(*)
+FROM PRODUITS
+JOIN COMMANDES USING (produit)
+GROUP BY Nom_du_produit
+LIMIT 1;
+
+```
