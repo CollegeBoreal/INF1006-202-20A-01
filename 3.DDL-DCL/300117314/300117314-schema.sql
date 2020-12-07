@@ -102,6 +102,8 @@ FOREIGN KEY(service)
       REFERENCES SERVICES(service),
 FOREIGN KEY(client)
       REFERENCES CLIENTS(client)
+FOREIGN KEY(employe)
+      REFERENCES EMPLOYES(emoloye)
 );
  
  
