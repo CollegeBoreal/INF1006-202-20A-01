@@ -52,7 +52,7 @@ CREATE TABLE SERVICES (
   service INT AUTO_INCREMENT,
   fournisseur INT, 
   Nom_du_service VARCHAR(15) NOT NULL,
-  RIMARY KEY(service),
+  PRIMARY KEY(service),
   FOREIGN KEY(fournisseur)
      REFERENCES FOURNISSEURS(fournisseur)
   );
