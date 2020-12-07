@@ -53,12 +53,12 @@ INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('
 
 -- donnee de la table facture
 
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (1000, 3, 11, 1);
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (2000, 10, 12, 2);
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (6000, 11, 13, 3);
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (7000, 6, 12, 5);
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (12000, 20, 33, 2);
-INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (3000, 11, 14, 4);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (1000, 3, 11, 1);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (2000, 10, 12, 2);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 13, 3);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (7000, 6, 12, 5);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (12000, 20, 33, 2);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (3000, 11, 14, 4);
 
 -- donnee de la table paiements
 
