@@ -53,21 +53,21 @@ INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('
 
 -- donnee de la table facture
 
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (1000, 3, 11, 1);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (2000, 10, 12, 2);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 13, 3);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (7000, 6, 12, 5);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (12000, 20, 33, 2);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (3000, 11, 14, 4);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (1000, 3, 11);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (2000, 10, 12);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 13);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (7000, 6, 14);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (12000, 20, 15);
+INSERT INTO FACTURES (Montant, quantites, commande) VALUES (3000, 11, 14);
 
 -- donnee de la table paiements
 
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 1);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 2);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (500, 3);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (500, 4);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (8000, 5);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (2900, 6);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 7);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 8);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (6000, 9);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (7000, 10);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (12000, 11);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (3000, 12);
 
 
 
