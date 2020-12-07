@@ -10,6 +10,7 @@ CREATE DATABASE IF NOT EXISTS MOTOSPORT;
 -- *********************************
 CREATE USER IF NOT EXISTS 'Auriane'@'%' IDENTIFIED BY 'Auriane';
 GRANT ALL ON MOTOSPORT.* TO 'Auriane'@'%';
+USE DATABASE MOTOSPORT;
 
 
 -- *********************************
