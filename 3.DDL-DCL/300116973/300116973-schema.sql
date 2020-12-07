@@ -102,7 +102,7 @@ Montant INT NOT NULL,
 Quantites INT NULL,
 Date_facturation DATE DEFAULT NULL,
 commande INT,
-PRIMARY KEY (facture, commande, paiement),
+PRIMARY KEY (facture, commande),
 FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
 );
 
