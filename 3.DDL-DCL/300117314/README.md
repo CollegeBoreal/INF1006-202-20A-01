@@ -4,4 +4,4 @@
 
 ##  Le schéma des relatiosn dans la base de données
 
-![image](image/6.PNG)
+![image](image/7.PNG)
