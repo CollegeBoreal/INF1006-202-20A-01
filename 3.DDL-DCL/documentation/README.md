@@ -68,6 +68,6 @@
 
 - 0 Index
 
-- plusieurs Indexes 
+- plusieurs Indexes (au moins un)
 
 - explain plan Query
