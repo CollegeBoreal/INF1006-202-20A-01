@@ -19,8 +19,6 @@
 
 :ok_hand: Imprimer  le montant des produits acheter le 2020-11-04?
 
-:ok_hand: Quel est le produit qui est le moins vendu?
-
 :ok_hand: Quel est le chiffre d'affaire moyenne ? Trié par produit
 
 :ok_hand: Quel est le client qui a le plus acheter les produits?
@@ -35,3 +33,13 @@ JOIN COMMANDES USING (commande)
 JOIN FACTURES USING (commande)
 GROUP BY Nom, Montant
 ;
+
+-- Quel est le client qui a le plus acheter les produits?
+
+SELECT CLIENTS.Nom, COUNT(*)
+FROM FOURNISSEURS
+JOIN PRODUITS USING (fournisseur)
+JOIN COMMANDES USING (produit)
+JOIN CLIENTS USING (commande)
+GROUP BY CLIENTS.Nom
+LIMIT 1;
