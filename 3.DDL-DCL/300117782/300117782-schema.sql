@@ -40,7 +40,7 @@ PRIMARY KEY (plat)
   plat INT,
   PRIMARY KEY (recette, ingredient),
   FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient),
-  FOREING KEY (plat) REFERENCES PLATS (plat)
+  FOREIGN KEY (plat) REFERENCES PLATS (plat)
   );
 
 -- creation de la table commande
