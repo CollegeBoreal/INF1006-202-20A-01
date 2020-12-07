@@ -76,18 +76,24 @@ CREATE TABLE COMMANDES
 nom_de_instrument VARCHAR(40) NOT NULL,
 vendeur VARCHAR(20),
 Address_physique VARCHAR(30) NOT NULL,
-client INT,
-date_de_reception DATE NOT NULL,
-date_de_livraison DATE ,
+date_de_reception DATE NOT NULL, 
+date_de_livraison DATE,
 commentaire VARCHAR(100),
-PRIMARY KEY (commande, client),
+client INT,
+service INT,
+PRIMARY KEY(commande, service, client),
+CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, service),
+FOREIGN KEY(service)
+      REFERENCES SERVICES(service),
 FOREIGN KEY(client)
-      REFERENCES CLIENTS(client) 
+      REFERENCES CLIENTS(client),
+
 );
-
-
-
-
+ 
+ 
+ 
+ 
+ 
 
 
 -- Créer la table SERVICES:
@@ -96,17 +102,12 @@ FOREIGN KEY(client)
 CREATE TABLE SERVICES
 (service INT AUTO_INCREMENT,
 commande INT,
-client INT,
 employe INT,
 detail VARCHAR(100),
 prix VARCHAR(20),
-PRIMARY KEY(service, client, employe),
-CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, employe),
+PRIMARY KEY(service, employe),
 FOREIGN KEY(commande)
       REFERENCES COMMANDES(commande),
-FOREIGN KEY(client)
-      REFERENCES CLIENTS(client),
-FOREIGN KEY(employe)
-      REFERENCES EMPLOYES(employe)
+
 );
 
