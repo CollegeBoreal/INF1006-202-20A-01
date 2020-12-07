@@ -1,8 +1,3 @@
-##africaMusic
-
- CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
- GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
- 
 CREATE DATABASE AfricaMusic;
 use AfricaMusic;
 
@@ -25,7 +20,7 @@ CREATE TABLE ALBUMS(
 album INT PRIMARY KEY AUTO_INCREMENT,
 Title_Album VARCHAR(20)NOT NULL UNIQUE,
 Release_date date,
-Cover_Album VARCHAR(20)
+Cover_Album VARCHAR(30)
 );
 
 CREATE TABLE GENRES(
@@ -45,16 +40,16 @@ FOREIGN KEY (genre) REFERENCES GENRES(genre)
 CREATE TABLE ArtistAlbum(
 artist INT, 
 album INT, 
-PRIMARY KEY(artist,album),
 FOREIGN KEY (artist) REFERENCES ARTISTS(artist),
-FOREIGN KEY (album) REFERENCES ALBUMS(album)
+FOREIGN KEY (album) REFERENCES ALBUMS(album),
+PRIMARY KEY(artist,album)
 );
 
 CREATE TABLE AlbumMusic(
-song int,
-album int,
-PRIMARY KEY(song,album),
+song INT,
+album INT,
 FOREIGN KEY (song) REFERENCES SONGS(song),
-FOREIGN KEY (album) REFERENCES AlBUMS(album)
+FOREIGN KEY (album) REFERENCES ALBUMS(album),
+PRIMARY KEY(song,album)
 
 );
