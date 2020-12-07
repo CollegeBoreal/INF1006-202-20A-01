@@ -21,7 +21,8 @@ Nom_du_fournisseur VARCHAR(25) NOT NULL,
 Numero_de_telephone INT NOT NULL,
 Email VARCHAR(25) NULL,
 Adresse VARCHAR(25) NULL,
-PRIMARY KEY(fournisseur)
+PRIMARY KEY(fournisseur),
+UNIQUE INDEX `Email_UNIQUE` (`Email` ASC)
 );
 
 -- creation de la table produits
@@ -33,22 +34,21 @@ Numero_de_reference VARCHAR(25),
 Date_de_peremption DATE DEFAULT NULL,
 fournisseur INT,
 PRIMARY KEY (produit, fournisseur),
-FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS
-(fournisseur)
+FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS (fournisseur)
  );
 
 -- creation de la table commandes
 
 CREATE TABLE COMMANDES(
-commande INT AUTO_INCREMENT,
+commande INT CHECK (commande > 10),
 Date_de_commande DATE DEFAULT NULL,
 Date_et_heure_de_livraison DATETIME,
 quantite INT NOT NULL,
 produit INT,
 PRIMARY KEY (commande, produit),
-FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
+FOREIGN KEY (produit) REFERENCES PRODUITS (produit),
+CONSTRAINT commande_nonzero CHECK (commande <> 0)
 ); 
-
 
 -- creation de la table clients
 
@@ -98,8 +98,11 @@ Numero_de_telephone INT NOT NULL,
 Sexe_feminin BOOLEAN DEFAULT NULL,
 achat INT,
 PRIMARY KEY (Matricule),
-FOREIGN KEY (achat) REFERENCES ACHATS (achat)
-);
+ INDEX `ach_ind` (`achat`),
+  CONSTRAINT `Nom_ibfk_1` 
+     FOREIGN KEY (achat) REFERENCES ACHATS (achat)
+     ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 
 -- creation de la table paiements
