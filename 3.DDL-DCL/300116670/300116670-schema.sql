@@ -1,14 +1,14 @@
 -- *********************************
 -- Création de ma DATABASE
 -- *********************************
-CREATE DATABASE IF NOT EXISTSMOTOSPORT;
+CREATE DATABASE IF NOT EXISTS MOTOSPORT;
 
 
 -- *********************************
 -- Creation des utilisateurs et don-
 -- ner les autorisations
 -- *********************************
-CREATE USER IF NOT EXISTS'Auriane'@'%' IDENTIFIED BY 'Auriane';
+CREATE USER IF NOT EXISTS 'Auriane'@'%' IDENTIFIED BY 'Auriane';
 GRANT ALL ON MOTOSPORT.* TO 'Auriane'@'%';
 
 
