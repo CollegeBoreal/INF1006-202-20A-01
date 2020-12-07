@@ -1,3 +1,4 @@
+
 -- insetion countries
 insert into countries (Name_Country) values("congo");
 insert into countries (Name_Country) values("cameroun");
@@ -39,3 +40,15 @@ insert into songs(Name_Music,Source_Music,genre) values('Ecole','src/Ecole.mp3',
 insert into songs(Name_Music,Source_Music,genre) values('Allo Telephone','src/Ecole.mp3',3);
 insert into songs(Name_Music,Source_Music,genre) values('Mama Amy','src/mama-amy.mp3',7);
 insert into songs(Name_Music,Source_Music,genre) values('Requiem','src/requiem.mp3',7);
+
+-- insertion artist music
+insert into albummusic(song,album) values(1,3);
+insert into albummusic(song,album) values(2,3);
+
+-- insertion artist albums
+insert into artistalbum(artist,album) values(6,1);
+insert into artistalbum(artist,album) values(6,2);
+insert into artistalbum(artist,album) values(3,4);
+
+
+
