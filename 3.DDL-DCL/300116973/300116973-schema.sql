@@ -7,7 +7,7 @@ CREATE DATABASE superette_2S_plus;
 USE superette_2S_plus;
 
 -- creation de l'utilisateur
-CREATE USER 'admin'@'%' IDENTIFIED BY 'password';
+CREATE USER 'nathalie'@'%' IDENTIFIED BY 'password';
 
 -- donnee tout les privileges a l'ulilisateur pascaline
 
