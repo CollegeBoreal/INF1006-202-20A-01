@@ -62,10 +62,10 @@ INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('
 
 INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 1);
 INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 2);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (500.366, 3);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (500.97, 4);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (8000.99, 5);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (2900.3878, 6);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (500, 3);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (500, 4);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (8000, 5);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (2900, 6);
 
 
 
