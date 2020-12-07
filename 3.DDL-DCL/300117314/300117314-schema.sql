@@ -75,18 +75,13 @@ PRIMARY KEY(client)
 
 CREATE TABLE SERVICES
 (service INT AUTO_INCREMENT,
-commande INT,
 employe INT,
 detail VARCHAR(100),
 prix VARCHAR(20),
 PRIMARY KEY(service, employe),
-FOREIGN KEY(commande)
-      REFERENCES COMMANDES(commande)
-
+FOREIGN KEY(employe)
+      REFERENCES EMPLOYES(employe)
 );
-
-
-
 
 
 
@@ -108,7 +103,6 @@ FOREIGN KEY(service)
       REFERENCES SERVICES(service),
 FOREIGN KEY(client)
       REFERENCES CLIENTS(client)
-
 );
  
  
