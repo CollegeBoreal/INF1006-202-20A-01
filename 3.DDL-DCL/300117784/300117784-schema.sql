@@ -1,8 +1,11 @@
+
+
+CREATE database BMOnlineGaming;
+
 CREATE USER 'Bertrand'@'%' IDENTIFIED BY 'Bertrand_1';
 GRANT ALL ON BMOnlineGaming.* TO 'Bertrand'@'%';
 
-DROP BMOnlineGaming IF EXISTS;
-CREATE database BMOnlineGaming;
+
 use BMOnlineGaming;
 
 CREATE TABLE CLIENTS(
