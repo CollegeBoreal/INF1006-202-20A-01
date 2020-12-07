@@ -48,10 +48,10 @@ PRIMARY KEY (client)
 CREATE TABLE VENTES(
 vente INT AUTO_INCREMENT,
 client INT,
-Nom_du_produit VARCHAR(40) NOT NULL,
+produit INT,
 Date_et_heure_de_la_vente DATETIME NOT NULL, 
 Date_et_heure_de_livraison DATETIME NOT NULL,
-PRIMARY KEY (vente),
+PRIMARY KEY (vente,client,produit),
 FOREIGN KEY (produit) REFERENCES PRODUITS(produit),
 FOREIGN KEY (client) REFERENCES CLIENTS(client)
 );
