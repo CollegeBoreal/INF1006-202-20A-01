@@ -27,10 +27,10 @@ INSERT INTO RECETTES (Nom_de_la_recette, Ingredient, plat) VALUES ("Mais", 7, 3)
 
 -- Creation des donnees de la table commande4
 
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-02' '05:40:10', 1);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-05' '08:10:08', 2);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-07' '07:20:90', 4);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-06' '10:20:70', 3);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-02''05:40:10', 1);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-05''08:10:08', 2);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-07''07:20:90', 4);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-06''10:20:70', 3);
 
 
 -- Creation des donnees de la table client
