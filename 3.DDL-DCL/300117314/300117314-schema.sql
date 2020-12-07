@@ -69,6 +69,27 @@ PRIMARY KEY(client)
 
 
 
+
+-- Créer la table SERVICES:
+
+
+CREATE TABLE SERVICES
+(service INT AUTO_INCREMENT,
+commande INT,
+employe INT,
+detail VARCHAR(100),
+prix VARCHAR(20),
+PRIMARY KEY(service, employe),
+FOREIGN KEY(commande)
+      REFERENCES COMMANDES(commande)
+
+);
+
+
+
+
+
+
 -- Créer la table COMMANDES: 
 
 CREATE TABLE COMMANDES
@@ -86,7 +107,7 @@ CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, service),
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
 FOREIGN KEY(client)
-      REFERENCES CLIENTS(client),
+      REFERENCES CLIENTS(client)
 
 );
  
@@ -95,19 +116,4 @@ FOREIGN KEY(client)
  
  
 
-
--- Créer la table SERVICES:
-
-
-CREATE TABLE SERVICES
-(service INT AUTO_INCREMENT,
-commande INT,
-employe INT,
-detail VARCHAR(100),
-prix VARCHAR(20),
-PRIMARY KEY(service, employe),
-FOREIGN KEY(commande)
-      REFERENCES COMMANDES(commande),
-
-);
 
