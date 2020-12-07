@@ -16,22 +16,23 @@ INSERT INTO PRODUITS (Nom_du_produit, Numero_de_reference, Date_de_peremption, f
 INSERT INTO PRODUITS (Nom_du_produit, Numero_de_reference, Date_de_peremption, fournisseur) VALUES ('yaourt camlait', 'y322', '2020-12-30', 2);
 INSERT INTO PRODUITS (Nom_du_produit, Numero_de_reference, Date_de_peremption, fournisseur) VALUES ('guinness smoth', 'g322', '2022-01-30', 4);
 
--- donnee de la tables commandes
-
-INSERT INTO COMMANDES (Commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES (11,'2020-10-01', '2020-10-05''06:20:00', 20, 1);
-INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES (12, '2020-8-01', '2020-8-05''07:30:55', 100, 3);
-INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES (13, '2020-9-01', '2020-09-05''11:15:09', 59, 2);
-INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES (14, '2020-11-01', '2020-11-05''10:15:40', 20, 6);
-INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit) VALUES (15, '2020-11-01', '2020-11-05''09:19:45', 40, 5);
-
 -- donnee de la table clients
 
 
-INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('sandrine', 99334456, 'sandrine@gmail.com', 11);
-INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('ets jullie', 97334456, 'jully@gmail.com', 12);
-INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('jean', 99994456, 'jean@gmail.com', 13);
-INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('valerie', 89334456, 'valerie@gmail.com', 13);
-INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email, commande) VALUES ('quentin', 89334400, 'quentin@gmail.com', 14);
+INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email) VALUES ('sandrine', 99334456, 'sandrine@gmail.com');
+INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email) VALUES ('ets jullie', 97334456, 'jully@gmail.com');
+INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email) VALUES ('jean', 99994456, 'jean@gmail.com');
+INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email) VALUES ('valerie', 89334456, 'valerie@gmail.com');
+INSERT INTO CLIENTS (Nom, Numero_de_telephone, Email) VALUES ('quentin', 89334400, 'quentin@gmail.com');
+
+-- donnee de la tables commandes
+
+INSERT INTO COMMANDES (Commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (11,'2020-10-01', '2020-10-05''06:20:00', 20, 1, 1);
+INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (12, '2020-8-01', '2020-8-05''07:30:55', 100, 3, 1);
+INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (13, '2020-9-01', '2020-09-05''11:15:09', 59, 2, 2);
+INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (14, '2020-11-01', '2020-11-05''10:15:40', 20, 6, 3);
+INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (15, '2020-11-01', '2020-11-05''09:19:45', 40, 5, 4);
+
 
 -- donnee de la table achats
 
@@ -41,14 +42,6 @@ INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (11100000, 
 INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (50000, 20, '2020-11-05''09:19:45', 6);
 INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (4000, 40, '2020-11-05''09:19:45', 5);
 
--- donnee de la table facture
-
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (1000, 3, 11);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (2000, 10, 12);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (6000, 11, 13);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (7000, 6, 12);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (12000, 20, 33);
-INSERT INTO FACTURES (Montant, quantites, commande) VALUES (3000, 11, 14);
 
 -- donnee de la table employes
 
@@ -57,6 +50,15 @@ INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('
 INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('kameni', 'Andree', 983345500, FALSE);
 INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('lago', 'Nathalie', 683344556, TRUE);
 INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuedjo', 'cristiane', 773344556, TRUE);
+
+-- donnee de la table facture
+
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (1000, 3, 11, 1);
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (2000, 10, 12, 2);
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (6000, 11, 13, 3);
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (7000, 6, 12, 5);
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (12000, 20, 33, 2);
+INSERT INTO FACTURES (Montant, quantites, commande, paiement) VALUES (3000, 11, 14, 4);
 
 -- donnee de la table paiements
 
