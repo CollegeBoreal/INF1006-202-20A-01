@@ -61,17 +61,19 @@ Résultat:
 
 **2. Séléctionner touos les cliens qui ont achetés un service entre janvier et septembre 2020. A chaque fois, nous aimerions savoir quel fournisseur à fournit le service en question** (pour des raisons évidentes d'exercice, le rendu serait symbolique et limité seulement au nombre restreint et limité des entrées dans le fichier data)
 
-SELECT CLIENTS.Nom, CLIENTS.Prenom, Nom_du_service, FOURNISSEURS.Nom FROM CLIENTS
-JOIN VENTES_DE_SERV USING (client)
-JOIN SERVICES USING (service)
-JOIN FOURNISSEURS USING (fournisseur)
-WHERE VENTES_DE_SERV.Date_de_vente between "2020/01/01" and "2020/09/01"
-GROUP BY CLIENTS.Nom, CLIENTS.Prenom, FOURNISSEURS.Nom, SERVICES.Nom_du_service
-LIMIT 0,10;
+```
+SELECT CLIENTS.Nom, CLIENTS.Prenom, Nom_du_service, FOURNISSEURS.Nom FROM CLIENTS  
+JOIN VENTES_DE_SERV USING (client)  
+JOIN SERVICES USING (service)  
+JOIN FOURNISSEURS USING (fournisseur)  
+WHERE VENTES_DE_SERV.Date_de_vente between "2020/01/01" and "2020/09/01"  
+GROUP BY CLIENTS.Nom, CLIENTS.Prenom, FOURNISSEURS.Nom, SERVICES.Nom_du_service  
+LIMIT 0,10;  
+```
 
 Résultat:  
 
-<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/fournisseur.PNG" width="250">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/fournisseur.PNG" width="450">
 
 **3. Séléctionner le nombre d'exfoliant vendus en 2020:**
 
