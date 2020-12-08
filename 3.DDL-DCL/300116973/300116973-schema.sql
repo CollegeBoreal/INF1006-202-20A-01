@@ -86,7 +86,7 @@ prenom VARCHAR(25) NULL,
 Numero_de_telephone INT NOT NULL,
 Sexe_feminin BOOLEAN DEFAULT NULL,
 achat INT,
-PRIMARY KEY (Matricule),
+PRIMARY KEY (Matricule, achat),
  INDEX `ach_ind` (`achat`),
   CONSTRAINT `Nom_ibfk_1` 
      FOREIGN KEY (achat) REFERENCES ACHATS (achat)
