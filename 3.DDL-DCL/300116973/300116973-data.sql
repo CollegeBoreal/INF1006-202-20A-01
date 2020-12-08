@@ -45,11 +45,11 @@ INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (4000, 40, 
 
 -- donnee de la table employes
 
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone, Sexe_feminin) VALUES ('Noumsi', 'Pascaline', 983344556, TRUE);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuekam', 'suzanne', 783344556, TRUE);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('kameni', 'Andree', 983345500, FALSE);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('lago', 'Nathalie', 683344556, TRUE);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuedjo', 'cristiane', 773344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone, Sexe_feminin, achat) VALUES ('Noumsi', 'Pascaline', 983344556, TRUE, 1);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('tuekam', 'suzanne', 783344556, TRUE, 1);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('kameni', 'Andree', 983345500, FALSE, 2);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('lago', 'Nathalie', 683344556, TRUE, 3);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('tuedjo', 'cristiane', 773344556, TRUE, 4);
 
 -- donnee de la table facture
 
@@ -62,12 +62,12 @@ INSERT INTO FACTURES (Montant, quantites, commande) VALUES (3000, 11, 14);
 
 -- donnee de la table paiements
 
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 7);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 8);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (6000, 9);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (7000, 10);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (12000, 11);
-INSERT INTO PAIEMENTS (Montant, facture) VALUES (3000, 12);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (1000, 1);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (2000, 2);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (6000, 3);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (7000, 4);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (12000, 5);
+INSERT INTO PAIEMENTS (Montant, facture) VALUES (3000, 6);
 
 
 
