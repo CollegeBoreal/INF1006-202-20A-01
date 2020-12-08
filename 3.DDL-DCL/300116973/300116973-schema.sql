@@ -56,10 +56,9 @@ Date_et_heure_de_livraison DATETIME,
 quantite INT NOT NULL,
 produit INT,
 client INT,
-PRIMARY KEY (commande, produit),
+PRIMARY KEY (commande, produit, client),
 FOREIGN KEY (produit) REFERENCES PRODUITS (produit),
-FOREIGN KEY (client) REFERENCES CLIENTS 
-(client),
+FOREIGN KEY (client) REFERENCES CLIENTS (client),
 CONSTRAINT commande_nonzero CHECK (commande <> 0)
 ); 
 
