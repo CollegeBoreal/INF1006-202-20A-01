@@ -17,7 +17,7 @@ Create Table: CREATE TABLE `VILLES` (
   CONSTRAINT `ville_ibfk_1` 
      FOREIGN KEY (`pays`) REFERENCES `PAYS` (`pays`) 
      ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+);
 ```
 
 ## :two: Data Quality Constraints
