@@ -60,22 +60,21 @@ FOREIGN KEY (client) REFERENCES CLIENTS(client)
 CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
 produit INT,
+prix INT,
 PRIMARY_KEY (location),
 FOREIGN KEY (produit) REFERENCES PRODUITS(produit);
-  
-CREATE TABLE PRIX(
-prix 
 
   
-CREATE TABLE SERVICES_LOCATIONS
-service_location INT AUTO_INCREMENT,
+CREATE TABLE SERVICE
+service INT AUTO_INCREMENT,
 client INT,
-prix INT,
-date_de_sortie DATETIME,
-date_de_retour DATETIME,
+quantité INT,
+location INT,
+date_de_sortie DATETIME NOT NULL,
+date_de_retour DATETIME DEFAULT NULL,
 PRIMARY_KEY(service_location,client,prix),
 FOREIGN KEY(client) REFERENCES CLIENTS(client),
-FOREIGN KEY(prix) REFERENCES PRIX(prix);
+FOREIGN KEY(location) REFERENCES LOCATIONS(location);
 
 
 
