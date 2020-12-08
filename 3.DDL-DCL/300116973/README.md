@@ -35,22 +35,23 @@
 
 -- IMPRIMER le nom et le montant des factures des clients ?
 
-SELECT Nom, Montant
+SELECT CLIENTS.Nom, FACTURES.Montant
 FROM CLIENTS
-JOIN COMMANDES USING (commande)
+JOIN COMMANDES USING (client)
 JOIN FACTURES USING (commande)
-GROUP BY Nom, Montant
+GROUP BY CLIENTS.Nom, FACTURES.Montant
 ;
 
 -- Quel est le client qui a le plus acheter les produits?
 
-SELECT CLIENTS.Nom, COUNT(*)
+SELECT CLIENTS.Nom, COUNT(CLIENTS.Nom)
 FROM FOURNISSEURS
 JOIN PRODUITS USING (fournisseur)
 JOIN COMMANDES USING (produit)
-JOIN CLIENTS USING (commande)
+JOIN CLIENTS USING (client)
 GROUP BY CLIENTS.Nom
 LIMIT 1;
+
 
 -- Imprimer le nom  du produit qui a ete le plus vendu?
 
