@@ -2,7 +2,7 @@
 CREATE DATABASE AfricaMusic;
 
 CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
-GRANT ALL ON AfricaMusic.* TO 'boris'@'%'
+GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
 use AfricaMusic;
 
 CREATE TABLE COUNTRIES(
