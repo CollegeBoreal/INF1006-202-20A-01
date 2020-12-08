@@ -30,6 +30,7 @@ Voici le schéma des relations entre tables selon le procédé Reverse Engineer:
 
 Je fais une contrainte DDL sur la table VENTES_DE_PROD en utilisant CONSTRAINT et la fonction UNIQUE:
 
+```
 CREATE TABLE VENTES_DE_PROD (  
   vente_de_prod INT AUTO_INCREMENT,  
   client INT,  
@@ -43,7 +44,7 @@ CREATE TABLE VENTES_DE_PROD (
   FOREIGN KEY(produit)  
      REFERENCES PRODUITS(produit)  
   );  
- 
+ ```
 
 ## Requêtes liées aux rapports:
 
@@ -81,7 +82,7 @@ Résultat:
 
 
 
-**4. Séléctionner le nombre de client qui ont eu recours à un service de soins en septembre 2020:**
+
 
 
 
