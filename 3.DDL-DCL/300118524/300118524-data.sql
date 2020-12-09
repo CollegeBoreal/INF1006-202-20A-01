@@ -36,13 +36,15 @@ INSERT INTO PRIX (vitesse, prix) VALUES ('4', '49');
 INSERT INTO PRIX (vitesse, prix) VALUES ('5', '39');
 INSERT INTO PRIX (vitesse, prix) VALUES ('6', '30');
 
--- next
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('01:28:79:DD:GG:JH', '1');
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('01:04:23:PP:UI:LK', '3');
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('01:08:11:WE:YG:HH', '2');
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('01:54:93:VP:UQ:MK', '5');
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('00:08:66:JE:LI:JH', '4');
-INSERT INTO ROUTEURS (MAC, vitesse) VALUES ('00:54:88:NE:MA:LK', '6');
+-- DONNÉES DE LA TABLE EQUIPEMENTS
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '1', '1','1');
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '0', '1','1');
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '1', '0','1');
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '0', '1','1');
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '1', '1','1');
+INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('0', '0', '0','0');
+
+
 
 -- DONNÉES DE LA TABLE CLIENTS
 INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('ouro', 'zoureni', '1 rue younge', '5147779999');
