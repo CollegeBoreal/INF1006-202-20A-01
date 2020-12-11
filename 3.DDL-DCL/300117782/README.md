@@ -26,7 +26,7 @@ CREATE TABLE RECETTES (
 
 ```
 
-:heavy_check_mark: Contrainte sur la table RECETTES
+:heavy_check_mark: Contrainte sur la table PAIEMENTS
 
 ```
 
