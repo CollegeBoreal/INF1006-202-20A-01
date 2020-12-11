@@ -1,6 +1,11 @@
 
-# Reverce ingeniering Restaurant Mamamiya
+# :cherries: Reverce ingeniering Restaurant Mamamiya
+---
 
-:cake: Cette base de données  représente le Restaurant Mamamiya propose de plats de nourritures variées à different prix :banana:
+:cake: Cette base de données  représente le Restaurant Mamamiya qui  propose des plats de nourritures variées à different prix :banana:
 
 ![image](images/p2.PNG)
+
+
+## :strawberry:  Exemple de contrainte DDL
+:heavy_check_mark:
