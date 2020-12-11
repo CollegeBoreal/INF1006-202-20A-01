@@ -41,5 +41,11 @@ CREATE TABLE PAIEMENTS (
 );
 
 ```
-## :tropical_fish: Requête 
 
+## :watermelon: Requête 
+
+:heavy_check_mark: Nombre de plat vendu
+
+:heavy_check_mark: Afficher la recette
+
+:heavy_check_mark: Montant total vendu
