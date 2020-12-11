@@ -1,10 +1,10 @@
 
-# :fork_and_knife: Restaurant Mamamiya
+# :fork_and_knife: :stew: Restaurant Mamamiya
 ---
 
-:cherries: Cette base de données  représente le Restaurant Mamamiya qui  propose des plats de nourritures variées à different prix 
+:spaghetti: Cette base de données  représente le Restaurant Mamamiya qui  propose des plats de nourritures variées à different prix 
 
- ## :grapes: Reverce ingeniering 
+ ## :tropical_drink: Reverce ingeniering 
  
  
 ![image](images/p2.PNG)
