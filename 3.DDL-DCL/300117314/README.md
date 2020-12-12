@@ -21,7 +21,7 @@
 ##  :two: la personne en charge de chaque département soit unique:
 
 
-![image](image/8.PNG)
+![image](image/8.PNG)(size 200,150)
 
 ##  :three: L'adresse-email de chaque client soit unique:
 
