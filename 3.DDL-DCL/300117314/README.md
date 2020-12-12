@@ -26,3 +26,11 @@
 ##  :three: L'adresse-email de chaque client soit unique:
 
 ![image](image/9.PNG)
+
+
+##  :four: le moment où on supprime un client on aura pas les informations concernant ce client dans les autre table :
+
+![image](image/10.PNG)
+
+
+
