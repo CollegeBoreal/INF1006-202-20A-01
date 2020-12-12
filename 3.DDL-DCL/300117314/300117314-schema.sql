@@ -103,6 +103,7 @@ employe INT,
 PRIMARY KEY(commande, service, client, employe),
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
+INDEX `Client_ind` (`client`),
 CONSTRAINT `CLIENT_INFO`  
    FOREIGN KEY(client)
       REFERENCES CLIENTS(client)
