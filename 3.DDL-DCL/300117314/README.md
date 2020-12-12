@@ -21,7 +21,7 @@
 ##  :two: la personne en charge de chaque département soit unique:
 
 
-![image](image/8.PNG)(size 200,150)
+![image](image/8.PNG)
 
 ##  :three: L'adresse-email de chaque client soit unique:
 
@@ -32,5 +32,10 @@
 
 ![image](image/10.PNG)
 
+:star:For example, si l'on supprime le client numéro 1, on n'aura plus ses information dans la table COMMANDES:
 
-
+![image](image/1.PNG)
+![image](image/2.PNG)
+![image](image/3.PNG)
+![image](image/4.PNG)
+![image](image/5.PNG)
