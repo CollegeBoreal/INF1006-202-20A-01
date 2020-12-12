@@ -60,7 +60,7 @@ CREATE TABLE CLIENTS
 (client INT AUTO_INCREMENT,
 prenom VARCHAR(20) NOT NULL,
 nom VARCHAR(20) NOT NULL,
-adresse_email VARCHAR(20) NOT NULL,
+adresse_email VARCHAR(20) NOT NULL UNIQUE,
 telephone INT NOT NULL,
 adresse VARCHAR(20),
 nom_de_entreprise VARCHAR(20),
