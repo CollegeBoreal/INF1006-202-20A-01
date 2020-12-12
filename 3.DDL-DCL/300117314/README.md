@@ -28,7 +28,7 @@
 ![image](image/9.PNG)
 
 
-##  :four: le moment où on supprime un client on aura pas les informations concernant ce client dans les autre table :
+##  :four: le moment où on supprime un client de la table CLIENTS, on n'aura plus ses informations dans les autres tables reliées :
 
 ![image](image/10.PNG)
 
