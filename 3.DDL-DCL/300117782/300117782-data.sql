@@ -35,10 +35,10 @@ INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-06''10:
 
 -- Creation des donnees de la table client
 
-INSERT INTO CLIENTS (Nom_du_ client, Commande) VALUES ("Nathalie", 2);
-INSERT INTO CLIENTS (Nom_du_ client, Commande) VALUES ("Hassana", 3);
-INSERT INTO CLIENTS (Nom_du_ client, Commande) VALUES ("Bright", 1);
-INSERT INTO CLIENTS (Nom_du_ client, Commande) VALUES ("Indri", 4);
+INSERT INTO CLIENTS (Nom_du_client, Commande) VALUES ("Nathalie", 2);
+INSERT INTO CLIENTS (Nom_du_client, Commande) VALUES ("Hassana", 3);
+INSERT INTO CLIENTS (Nom_du_client, Commande) VALUES ("Bright", 1);
+INSERT INTO CLIENTS (Nom_du_client, Commande) VALUES ("Indri", 4);
 
 
 -- Creation des donnens de la table facture
