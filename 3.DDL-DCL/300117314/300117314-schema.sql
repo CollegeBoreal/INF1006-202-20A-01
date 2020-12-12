@@ -101,18 +101,16 @@ client INT,
 service INT,
 employe INT,
 PRIMARY KEY(commande, service, client, employe),
-CONSTRAINT `SERVICES_ibfk_1` UNIQUE (client, service),
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
-FOREIGN KEY(client)
-      REFERENCES CLIENTS(client),
+CONSTRAINT `CLIENT_INFO`  
+   FOREIGN KEY(client)
+      REFERENCES CLIENTS(client)
+      ON DELETE CASCADE,
 FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe)
 );
  
- 
- 
- 
- 
+
 
 
