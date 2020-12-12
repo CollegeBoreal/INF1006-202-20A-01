@@ -1,7 +1,7 @@
-:zap: ## schéma Mortimaintenance est une companie qui fournit la maintenance des équipements techniques  Mortimaintanance ##:zap: 
+:zap: ## Mortimaintenance est une companie qui fournit la maintenance des équipements techniques  Mortimaintanance :zap: 
 
 
 
-##  Le schéma des relatiosn dans la base de données
+## :zap: Le schéma des relatiosn dans la base de données :zap:
 
 ![image](image/7.PNG)
