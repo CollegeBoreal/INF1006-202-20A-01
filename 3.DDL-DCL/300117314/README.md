@@ -23,3 +23,6 @@
 
 ![image](image/8.PNG)
 
+##  :three: L'adresse-email de chaque client soit unique:
+
+![image](image/9.PNG)
