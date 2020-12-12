@@ -33,6 +33,7 @@ prenom VARCHAR(20) NOT NULL,
 nom VARCHAR(20) NOT NULL,
 adresse_email VARCHAR(20) NOT NULL,
 telephone INT NOT NULL,
+UNIQUE (adresse_email, telephone),
 adresse VARCHAR(20),
 nom_de_departement VARCHAR(20),
 PRIMARY KEY(employe)
