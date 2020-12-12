@@ -35,12 +35,20 @@
 ## :pushpin::star:For example, si l'on supprime le client numéro 1, on n'aura plus ses information dans la table COMMANDES:
 
 ![image](image/1.PNG)
-:ok_hand:
+
+## :ok_hand:
+
 ![image](image/2.PNG)
-:ok_hand:
+
+## :ok_hand:
 ![image](image/3.PNG)
-:ok_hand:
+
+## :ok_hand:
+
 ![image](image/4.PNG)
-:ok_hand:
+
+## :ok_hand:
+
 ![image](image/5.PNG)
-:like_hand:
+
+## :like_hand:
