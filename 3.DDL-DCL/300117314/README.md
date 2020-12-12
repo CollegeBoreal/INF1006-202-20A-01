@@ -51,4 +51,4 @@
 
 ![image](image/5.PNG)
 
-## :like_hand:
+## :like:
