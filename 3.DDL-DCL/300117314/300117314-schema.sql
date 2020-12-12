@@ -97,7 +97,7 @@ client INT,
 service INT,
 employe INT,
  
-PRIMARY KEY(commande, service, client, employe),
+PRIMARY KEY(commande, client, service, employe),
 
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
