@@ -33,6 +33,7 @@ prenom VARCHAR(20) NOT NULL,
 nom VARCHAR(20) NOT NULL,
 adresse_email VARCHAR(20) NOT NULL,
 telephone INT NOT NULL,
+UNIQUE (adresse_email, telephone),
 adresse VARCHAR(20),
 nom_de_departement VARCHAR(20),
 PRIMARY KEY(employe)
@@ -49,6 +50,7 @@ telephone INT NOT NULL,
 responsable VARCHAR(20),
 employe INT,
 PRIMARY KEY(departement),
+UNIQUE INDEX `RESPONSIBLE_UNIQUE` (`responsable` ASC),
 FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe)
 );
@@ -61,7 +63,7 @@ CREATE TABLE CLIENTS
 (client INT AUTO_INCREMENT,
 prenom VARCHAR(20) NOT NULL,
 nom VARCHAR(20) NOT NULL,
-adresse_email VARCHAR(20) NOT NULL ,
+adresse_email VARCHAR(20) NOT NULL UNIQUE,
 telephone INT NOT NULL,
 adresse VARCHAR(20),
 nom_de_entreprise VARCHAR(20),
@@ -81,6 +83,7 @@ detail VARCHAR(100),
 prix VARCHAR(20),
 PRIMARY KEY(service, employe)
 );
+
 
 
 
