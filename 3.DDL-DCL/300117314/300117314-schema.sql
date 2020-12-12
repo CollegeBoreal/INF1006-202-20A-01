@@ -87,7 +87,7 @@ PRIMARY KEY(service, employe)
 
 
 -- Créer la table COMMANDES: 
-
+CREATE TABLE COMMANDES
 (commande INT AUTO_INCREMENT,
 nom_de_instrument VARCHAR(40) NOT NULL,
 vendeur VARCHAR(20),
@@ -98,17 +98,22 @@ commentaire VARCHAR(100),
 client INT,
 service INT,
 employe INT,
+ 
 PRIMARY KEY(commande, service, client, employe),
-INDEX Client_ind (client),
-CONSTRAINT commande_ibfk_1  
-   FOREIGN KEY (client) REFERENCES CLIENTS(client)
-      ON DELETE CASCADE,
+
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
 
 FOREIGN KEY(employe)
-      REFERENCES EMPLOYES(employe)
+      REFERENCES EMPLOYES(employe),
+
+INDEX Client_ind (client),
+CONSTRAINT commande_ibfk_1  
+   FOREIGN KEY (client) REFERENCES CLIENTS(client)
+      ON DELETE CASCADE
 );
+
+
 
 
 
