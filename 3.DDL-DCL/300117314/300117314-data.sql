@@ -47,21 +47,21 @@ INSERT INTO SERVICES (employe, detail, prix) VALUES ('7', 'mis a jour', '65$');
 -- remplir la table de COMMANDES:
 
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Routeur', 'Cisco', '5F01:10B::5AC1::1', '1', '2020-11-23', '2020-12-01', "interface G0/0 a ete remplace", '1','2');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Routeur', 'Cisco', '5F01:10B::5AC1::1', '2020-11-23', '2020-12-01', "interface G0/0 a ete remplace", '1', '1', '2');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Switch', 'Cisco', '5F01:10B::5AC1::1125', '2', '2020-11-24', '2020-12-02', "ventilateur marchait pas bien", '2','4');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Switch', 'Cisco', '5F01:10B::5AC1::1125', '2020-11-24', '2020-12-02', "ventilateur marchait pas bien", '2' , '2', '4');
+ 
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Firewall', 'Cisco', '5F01:10B::5AC1::1BF4', '2020-11-24', '2020-12-02', "mise a jour des logiciels", '3', '3','5');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Firewall', 'Cisco', '5F01:10B::5AC1::1BF4', '3', '2020-11-24', '2020-12-02', "mise a jour des logiciels", '3','5');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Bridge', 'Mitrotik', '5F01:10B::5ADE::1BCA', '2020-11-25', '2020-12-03', "boite d'alimentation a ete remplace", '4', '4','8');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Bridge', 'Mitrotik', '5F01:10B::5ADE::1BCA', '4', '2020-11-25', '2020-12-03', "boite d'alimentation a ete remplace", '4','8');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Modem', 'TPlink', '5F01:10B::5ADE::1ABE', '2020-11-25', '2020-12-03', "changement de carte mere", '5', '5','6');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Modem', 'TPlink', '5F01:10B::5ADE::1ABE', '5', '2020-11-25', '2020-12-03', "changement de carte mere", '5','6');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Serveur', 'HP', '5F01:10B::5ADE::1ABE', '2020-12-26', '2020-12-04', "changement de carte reseau", '6', '6', '1');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Serveur', 'HP', '5F01:10B::5ADE::1ABE', '6', '2020-12-26', '2020-12-04', "changement de carte reseau", '6','1');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Routeur', 'Juniper', '5F01:10B::5ADE::1', '2020-12-26', '2020-12-04', "mise a jour des logiciels", '7', '7', '3');
 
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Routeur', 'Juniper', '5F01:10B::5ADE::1', '7', '2020-12-26', '2020-12-04', "mise a jour des logiciels", '7','3');
-
-INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, client, date_de_reception, date_de_livraison, commentaire, service, employe) VALUES ( 'Switch', 'Facebook', '5F01:10B::5ADE::4BE9', '8', '2020-12-27', '2020-12-05', "mise a jour des logiciels", '8','6');
+INSERT INTO COMMANDES (nom_de_instrument, vendeur, Address_physique, date_de_reception, date_de_livraison, commentaire, client, service, employe) VALUES ( 'Switch', 'Facebook', '5F01:10B::5ADE::4BE9', '2020-12-27', '2020-12-05', "mise a jour des logiciels", '8', '8','6');
 
 
 
