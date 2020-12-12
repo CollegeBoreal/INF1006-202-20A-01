@@ -9,4 +9,5 @@
 
 ![image](image/7.PNG)
 
-:pushpin:
+:pushpin: la politique de cette compagnie concernant les informations de ces données: 
+:1:
