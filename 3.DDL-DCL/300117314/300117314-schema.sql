@@ -88,6 +88,7 @@ PRIMARY KEY(service, employe)
 
 
 -- Créer la table COMMANDES: 
+
 CREATE TABLE COMMANDES
 (commande INT AUTO_INCREMENT,
 nom_de_instrument VARCHAR(40) NOT NULL,
@@ -98,13 +99,10 @@ date_de_livraison DATE,
 commentaire VARCHAR(100),
 client INT,
 service INT,
-employe INT,
- 
+employe INT, 
 PRIMARY KEY(commande, client, service, employe),
-
 FOREIGN KEY(service)
       REFERENCES SERVICES(service),
-
 FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe),
 
