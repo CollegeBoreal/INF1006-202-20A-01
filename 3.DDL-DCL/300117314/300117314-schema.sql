@@ -50,9 +50,11 @@ telephone INT NOT NULL,
 responsable VARCHAR(20),
 employe INT,
 PRIMARY KEY(departement),
+UNIQUE INDEX `RESPONSIBLE_UNIQUE` (`responsable` ASC),
 FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe)
 );
+
 
 
 -- Créer la table CLIENTS: 
