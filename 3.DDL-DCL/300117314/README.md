@@ -9,12 +9,12 @@
 
 ![image](image/7.PNG)
 
-
+#  :pushpin: la politique de la compagnie concernant ses données:
 ## :pushpin: La politique de la compagnie concernant les informations de ces données:
 
-## :one: L'adresse-email et nuéro de téléphone de chaque employé doivent être uniques:     
+## :one: L'adresse-email et numéro de téléphone de chaque employé doivent être uniques:     
 
-#  :one: l'adresse-email et numéro de télépnone de chaque employé doivent être uniques:
+
 
 ![image](image/6.PNG)
 
