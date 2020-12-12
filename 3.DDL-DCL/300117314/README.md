@@ -32,7 +32,7 @@
 
 ![image](image/10.PNG)
 
-:star:For example, si l'on supprime le client numéro 1, on n'aura plus ses information dans la table COMMANDES:
+## :pushpin::star:For example, si l'on supprime le client numéro 1, on n'aura plus ses information dans la table COMMANDES:
 
 ![image](image/1.PNG)
 ![image](image/2.PNG)
