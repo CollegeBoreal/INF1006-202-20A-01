@@ -18,7 +18,7 @@
 
 ![image](image/6.PNG)
 
-#  :2: la personne en charge de chaque département soit unique:
+#  :two: la personne en charge de chaque département soit unique:
 
 
 ![image](image/8.PNG)
