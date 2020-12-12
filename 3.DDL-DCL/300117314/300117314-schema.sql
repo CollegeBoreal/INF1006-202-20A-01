@@ -112,6 +112,27 @@ FOREIGN KEY(employe)
       REFERENCES EMPLOYES(employe)
 );
  
-
+================================
+CREATE TABLE COMMANDES
+(commande INT AUTO_INCREMENT,
+nom_de_instrument VARCHAR(40) NOT NULL,
+vendeur VARCHAR(20),
+Address_physique VARCHAR(30) NOT NULL,
+client INT,
+date_de_reception DATE NOT NULL, 
+date_de_livraison DATE,
+commentaire VARCHAR(100),
+service INT,
+employe INT,
+PRIMARY KEY(commande, service, client, employe),
+FOREIGN KEY(service)
+      REFERENCES SERVICES(service),
+FOREIGN KEY(employe)
+      REFERENCES EMPLOYES(employe)
+CONSTRAINT `CLIENT_INFO`  
+   FOREIGN KEY(client)
+      REFERENCES CLIENTS(client)
+      ON DELETE CASCADE,
+);
 
 
