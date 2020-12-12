@@ -16,19 +16,5 @@
 ## :one: l'adresse-email et numéro de télépnone de chaque employé doivent être uniques:
 
 
-mysql> CREATE TABLE EMPLOYES
-    -> (employe INT AUTO_INCREMENT,
-    -> prenom VARCHAR(20) NOT NULL,
-    -> nom VARCHAR(20) NOT NULL,
-    -> adresse_email VARCHAR(20) NOT NULL,
-    -> telephone INT NOT NULL,
-    -> UNIQUE (adresse_email, telephone),
-    -> adresse VARCHAR(20),
-    -> nom_de_departement VARCHAR(20),
-    -> PRIMARY KEY(employe)
-    -> );
-Query OK, 0 rows affected (0.38 sec)
-
-mysql>
-
+![image](image/6.PNG)
 
