@@ -15,7 +15,7 @@
 
 ## :one: l'adresse-email et numéro de télépnone de chaque employé doivent être uniques:
 
-#  :one:
+
 
 ![image](image/6.PNG)
 
