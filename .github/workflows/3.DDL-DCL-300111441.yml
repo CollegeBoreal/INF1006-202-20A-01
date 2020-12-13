@@ -1,0 +1,35 @@
+name: P.Projets
+
+on: [push]
+
+jobs:
+  from-some-mysql-container:
+    runs-on: ubuntu-latest
+    container: ubuntu
+    services:
+      some-mysql:
+        image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: password
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
+    steps:
+      # Check is MYSQL is running
+      - name: Verify MySQL connection from container 
+        run: |
+          apt-get update
+          apt-get install -y mysql-client
+          mysql --host some-mysql --user root --password=password --execute "SHOW DATABASES;"
+
+      # Set Students Environment Variable
+      - name: Student ID
+        run: |
+         echo "STUDENT_ID=300111441" >> $GITHUB_ENV
+         
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        
+      # 3.DDL-DCL Assignment
+      - name: Check 3.DDL-DCL
+        run: |
+          cd  3.DDL-DCL/$STUDENT_ID
+          pwd
