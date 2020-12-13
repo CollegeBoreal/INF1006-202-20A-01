@@ -1,6 +1,6 @@
 # ÊTRE BIEN: Base de données pour la vente en ligne de produits de santé et cosmétiques +vente de services de soins aux personnes
 
-<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/Eblogo.png" width="250">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/Eblogo.png" width="350">
 
 ## Sommaire:
 
@@ -62,7 +62,7 @@ Résultat:
 <img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/req1.PNG" width="550">
 
 
-**2. Séléctionner touos les cliens qui ont achetés un service entre janvier et septembre 2020. A chaque fois, nous aimerions savoir quel fournisseur à fournit le service en question** (pour des raisons évidentes d'exercice, le rendu serait symbolique et limité seulement au nombre restreint et limité des entrées dans le fichier data)
+**2. Séléctionner tous les cliens qui ont achetés un service entre janvier et septembre 2020. A chaque fois, nous aimerions savoir quel fournisseur à fournit le service en question** (pour des raisons évidentes d'exercice, le rendu serait symbolique et limité seulement au nombre restreint et limité des entrées dans le fichier data)
 
 ```
 SELECT CLIENTS.Nom, CLIENTS.Prenom, Nom_du_service, FOURNISSEURS.Nom FROM CLIENTS  
@@ -78,7 +78,7 @@ Résultat:
 
 <img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/fournisseur.PNG" width="550">
 
-**3. Séléctionner le nombre d'exfoliant vendus en 2020:**
+
 
 
 
