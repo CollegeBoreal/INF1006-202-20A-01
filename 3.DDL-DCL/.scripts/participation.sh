@@ -35,6 +35,8 @@ echo "|------|----------------------------|---------------|----------|---------|
 
 i=0
 
+URL="https://github.com/CollegeBoreal/INF1006-202-20A-01"
+
 for id in "${ETUDIANTS[@]}"
 do
    U_AVATAR="<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
@@ -50,7 +52,7 @@ do
    else
        OK_DATA="[:x:]"
    fi
-   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions](/actions?query=workflow/3.DDL-DCL-${id}) | "
+   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions](${URL}/actions?query=workflow/3.DDL-DCL-${id}) | "
    echo ${OK}
    let "i++"
 done
