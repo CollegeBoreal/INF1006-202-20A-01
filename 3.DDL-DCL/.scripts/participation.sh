@@ -30,10 +30,12 @@ echo "| :x:                | Projet inexistant             |"
 echo ""
 echo "## :a: Présence"
 echo ""
-echo "|:hash:| Boréal :id:                | SQL Schema    |"
-echo "|------|----------------------------|---------------|"
+echo "|:hash:| Boréal :id:                | SQL Schema    | SQL Data | Actions |"
+echo "|------|----------------------------|---------------|----------|---------|"
 
 i=0
+
+actions?query=workflow%3A3.DDL-DCL-300111441
 
 for id in "${ETUDIANTS[@]}"
 do
@@ -44,7 +46,13 @@ do
    else
        OK_SCHEMA="[:x:]"
    fi
-   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | "
+   F_DATA=${id}/${id}-data.sql
+   if [ -f "$F_SCHEMA" ]; then
+       OK_DATA="[:heavy_check_mark:](../${F_DATA})"
+   else
+       OK_DATA="[:x:]"
+   fi
+   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions]i(/actions?query=workflow/3.DDL-DCL-${id}) | "
    echo ${OK}
    let "i++"
 done
