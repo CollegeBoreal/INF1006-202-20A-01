@@ -41,6 +41,7 @@ Voici un autre exemple de contrainte: UNIQUE sur la table VENTES_DE_SERV:
 
 ## Requêtes liées aux rapports:
 
+**Rapport avec 3 tables avec regroupement**
 **1. Séléctionner tous les clients qui ont achetés des produits au moins de septembre 2020, leur nom, et le nombre de produits achetés par client:**
 
 ```
@@ -54,7 +55,7 @@ Résultat:
 
 <img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/req1.PNG" width="550">
 
-
+**Rapport sur 4 tables avec regroupement + limitation + critères avec dates**
 **2. Séléctionner tous les cliens qui ont achetés un service entre janvier et septembre 2020. A chaque fois, nous aimerions savoir quel fournisseur à fournit le service en question** (pour des raisons évidentes d'exercice, le rendu serait symbolique et limité seulement au nombre restreint et limité des entrées dans le fichier data)
 
 ```
