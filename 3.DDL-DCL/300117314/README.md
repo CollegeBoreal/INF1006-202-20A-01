@@ -52,3 +52,9 @@
 ![image](image/5.PNG)
 
 ## :white_check_mark:
+
+## :pushpin::star: quelques Requêtes selon les données:
+![image](image/11.PNG)
+
+
+
