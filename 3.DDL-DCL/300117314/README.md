@@ -87,7 +87,7 @@ JOIN CLIENTS USING (client)
 JOIN SERVICES USING (service) 
 GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom_de_departement, SERVICES.montant 
 ;
-
+```
 
 ![image](image/12.PNG)
 
