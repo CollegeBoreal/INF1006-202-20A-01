@@ -80,4 +80,14 @@ GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom;
 ![image](image/11.PNG)
 
 
+```
+SELECT COMMANDES.nom_de_instrument,  CLIENTS.Nom, SERVICES.montant, EMPLOYES.nom_de_departement FROM COMMANDES  
+JOIN EMPLOYES USING (employe)  
+JOIN CLIENTS USING (client) 
+JOIN SERVICES USING (service) 
+GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom_de_departement, SERVICES.montant 
+;
+
+
+![image](image/12.PNG)
 
