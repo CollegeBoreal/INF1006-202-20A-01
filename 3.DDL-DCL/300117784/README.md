@@ -1,7 +1,7 @@
 # :pushpin: BMOlineGaming 
 <img src="BMOline3.PNG" height="800" witdth="900"></img> 
 ---
-# :pushpin: CONTRAINTE TABLE ARTICLES
+# :cop: CONTRAINTE TABLE ARTICLES
 ```
 Article INT AUTO_INCREMENT,
 Fournisseur INT,
