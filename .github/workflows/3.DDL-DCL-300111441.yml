@@ -1,0 +1,44 @@
+name: 3.DDL-DCL-300111441
+
+on: [push]
+
+jobs:
+  from-some-mysql-container:
+    runs-on: ubuntu-latest
+    container: ubuntu
+    services:
+      some-mysql:
+        image: mysql:latest
+        env:
+          MYSQL_ROOT_PASSWORD: password
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
+    steps:
+      # Check is MYSQL is running
+      - name: Verify MySQL connection from container 
+        run: |
+          apt-get update
+          apt-get install -y mysql-client
+          mysql --host some-mysql --user root --password=password --execute "SHOW DATABASES;"
+
+      # Set Students Environment Variable
+      - name: Student ID
+        run: |
+         echo "STUDENT_ID=300111441" >> $GITHUB_ENV
+         echo "PROJECT_PATH=$PWD" >> $GITHUB_ENV
+         
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        
+      # 3.DDL-DCL Assignment
+      # Load the DB schema and set the DB_NAME env variable
+      - name: Check 3.DDL-DCL Squema
+        run: |
+          mysql --host some-mysql --user root --password=password  < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql
+          echo "DB_NAME=`grep --ignore-case "CREATE DATABASE" ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql | awk '{ gsub(";",""); print $NF}'`" >> $GITHUB_ENV
+
+      # 3.DDL-DCL Assignment
+      # Displays the DB_NAME env variable and Load the DB data
+      - name: Check 3.DDL-DCL Data
+        run: |
+          echo ${DB_NAME}
+          mysql --host some-mysql --user root --password=password ${DB_NAME} < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-data.sql
