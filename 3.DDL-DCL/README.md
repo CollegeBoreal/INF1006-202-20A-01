@@ -32,7 +32,7 @@ Pour vérifier votre [`participation`](.scripts/Participation.md) et les erreurs
 
 | :one: [Participation](.scripts/Participation.md) | :two: Résultat | :three: Erreurs |
 |---------------------|----------------|-----------------|
-| <img src="images/Actions-Execution.png" width="311" height="126"></img> | <img src="images/Actions-result.png" width="434" height="245"></img> | <img src="images/Actions-job.png" width="493" height="348"></img> |
+| [<img src="images/Actions-Execution.png" width="311" height="126"></img>](.scripts/Participation.md) | <img src="images/Actions-result.png" width="434" height="245"></img> | <img src="images/Actions-job.png" width="493" height="348"></img> |
 
 ## :ab: [:construction:](documentation) Vérification 
 
