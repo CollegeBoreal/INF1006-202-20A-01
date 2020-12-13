@@ -40,13 +40,5 @@ jobs:
       # Displays the DB_NAME env variable and Load the DB data
       - name: Check 3.DDL-DCL Data
         run: |
-          mysql --host some-mysql --user root --password=password ${DB_NAME} < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-data.sql 2> 3.DDL-DCL/${STUDENT_ID}/.correction/ERROR.txt
-
-      - name: Commit files
-        run: |
-          date > generated.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit --message ":id: : ${STUDENT_ID}"
-          git push
+          echo ${DB_NAME}
+          mysql --host some-mysql --user root --password=password ${DB_NAME} < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-data.sql
