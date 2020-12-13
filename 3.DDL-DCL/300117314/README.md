@@ -40,15 +40,23 @@
 
 ![image](image/2.PNG)
 
+:pushpin: EN executant cette commande on va supprimer le client numéro un
+
 ```
 DELETE FROM CLIENTS WHERE client = 1 ;
-SELECT * FROM CLIENTS; 
-SELECT * FROM COMMANDES;
 ```
+
 
 
 ## :ok_hand:
 ![image](image/3.PNG)
+
+:pushpin: EN executant cette commande on peut vérifier si les informations concernant ce clien sont supprimées?
+
+```
+SELECT * FROM CLIENTS; 
+SELECT * FROM COMMANDES;
+```
 
 ## :ok_hand:
 
