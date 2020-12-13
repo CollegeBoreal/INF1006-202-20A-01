@@ -80,7 +80,7 @@ CREATE TABLE SERVICES
 (service INT AUTO_INCREMENT,
 employe INT,
 detail VARCHAR(100),
-Montant INT NOT NULL,
+montant INT NOT NULL,
 PRIMARY KEY(service, employe)
 );
 
