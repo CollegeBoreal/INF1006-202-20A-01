@@ -47,7 +47,7 @@ do
        OK_SCHEMA="[:x:]"
    fi
    F_DATA=${id}/${id}-data.sql
-   if [ -f "$F_DATA" ]; then
+   if [[ -f "$F_DATA" && ! -s "$F_DATA" ]]; then
        OK_DATA="[:heavy_check_mark:](../${F_DATA})"
    else
        OK_DATA="[:x:]"
