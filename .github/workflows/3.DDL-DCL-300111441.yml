@@ -1,4 +1,4 @@
-name: P.Projets
+name: 3.DDL-DCL-300111441
 
 on: [push]
 
@@ -24,6 +24,7 @@ jobs:
       - name: Student ID
         run: |
          echo "STUDENT_ID=300111441" >> $GITHUB_ENV
+         echo "PROJECT_PATH=$PWD" >> $GITHUB_ENV
          
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -32,4 +33,5 @@ jobs:
       - name: Check 3.DDL-DCL
         run: |
           cd  3.DDL-DCL/$STUDENT_ID
-          pwd
+          echo "PATH IS: "
+          echo ${PROJECT_PATH}
