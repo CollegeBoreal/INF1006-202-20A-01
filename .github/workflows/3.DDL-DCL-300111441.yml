@@ -32,5 +32,5 @@ jobs:
       # 3.DDL-DCL Assignment
       - name: Check 3.DDL-DCL
         run: |
-          mysql --user root --password=password  < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql
+          mysql --host some-mysql --user root --password=password  < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql
           mysql --host some-mysql --user root --password=password --execute "SHOW DATABASES;"
