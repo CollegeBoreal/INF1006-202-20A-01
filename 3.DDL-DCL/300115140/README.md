@@ -28,23 +28,16 @@ Voici le schéma des relations entre tables selon le procédé Reverse Engineer:
 
 ## Exemple de contrainte DDL
 
-Je fais une contrainte DDL sur la table VENTES_DE_PROD en utilisant CONSTRAINT et la fonction UNIQUE:
+Je fais une contrainte DDL sur la table VENTES_DE_PROD en utilisant CONSTRAINT et la fonction UNIQUE sur la table VENTES_DE_PROD  
+Elle correspond à la vente de produits wellness.
 
-```
-CREATE TABLE VENTES_DE_PROD (  
-  vente_de_prod INT AUTO_INCREMENT,  
-  client INT,  
-  produit INT,  
-  Prix INT NOT NULL,  
-  Date_de_vente DATE UNIQUE,  
-  PRIMARY KEY(vente_de_prod, client, produit),  
-  CONSTRAINT uc_client_produit UNIQUE (client, produit),  
-  FOREIGN KEY(client)  
-     REFERENCES CLIENTS(client),  
-  FOREIGN KEY(produit)  
-     REFERENCES PRODUITS(produit)  
-  );  
- ```
+
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/contr.PNG" width="350">
+
+
+Voici un autre exemple de contrainte: UNIQUE sur la table VENTES_DE_SERV:
+
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/unique.PNG" width="350">
 
 ## Requêtes liées aux rapports:
 
