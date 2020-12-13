@@ -33,6 +33,11 @@
 ![image](image/10.PNG)
 
 ## :pushpin::star:For example, si l'on supprime le client numéro 1, on n'aura plus ses information dans la table COMMANDES:
+```
+DELETE FROM CLIENTS WHERE client = 1 ;
+SELECT * FROM CLIENTS; 
+SELECT * FROM COMMANDES;
+```
 
 ![image](image/1.PNG)
 
