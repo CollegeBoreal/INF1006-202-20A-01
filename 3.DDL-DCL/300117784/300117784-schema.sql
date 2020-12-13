@@ -1,11 +1,6 @@
 
 
 CREATE database BMOnlineGaming;
-
-CREATE USER 'Bertrand'@'%' IDENTIFIED BY 'Bertrand_1';
-GRANT ALL ON BMOnlineGaming.* TO 'Bertrand'@'%';
-
-
 use BMOnlineGaming;
 
 CREATE TABLE CLIENTS(
@@ -37,7 +32,8 @@ Type_Article INT,
 quantite_Stock INT,
 foreign key(Type_Article) references TYPESARTICLES (Type_Article),
 foreign key(Fournisseur) references FOURNISSEURS (Fournisseur),
-primary key(Article,Fournisseur)
+primary key(Article,Fournisseur),
+CONSTRAINT quantite_nonzero CHECK(quantite_Stock<>0)
 
 );
 
@@ -58,5 +54,4 @@ foreign key(type_Service) references TYPESDESERVICES (type_Service),
 primary key(clients,Article,type_Service)
 
 );
-
 
