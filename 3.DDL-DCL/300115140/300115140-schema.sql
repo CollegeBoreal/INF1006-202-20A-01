@@ -1,21 +1,21 @@
 
--- *********************************
+
 -- Création de ma DATABASE
--- *********************************
+
 
 CREATE DATABASE IF NOT EXISTS ETREBIEN;
 
--- *********************************
+USE ETREBIEN;
+
+
 -- Donner les autorisations
--- *********************************
+
 CREATE USER IF NOT EXISTS 'zack'@'%' IDENTIFIED BY 'password';
 GRANT ALL ON ETREBIEN.* TO 'zack'@'%';
 
-USE ETREBIEN;
 
--- *********************************
 --  Création des TABLES 
--- ********************************
+
 
 CREATE TABLE FOURNISSEURS (
   fournisseur INT AUTO_INCREMENT,
