@@ -17,9 +17,9 @@ $ docker container exec  --interactive some-mysql mysql --user root --password=p
 
 ## [Participation](.scripts/Participation.md)
 
-| | |
-|-|-|
-| <img src="images/Actions-Execution.png" width="1244" height="506"></img>" | <img src="images/Actions-result.png" width="1738" height="980"></img>" | <img src="images/Actions-job.png" width="1972" height="1392"></img>" |
+| | | |
+|-|-|-|
+| <img src="images/Actions-Execution.png" width="311" height="126"></img>" | <img src="images/Actions-result.png" width="434" height="245"></img>" | <img src="images/Actions-job.png" width="493" height="348"></img>" |
 
 ## [:construction:](documentation) Vérification 
 
