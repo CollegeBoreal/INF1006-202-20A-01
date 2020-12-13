@@ -3,7 +3,7 @@
 
 # :pushpin: RAPPORTS
 --- 
-### 1. :Bell:Afficher la somme de tous les articles vendu
+### 1. :bell:Afficher la somme de tous les articles vendu
 
 ```
 SELECT (montant * quantite) As sommetotal,Nom_Article FROM SERVICES join CLIENTS 
