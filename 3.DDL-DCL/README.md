@@ -28,7 +28,7 @@ $ docker container exec  --interactive some-mysql mysql --user root --password=p
 
 ## :b: [Participation](.scripts/Participation.md)
 
-Pour vérifier votre [`participation`](.scripts/Participation.md) et les erreurs qui pourraient se cacher, suivez les images ci-dessous représantant la notation automatique avec `github actions`
+Pour vérifier votre [`participation`](.scripts/Participation.md) et les erreurs qui pourraient se cacher, suivez les images ci-dessous représentant la notation automatique avec `github actions`
 
 | :one: [Participation](.scripts/Participation.md) | :two: Résultat | :three: Erreurs |
 |---------------------|----------------|-----------------|
