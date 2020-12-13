@@ -62,7 +62,7 @@ CREATE TABLE VENTES_DE_SERV (
   vente_de_serv INT AUTO_INCREMENT,
   client INT,
   Prix INT NOT NULL,
-  Date_de_vente DATE,
+  Date_de_vente DATE UNIQUE,
   service INT,
   PRIMARY KEY(vente_de_serv, client, service),
   FOREIGN KEY(client)
