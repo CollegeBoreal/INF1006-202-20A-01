@@ -54,6 +54,14 @@
 ## :white_check_mark:
 
 ## :pushpin::star: quelques Requêtes selon les données:
+```
+SELECT COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom FROM COMMANDES  
+JOIN EMPLOYES USING (employe)  
+JOIN CLIENTS USING (client)  
+GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom;
+
+```
+
 ![image](image/11.PNG)
 
 
