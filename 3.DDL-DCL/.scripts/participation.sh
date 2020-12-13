@@ -54,7 +54,7 @@ do
          OK_DATA="[:x:](../${F_DATA})"
       fi
    else
-       OK_DATA="[:x:]"
+       OK_DATA="[:x:](../${F_DATA})"
    fi
    OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions](${URL}/actions?query=workflow:3.DDL-DCL-${id}) | "
    echo ${OK}
