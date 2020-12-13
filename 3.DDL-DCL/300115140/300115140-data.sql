@@ -48,7 +48,7 @@ INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (6, 131
 INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (1, 111.02,'2020-10-23', 3);
 INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (2, 113,'2020-02-03', 5);
 INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (4, 110,'2020-03-01', 4);
-INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (5, 180,'2020-03-01',5);
+INSERT INTO VENTES_DE_SERV (client, Prix, Date_de_vente, service) VALUES (5, 180,'2020-04-01',5);
 
 
 -- La table VENTES_DE_PROD
