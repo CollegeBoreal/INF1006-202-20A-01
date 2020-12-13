@@ -19,7 +19,7 @@ $ docker container exec  --interactive some-mysql mysql --user root --password=p
                    ~/Developer/INF1006-202-20A-01/3.DDL-DCL/300116670/300116670-schema.sql 
 ```
 
-- [ ] Charger les données, `BMOnlineGaming` étant le nom dee la base de données à utiliser.
+- [ ] Charger les données, `BMOnlineGaming` étant le nom de la base de données à utiliser.
 
 ```
 $ docker container exec  --interactive some-mysql mysql --user root --password=password   BMOnlineGaming < \
