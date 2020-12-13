@@ -31,7 +31,7 @@ jobs:
         
       # 3.DDL-DCL Assignment
       # Load the DB schema and set the DB_NAME env variable
-      - name: Check 3.DDL-DCL Squema
+      - name: Check 3.DDL-DCL Schema
         run: |
           mysql --host some-mysql --user root --password=password  < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql
           echo "DB_NAME=`grep --ignore-case "CREATE DATABASE" ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql | awk '{ gsub(";",""); print $NF}'`" >> $GITHUB_ENV
