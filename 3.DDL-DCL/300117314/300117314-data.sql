@@ -32,14 +32,14 @@ INSERT INTO DEPARTEMENTS (domaine, telephone, responsable, employe) VALUES ( 'Ma
 
 -- remplir la table de SERVICES:
 
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('2', 'la carte mere a ete morte', '3500');
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('4', 'le ventilateur marche bien, probleme etait cable de alimentation', '150');
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('6', 'les logiciels de Firewall avaitent besion de mettre en jour', '280'); 
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('3', 'on a remplace des interfaces', '86 '); 
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('1', 'ce modem marche plus', '0'); 
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('5', 'on a reinstaller system de exploitation', '220');
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('2', 'boite de alimentation a ete remplacee','55' );
-INSERT INTO SERVICES (employe, detail, prix) VALUES ('7', 'mis a jour', '65'); 
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('2', 'la carte mere a ete morte', '3500');
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('4', 'le ventilateur marche bien, probleme etait cable de alimentation', '150');
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('6', 'les logiciels de Firewall avaitent besion de mettre en jour', '280'); 
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('3', 'on a remplace des interfaces', '86 '); 
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('1', 'ce modem marche plus', '0'); 
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('5', 'on a reinstaller system de exploitation', '220');
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('2', 'boite de alimentation a ete remplacee','55' );
+INSERT INTO SERVICES (employe, detail, montant) VALUES ('7', 'mis a jour', '65'); 
 
 
 
