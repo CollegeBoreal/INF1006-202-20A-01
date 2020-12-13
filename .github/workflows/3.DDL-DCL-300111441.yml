@@ -41,3 +41,4 @@ jobs:
           echo "DB_NAME=`grep --ignore-case "CREATE DATABASE" ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql | awk '{ gsub(";",""); print $3}'`"
           echo "DB_NAME=`grep --ignore-case "CREATE DATABASE" ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-schema.sql | awk '{ gsub(";",""); print $3}'`" >> $GITHUB_ENV
           echo ${DB_NAME}
+          mysql --host some-mysql --user root --password=password ${DB_NAME} < ${PROJECT_PATH}/3.DDL-DCL/${STUDENT_ID}/${STUDENT_ID}-data.sql
