@@ -35,8 +35,6 @@ echo "|------|----------------------------|---------------|----------|---------|
 
 i=0
 
-actions?query=workflow%3A3.DDL-DCL-300111441
-
 for id in "${ETUDIANTS[@]}"
 do
    U_AVATAR="<image src='https://avatars0.githubusercontent.com/u/${AVATARS[$i]}?s=460&v=4' width=20 height=20></image>"
@@ -47,12 +45,12 @@ do
        OK_SCHEMA="[:x:]"
    fi
    F_DATA=${id}/${id}-data.sql
-   if [ -f "$F_SCHEMA" ]; then
+   if [ -f "$F_DATA" ]; then
        OK_DATA="[:heavy_check_mark:](../${F_DATA})"
    else
        OK_DATA="[:x:]"
    fi
-   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions]i(/actions?query=workflow/3.DDL-DCL-${id}) | "
+   OK="| ${i} | [${id}](../${id}) - ${U_AVATAR} | ${OK_SCHEMA} | ${OK_DATA} | [:construction: Actions](/actions?query=workflow/3.DDL-DCL-${id}) | "
    echo ${OK}
    let "i++"
 done
