@@ -12,12 +12,47 @@ Image
 <img src="MCD.JPG" witdth="900" height="900"></img>
 ```{r}
 ```
-Rules
+## :rocket: Requete
 --------------------------------------------------
-### Chart B
+### 1. L'ALBUM QUI A LE PLUS DE SONG
 ```{r}
+-- L'ALBUM QUI A LE PLUS DE SONG
+
+SELECT Title_Album, COUNT(song) AS NB_SONG FROM ALBUMS JOIN ALBUMMUSIC USING(album)
+JOIN SONGS USING(song)
+GROUP BY ALBUM 
+ORDER by NB_SONG DESC
+LIMIT 1;
+```
+
+### 2. AFFICHER TOUTE LES MUSIC PAR GENRE
+```{r}
+-- AFFICHER TOUTE LES MUSIC PAR GENRE
+
+SELECT Name_Music,Title_Genre FROM SONGS JOIN GENRES USING(genre);
 
 ```
+
+### 3. AFFICHER TOUTE LES MUSIC PAR GENRE
+```{r}
+-- TOUT LES ALBUMS DE L'ARTIST "KOFFI OLIMIDE"
+
+SELECT Name_Artist,Title_Album FROM ALBUMS JOIN ARTISTALBUM
+USING(album) JOIN ARTISTS USING(artist) WHERE Name_Artist="KOFFI OLIMIDE";
+
+```
+
+
+### 4. AFFICHER TOUTE LES MUSIC PAR GENRE
+```{r}
+-- TOUTES LES MUSICS DE L'ANNEE 2015
+
+SELECT Name_Music FROM ALBUMS JOIN ALBUMMUSIC USING(album)
+JOIN SONGS USING(song) WHERE Release_date BETWEEN '2015-00-00' AND  '2015-12-31';
+
+```
+
+
 ### Chart C
 ```{r}
 ```
