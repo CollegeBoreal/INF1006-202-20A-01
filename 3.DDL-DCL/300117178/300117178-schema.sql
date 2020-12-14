@@ -56,3 +56,5 @@ FOREIGN KEY (album) REFERENCES ALBUMS(album),
 PRIMARY KEY(song,album)
 
 );
+-- index
+CREATE INDEX idx_AM ON ALBUMMUSIC (song,album)
