@@ -1,3 +1,7 @@
+-- Dans le domaine
+
+USE ALL_TELECOM;
+
 -- DONNÉES DE LA TABLE FOURNISSEURS
 INSERT INTO FOURNISSEURS (nom, telephone, email, addresse) VALUES ('ROGERS', '6477777777', 'internet@rogers.ca', '7205 Goreway Dr Kiosk 4');
 INSERT INTO FOURNISSEURS (nom, telephone, email, addresse) VALUES ('BELL CANADA', '8663011942', 'internet@bell.ca', '2664 Islington Ave, Etobicoke, ON M9V 2X6');
