@@ -94,7 +94,7 @@ Résultat:
 Résultat:
 
 
-<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain%204.PNG" width="550">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain%205.PNG" width="550">
 
 
 
