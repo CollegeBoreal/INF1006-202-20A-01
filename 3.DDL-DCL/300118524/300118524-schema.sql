@@ -14,38 +14,65 @@ USE ALL_TELECOM;
 CREATE TABLE FOURNISSEURS (
     fournisseur INT AUTO_INCREMENT,
     nom VARCHAR(24) NOT NULL,
-    telephone INT NOT NULL,
+    telephone NUMERIC NOT NULL,
     email VARCHAR(24),
     addresse VARCHAR(50),
     PRIMARY KEY(fournisseur)
     );
     
 -- CRÉER TABLE VITESSE
-CREATE TABLE VITESSE (
+CREATE TABLE VITESSES (
     vitesse INT AUTO_INCREMENT,
     download VARCHAR (8),
     upload VARCHAR (8),
     fournisseur INT,
-    PRIMARY KEY(vitesse),
-    FOREIGN KEY(fournisseur) REFERENCES FOURNISSEURS(fournisseur)
+    PRIMARY KEY(vitesse)
     );
+    
+-- CRÉER TABLE PRODUITS
+    CREATE TABLE PRODUITS (
+produit INT AUTO_INCREMENT,
+cable BOOLEAN ,
+dsl BOOLEAN,
+fibre BOOLEAN,
+fournisseur INT,
+vitesse INT,
+PRIMARY KEY (produit, fournisseur),
+  INDEX fournisseur (fournisseur ASC) VISIBLE,
+  CONSTRAINT PRODUITS_ibfk_1
+    FOREIGN KEY (fournisseur)
+    REFERENCES FOURNISSEURS (fournisseur)
+    ON DELETE CASCADE,
+  INDEX fk_PRODUITS_VITESSES1_idx (vitesse ASC) VISIBLE,
+  CONSTRAINT fk_PRODUITS_VITESSES1
+    FOREIGN KEY (vitesse)
+    REFERENCES VITESSES (vitesse)
+    ON DELETE CASCADE
+    
+);
+
+    
 
 -- CRÉER TABLE ZONE
 CREATE TABLE ZONES (
     zone INT AUTO_INCREMENT,
     province VARCHAR (30),
     ville VARCHAR (30),
-    quartier VARCHAR (30),
-    PRIMARY KEY(zone)
+    PRIMARY KEY(zone),
+    INDEX zone (zone ASC) VISIBLE
     );
     
+    
 -- CRÉER TABLE ROUTEURS
-CREATE TABLE ROUTEURS (
-    routeur INT AUTO_INCREMENT,
-    MAC VARCHAR (24),
-    vitesse INT,
-    PRIMARY KEY(routeur, MAC),
-    FOREIGN KEY(vitesse) REFERENCES VITESSE(vitesse)
+CREATE TABLE EQUIPEMENTS (
+    equipement INT AUTO_INCREMENT,
+    routeur BOOLEAN,
+    rj45 BOOLEAN,
+    coaxial BOOLEAN,
+    alimentation BOOLEAN,
+    fournisseur INT,
+    PRIMARY KEY(equipement),
+    FOREIGN KEY(fournisseur) REFERENCES FOURNISSEURS(fournisseur)
     );  
 
 -- CRÉER TABLE CLIENT
@@ -54,30 +81,40 @@ CREATE TABLE CLIENTS (
     nom VARCHAR(24) NOT NULL,
     prenom VARCHAR(24) NOT NULL,
     addresse VARCHAR(50) NOT NULL,
-    telephone INT NOT NULL,
-    fournisseur INT,
-    routeur INT,
+    telephone NUMERIC NOT NULL,
     zone INT,
-    MAC VARCHAR (24),
     PRIMARY KEY(client, telephone),
-    FOREIGN KEY(routeur) REFERENCES ROUTEURS(routeur),
+    CONSTRAINT ZONES_ibfk_1
       FOREIGN KEY(zone) REFERENCES ZONES(zone)
     );
+
     
 -- CRÉER TABLE PRIX
 CREATE TABLE PRIX (
     vitesse INT,
     prix INT,
     PRIMARY KEY(vitesse, prix),
-    FOREIGN KEY(vitesse) REFERENCES VITESSE(vitesse)
+    CONSTRAINT PRIX_ibfk_1
+    FOREIGN KEY (vitesse)
+    REFERENCES VITESSES (vitesse)
     );
-    
--- CRÉER TABLE FACTURE
-CREATE TABLE FACTURES (
-    client INT ,
-    prix INT,
-    facture FLOAT,
-    PRIMARY KEY(client, prix),
-    FOREIGN KEY(client) REFERENCES CLIENTS(client)
-    ); 
--- Error Code: 1822. Failed to add the foreign key constraint. Missing index for constraint 'FACTURES_ibfk_2' in the referenced table 'PRIX'
+
+-- CRÉER TABLE VENTES
+CREATE TABLE VENTES (
+vente INT,
+produit INT,
+client INT,
+telephone NUMERIC,
+PRIMARY KEY (vente,produit, client, telephone),
+INDEX fk_VENTES_CLIENTS1 (client ASC, telephone ASC) VISIBLE,
+INDEX fk_VENTES_PRODUITS1_idx (produit ASC) VISIBLE,
+  CONSTRAINT fk_VENTES_CLIENTS1
+    FOREIGN KEY (client, telephone)
+    REFERENCES CLIENTS (client, telephone),
+    CONSTRAINT fk_VENTES_PRODUITS1
+    FOREIGN KEY (produit)
+    REFERENCES PRODUITS (produit)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
