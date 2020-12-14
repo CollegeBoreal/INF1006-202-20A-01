@@ -44,6 +44,9 @@ insert into SONGS(Name_Music,Source_Music,genre) values('Requiem','src/requiem.m
 -- insertion artist music
 insert into AlbumMusic(song,album) values(1,3);
 insert into AlbumMusic(song,album) values(2,3);
+insert into AlbumMusic(song,album) values(5,2);
+insert into AlbumMusic(song,album) values(6,2);
+insert into AlbumMusic(song,album) values(7,2);
 
 -- insertion artist albums
 insert into ArtistAlbum(artist,album) values(6,1);
