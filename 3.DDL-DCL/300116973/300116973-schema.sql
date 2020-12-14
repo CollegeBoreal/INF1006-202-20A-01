@@ -72,7 +72,8 @@ Montant INT NOT NULL,
 Quantites INT NOT NULL,
 Date_dachat DATETIME,
 produit INT,
-PRIMARY KEY (achat, produit),
+Matricule INT,
+PRIMARY KEY (achat, produit, Matricule),
 FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
 );
 
@@ -85,8 +86,7 @@ Nom VARCHAR(25) NOT NULL,
 prenom VARCHAR(25) NULL,
 Numero_de_telephone INT NOT NULL,
 Sexe_feminin BOOLEAN DEFAULT NULL,
-achat INT,
-PRIMARY KEY (Matricule, achat),
+PRIMARY KEY (Matricule),
  INDEX `ach_ind` (`achat`),
   CONSTRAINT `Nom_ibfk_1` 
      FOREIGN KEY (achat) REFERENCES ACHATS (achat)
