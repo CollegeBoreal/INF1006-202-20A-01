@@ -36,11 +36,11 @@ INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, q
 
 -- donnee de la table achats
 
-INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (100000, 20, '2020-11-05''09:19:45', 1);
-INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (1200000, 60, '2020-11-05''09:19:45', 3);
-INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (11100000, 60, '2020-11-05''09:19:45', 2);
-INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (50000, 20, '2020-11-05''09:19:45', 6);
-INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit) VALUES (4000, 40, '2020-11-05''09:19:45', 5);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (100000, 20, '2020-11-05''09:19:45', 1, 1);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (1200000, 60, '2020-11-05''09:19:45', 3, 1);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (11100000, 60, '2020-11-05''09:19:45', 2, 1);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (50000, 20, '2020-11-05''09:19:45', 6, 1);
+INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (4000, 40, '2020-11-05''09:19:45', 5, 1);
 
 
 -- donnee de la table employes
