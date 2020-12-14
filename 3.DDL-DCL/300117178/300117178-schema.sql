@@ -1,8 +1,8 @@
 
 CREATE DATABASE IF NOT EXISTS AfricaMusic;
 
-CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
-GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
+-- CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
+-- GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
 use AfricaMusic;
 
 CREATE TABLE IF NOT EXISTS  COUNTRIES(
