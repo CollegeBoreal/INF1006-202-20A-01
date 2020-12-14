@@ -45,15 +45,13 @@ INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('1', '1',
 INSERT INTO EQUIPEMENTS (routeur, rj45, coaxial, alimentation) VALUES ('0', '0', '0','0');
 
 
--- NEXT
-INSERT INTO FACTURES (client, prix, facture) VALUES ('1','109', '79');
-INSERT INTO FACTURES (client, prix, facture) VALUES ('2', '39', '39');
-INSERT INTO FACTURES (client, prix, facture) VALUES ('3', '49', '49');
-INSERT INTO FACTURES (client, prix, facture) VALUES ('4', '59', '59');
-INSERT INTO FACTURES (client, prix, facture) VALUES ('5', '69', '69');
-INSERT INTO FACTURES (client, prix, facture) VALUES ('6', '30', '30');
-
-
+-- DONNÉES DE LA TABLE CLIENTS
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('ouro', 'zoureni', '1 rue younge', '5147779999');
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('fofana', 'sekou', '1 rue north york', '2125556767');
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('pierre', 'françois', '1 rue amiens', '4380007777');
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('jean', 'luc', '1 rue pie 9 ', '6471114444');
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('marie', 'louis', '1 rue bourassa', '5146661111');
+INSERT INTO CLIENTS (nom, prenom, addresse, telephone) VALUES ('anaelle', 'valery', '1 rue  lacordaire', '8198887575');
 
 
 
