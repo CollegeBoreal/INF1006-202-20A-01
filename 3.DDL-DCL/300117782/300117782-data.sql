@@ -43,10 +43,10 @@ INSERT INTO CLIENTS (Nom_du_client, Commande) VALUES ("Indri", 4);
 
 -- Creation des donnens de la table facture
 
-INSERT INTO FACTURE(montant, quantites) VALUES (15, 1);
-INSERT INTO FACTURE(montant, quantites) VALUES (20, 3);
-INSERT INTO FACTURE(montant, quantites) VALUES (25, 1);
-INSERT INTO FACTURE(montant, quantites) VALUES (15, 2);
+INSERT INTO FACTURES (montant, quantites) VALUES (15, 1);
+INSERT INTO FACTURES (montant, quantites) VALUES (20, 3);
+INSERT INTO FACTURES (montant, quantites) VALUES (25, 1);
+INSERT INTO FACTURES (montant, quantites) VALUES (15, 2);
 
 
 -- Creation des donnees de la table paiement
