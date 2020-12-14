@@ -91,3 +91,18 @@ JOIN FACTURES USING (commande)
 GROUP BY FACTURES.Montant, PRODUITS.Nom_du_produit;
 
 ```
+
+## :green_heart: EXPLAIN des differents requetes:
+
+![image](images/ex1.JPG)
+
+![image](images/ex2.JPG)
+
+![image](images/ex3.JPG)
+
+![image](images/ex4.JPG)
+
+![image](images/ex5.JPG)
+
+![image](images/ex6.JPG)
+
