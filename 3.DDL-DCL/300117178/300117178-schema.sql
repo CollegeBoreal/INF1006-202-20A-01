@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS  ALBUMS(
 album INT PRIMARY KEY AUTO_INCREMENT,
 Title_Album VARCHAR(20)NOT NULL UNIQUE,
 Release_date date,
-Cover_Album VARCHAR(30)
+Cover_Album VARCHAR(30),
+CONSTRAINT ck_date CHECK (Release_date <> '00-00-00')
 );
 
 CREATE TABLE IF NOT EXISTS  GENRES(
@@ -53,8 +54,8 @@ song INT,
 album INT,
 FOREIGN KEY (song) REFERENCES SONGS(song),
 FOREIGN KEY (album) REFERENCES ALBUMS(album),
-PRIMARY KEY(song,album)
+PRIMARY KEY(song,album),
+INDEX `inx_AS` (song,album)
 
 );
--- index
-CREATE INDEX idx_AM ON ALBUMMUSIC (song,album)
+
