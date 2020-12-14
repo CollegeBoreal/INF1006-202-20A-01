@@ -24,7 +24,7 @@ album INT PRIMARY KEY AUTO_INCREMENT,
 Title_Album VARCHAR(20)NOT NULL UNIQUE,
 Release_date date,
 Cover_Album VARCHAR(30),
-CONSTRAINT ck_date CHECK (Release_date <> '00-00-00')
+CONSTRAINT ck_date CHECK (Release_date <> 00-00-00)
 );
 
 CREATE TABLE IF NOT EXISTS  GENRES(
