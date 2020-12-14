@@ -51,10 +51,10 @@ INSERT INTO FACTURES (montant, quantites) VALUES (15, 2);
 
 -- Creation des donnees de la table paiement
 
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, client, facture, commande) VALUES (15, '2020-03-02''05:40:30', 1, 1,1);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, client, facture, commande) VALUES (25, '2020-03-05''08:10:30', 2, 2,2);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, client, facture, commande) VALUES (15, '2020-11-07''07:20:90', 3, 3,3);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, client, facture, commande) VALUES (15, '2020-11-06''10:350:30', 4, 4,4);
+INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture, commande) VALUES (15, '2020-03-02''05:40:30', 1, 1,1);
+INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture, commande) VALUES (25, '2020-03-05''08:10:30', 2, 2,2);
+INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture, commande) VALUES (15, '2020-11-07''07:20:90', 3, 3,3);
+INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture, commande) VALUES (15, '2020-11-06''10:350:30', 4, 4,4);
 
 
 
