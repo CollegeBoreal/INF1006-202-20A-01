@@ -75,6 +75,18 @@ Résultat:
 <img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/fournisseur.PNG" width="550">
 
 
+**3. Utiliser une contrainte avec EXPLAIN sans utiliser un INDEX:**  
+
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain1.PNG" width="550">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain2.PNG" width="550">
+
+
+**4. Utiliser une contrainte EXPLAIN en utiliser deux INDEX:
+
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain3.PNG" width="550">
+<img src="https://github.com/CollegeBoreal/INF1006-202-20A-01/blob/master/3.DDL-DCL/300115140/images/explain%204.PNG" width="550">
+
+
 
 
 
