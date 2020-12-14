@@ -48,8 +48,6 @@ JOIN SONGS USING(song) WHERE Release_date BETWEEN '2015-00-00' AND  '2015-12-31'
 ```
 
 
-### Chart C
-```{r}
-```
+
 
 
