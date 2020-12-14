@@ -1,14 +1,9 @@
 #  :a: AfricaMusic 
-
----
- Gestion AfricaMusic
----
 ```{r setup, include=FALSE}
-Description
+Gestion des musisc des artist africains 
 ```
-Image 
+## :rocket: MCD
 --------------------------------------------------
-### MCD
 <img src="MCD.JPG" witdth="900" height="900"></img>
 ```{r}
 ```
