@@ -63,6 +63,17 @@ CONSTRAINT commande_nonzero CHECK (commande <> 0)
 ); 
 
 
+-- creation de la table employes
+
+CREATE TABLE EMPLOYES(
+Matricule INT AUTO_INCREMENT,
+Nom VARCHAR(25) NOT NULL,
+prenom VARCHAR(25) NULL,
+Numero_de_telephone INT NOT NULL,
+Sexe_feminin BOOLEAN DEFAULT NULL,
+PRIMARY KEY (Matricule)
+);
+
 
 -- creation de la table achats
 
@@ -74,24 +85,10 @@ Date_dachat DATETIME,
 produit INT,
 Matricule INT,
 PRIMARY KEY (achat, produit, Matricule),
+FOREIGN KEY (Matricule) REFERENCES EMPLOYES (Matricule),
 FOREIGN KEY (produit) REFERENCES PRODUITS (produit)
 );
 
-
--- creation de la table employes
-
-CREATE TABLE EMPLOYES(
-Matricule INT AUTO_INCREMENT,
-Nom VARCHAR(25) NOT NULL,
-prenom VARCHAR(25) NULL,
-Numero_de_telephone INT NOT NULL,
-Sexe_feminin BOOLEAN DEFAULT NULL,
-PRIMARY KEY (Matricule),
- INDEX `ach_ind` (`achat`),
-  CONSTRAINT `Nom_ibfk_1` 
-     FOREIGN KEY (achat) REFERENCES ACHATS (achat)
-     ON DELETE CASCADE
-);
 
 -- creation de la table factures
 
