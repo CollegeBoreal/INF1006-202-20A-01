@@ -41,7 +41,7 @@ Voici un autre exemple de contrainte: UNIQUE sur la table VENTES_DE_SERV:
 
 ## Requêtes liées aux rapports:
 
-**Rapport avec 3 tables avec regroupement**  
+------- |**Rapport avec 3 tables avec regroupement**|------------  
 
 **1. Séléctionner tous les clients qui ont achetés des produits au moins de septembre 2020, leur nom, et le nombre de produits achetés par client:**
 
