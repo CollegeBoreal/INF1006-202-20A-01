@@ -11,7 +11,7 @@ CREATE USER 'nathalie'@'%' IDENTIFIED BY 'password';
 
 -- donnee tout les privileges a l'ulilisateur pascaline
 
-GRANT ALL ON superette_2S_plus.* TO 'admin'@'%';
+GRANT ALL ON superette_2S_plus.* TO 'nathalie'@'%';
 
 -- creation de la table fournisseurs
 
