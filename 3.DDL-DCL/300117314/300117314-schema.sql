@@ -1,7 +1,7 @@
 
 -- Comment créer une DATABASE appellée MORTIMAINTENANCE:
 
-CREATE DATABASE mortimaintenance;
+CREATE DATABASE IF NOT EXISTS mortimaintenance;
 
 
 -- Comment créer un utilsateur pour l'utilisation à distance:
