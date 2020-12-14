@@ -68,7 +68,7 @@ PRIMARY KEY (plat)
  CREATE TABLE FACTURES (
   facture INT NOT NULL AUTO_INCREMENT,
   montant INT NULL,
-  commade INT,
+  commande INT,
   quantites INT DEFAULT NULL,
   PRIMARY KEY (facture),
   FOREIGN KEY (commande) REFERENCES COMMANDES (commande)
