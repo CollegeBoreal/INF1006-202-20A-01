@@ -1,5 +1,5 @@
 
-CREATE DATABASE AfricaMusic;
+CREATE DATABASE IF NOT EXISTS AfricaMusic;
 
 CREATE USER 'boris'@'%' IDENTIFIED BY 'boris_1';
 GRANT ALL ON AfricaMusic.* TO 'boris'@'%';
