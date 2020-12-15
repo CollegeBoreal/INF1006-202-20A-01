@@ -33,6 +33,13 @@ INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, q
 INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (14, '2020-11-01', '2020-11-05''10:15:40', 20, 6, 3);
 INSERT INTO COMMANDES (commande, Date_de_commande, Date_et_heure_de_livraison, quantite, produit, client) VALUES (15, '2020-11-01', '2020-11-05''09:19:45', 40, 5, 4);
 
+-- donnee de la table employes
+
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone, Sexe_feminin) VALUES ('Noumsi', 'Pascaline', 983344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuekam', 'suzanne', 783344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('kameni', 'Andree', 983345500, FALSE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('lago', 'Nathalie', 683344556, TRUE);
+INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin) VALUES ('tuedjo', 'cristiane', 773344556, TRUE);
 
 -- donnee de la table achats
 
@@ -43,13 +50,6 @@ INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES 
 INSERT INTO ACHATS (Montant, quantites, Date_dachat, produit, Matricule) VALUES (4000, 40, '2020-11-05''09:19:45', 5, 1);
 
 
--- donnee de la table employes
-
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone, Sexe_feminin, achat) VALUES ('Noumsi', 'Pascaline', 983344556, TRUE, 1);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('tuekam', 'suzanne', 783344556, TRUE, 1);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('kameni', 'Andree', 983345500, FALSE, 2);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('lago', 'Nathalie', 683344556, TRUE, 3);
-INSERT INTO EMPLOYES (Nom, Prenom, Numero_de_telephone,  Sexe_feminin, achat) VALUES ('tuedjo', 'cristiane', 773344556, TRUE, 4);
 
 -- donnee de la table facture
 
