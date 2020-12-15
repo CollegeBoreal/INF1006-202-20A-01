@@ -49,7 +49,7 @@ CREATE TABLE VENTES(
 vente INT AUTO_INCREMENT,
 client INT,
 produit INT,
-quantités INT,
+quantites INT,
 Date_et_heure_de_la_vente DATETIME NOT NULL, 
 Date_et_heure_de_livraison DATETIME NOT NULL,
 PRIMARY KEY (vente,client,produit),
@@ -57,24 +57,36 @@ FOREIGN KEY (produit) REFERENCES PRODUITS(produit),
 FOREIGN KEY (client) REFERENCES CLIENTS(client)
 );
 
+CREATE TABLE PRIX_LOCATIONS(
+prix_location INT AUTO_INCREMENT,
+prix INT,
+PRIMARY_KEY (prix_location)
+);
+
 CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
 produit INT,
-prix INT,
+prix_location INT,
 PRIMARY_KEY (location),
-FOREIGN KEY (produit) REFERENCES PRODUITS(produit);
+FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
+FOREIGN KEY (prix_location) REFERENCES PRIX_LOCATIONS(prix_location)
+);
 
   
-CREATE TABLE SERVICE
+CREATE TABLE SERVICE(
 service INT AUTO_INCREMENT,
 client INT,
-quantité INT,
+quantite INT,
 location INT,
+prix_location,
 date_de_sortie DATETIME NOT NULL,
 date_de_retour DATETIME DEFAULT NULL,
-PRIMARY_KEY(service_location,client,prix),
+PRIMARY_KEY(service_location,client,prix_location),
 FOREIGN KEY(client) REFERENCES CLIENTS(client),
 FOREIGN KEY(location) REFERENCES LOCATIONS(location);
+FOREIGN_KEY(prix_location) REFERENCES PRIX_LOCATIONS(prix_location)
+);
+
 
 
 
