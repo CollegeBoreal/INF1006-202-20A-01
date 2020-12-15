@@ -46,8 +46,16 @@ SELECT Name_Music FROM ALBUMS JOIN ALBUMMUSIC USING(album)
 JOIN SONGS USING(song) WHERE Release_date BETWEEN '2015-00-00' AND  '2015-12-31';
 
 ```
+-------------------------------------------------
+## :rocket: Explain
+--------------------------------------------------
 
-
+1. EXPLAIN SELECT Title_Album, COUNT(song) AS NB_SONG FROM ALBUMS JOIN ALBUMMUSIC USING(album)
+JOIN SONGS USING(song)
+GROUP BY ALBUM 
+ORDER by NB_SONG DESC
+LIMIT 1;
+![L'ALBUM QUI A LE PLUS DE SONG](img/explain1)
 
 
 
