@@ -17,12 +17,30 @@ CONSTRAINT quantite_nonzero CHECK(quantite_Stock<>0)
 
 # :pushpin: RAPPORTS
 --- 
-### 1. :bell:Afficher la somme de tous les articles vendu
+### 1. :bell:Afficher la somme des montants de  tous les articles vendu
 
 ```
 SELECT (montant * quantite) As sommetotal,Nom_Article FROM SERVICES join CLIENTS 
 USING (clients) join ARTICLES USING (Article) 
 join TYPESARTICLES USING (type_Article)
 where Type_Article=1;
+
+```
+--- 
+### 2. :bell:Afficher tous les articles qui ont ete depanne a partir de 2020 
+
+```
+
+SELECT Nom_Article FROM SERVICES JOIN TYPESDESERVICES USING(type_Service)
+JOIN ARTICLES USING (Article)
+WHERE nom_du_Service='depanage' and Date_Services between '2020-00-00' and '2020-12-31';
+
+```
+---
+### 3. :bell:Afficher le nombre de Jeux 
+
+```
+SELECT COUNT(Article) AS NB_Jeux FROM ARTICLES JOIN TYPESARTICLES USING(Type_Article)
+WHERE Nom_Type_Article='Jeux';
 
 ```
