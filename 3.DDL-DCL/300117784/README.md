@@ -49,17 +49,17 @@ WHERE Nom_Type_Article='Jeux';
 ---
 
 ### 1. :exclamation: 
-![Somme des Montant Vendu](img/Explain1.JPG)
+![Somme des Montant Vendu](Explain1.PNG)
 
 ---
 
 ### 2. :exclamation: 
-![Tous les articles Depanne](img/Explain2.JPG)
+![Tous les articles Depanne](Explain2.PNG)
 
 ---
 
 ### 3. :exclamation: 
-![Le Nombre de Jeux ](img/Explain3.JPG)
+![Le Nombre de Jeux ](Explain3.PNG)
 
 ---
 
