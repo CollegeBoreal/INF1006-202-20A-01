@@ -17,11 +17,16 @@ INSERT INTO PRODUITS (Nom_du_produit,Prix_du_produit,fournisseur) VALUES('Moto t
 
 -- donnees table ventes
 
-INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES('',2250,'standard')
-INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES('Goldwing',27000,'premium')
-INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES('Buggy 4x4',1000,'standard')
-INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES('Quad T3',7000,'premium')
-INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES('SSV',10000,'premium')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(1,2,10,'2020-05-15 12:30:00','2020-05-15 17:00:00')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(3,3,5,'2020-06-30 10:30:SS','2020-06-30 15h:00:07')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(5,8,1,'2020-06-25 15:00:00','2020-06-25 20:30:30')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(2,4,20,'2019-01-31 09:15:00','2020-01-31 12:00:50')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(4,5,15,' 2019-02-02 09:30:00','2019-02-02 15:00:00')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(1,7,2,'2020-05-15 12:30:00','2020-05-20 17:00:00')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(3,5,5,'2020-03-30 10:30:00','2020-03-30 15h:00:07')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(5,1,1,'2020-03-25 15:00:00','2020-03-25 20:30:30')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(2,6,20,'2019-01-31 09:15:00','2020-01-31 12:00:50')
+INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_heure_de_la_livraison) VALUES(4,6,15,' 2019-02-02 14:30:00','2019-02-02 19:00:25')
 
 -- donnees table clients
 
