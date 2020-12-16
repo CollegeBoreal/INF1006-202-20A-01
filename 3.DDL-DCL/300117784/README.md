@@ -44,3 +44,8 @@ SELECT COUNT(Article) AS NB_Jeux FROM ARTICLES JOIN TYPESARTICLES USING(Type_Art
 WHERE Nom_Type_Article='Jeux';
 
 ```
+---
+# :pushpin: EXPLAIN
+
+### 1. :exclamation: 
+
