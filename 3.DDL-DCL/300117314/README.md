@@ -70,7 +70,7 @@ SELECT * FROM COMMANDES;
 
 ## :pushpin::star: quelques Requêtes selon les données:
 
-:star: une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec son nom avec  le nom de client et d'employé qui a travaillé sur cette machine: 
+:star: Une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec son nom avec  le nom de client et d'employé qui a travaillé sur cette machine: 
 
 ```
 SELECT COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom FROM COMMANDES  
@@ -82,7 +82,7 @@ GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom;
 
 ![image](image/11.PNG)
 
-:star: une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec le nom de client, le montant qu'on a payé, et quel département a été en charge: 
+:star: Une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec le nom de client, le montant qu'on a payé, et quel département a été en charge: 
 
 ```
 SELECT COMMANDES.nom_de_instrument,  CLIENTS.Nom, SERVICES.montant, EMPLOYES.nom_de_departement FROM COMMANDES  
@@ -94,4 +94,10 @@ GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom_de_depa
 ```
 
 ![image](image/12.PNG)
+
+:star: Une Requêtes pour extraire les meilleures routes pour extraire les informations de la table précédente:
+
+![image](image/16.PNG)
+
+
 
