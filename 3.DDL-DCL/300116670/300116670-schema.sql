@@ -64,7 +64,7 @@ CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
 produit INT,
 prix_location INT,
-PRIMARY KEY (location,produit),
+PRIMARY KEY (location),
 FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
 );
 
@@ -90,7 +90,6 @@ FOREIGN KEY(client) REFERENCES CLIENTS(client),
 FOREIGN KEY(location) REFERENCES LOCATIONS(location),
 FOREIGN KEY(produit) REFERENCES PRODUITS(produit)
 );
-
 
 
 
