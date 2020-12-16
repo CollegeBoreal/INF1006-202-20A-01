@@ -82,6 +82,7 @@ GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom;
 
 ![image](image/11.PNG)
 
+:star: une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec le nom de client, le montant qu'on a payé, et quel département a été en charge: 
 
 ```
 SELECT COMMANDES.nom_de_instrument,  CLIENTS.Nom, SERVICES.montant, EMPLOYES.nom_de_departement FROM COMMANDES  
