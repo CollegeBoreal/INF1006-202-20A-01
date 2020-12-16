@@ -70,7 +70,7 @@ SELECT * FROM COMMANDES;
 
 ## :pushpin::star: quelques Requêtes selon les données:
 
-:star: une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec son nom et le nom d'employé qui a travaillé sur cette machine: 
+:star: une Requêtes pour extraire les informations concernant les équipements d'un/e client/e avec son nom avec  le nom de client et d'employé qui a travaillé sur cette :star:machine: 
 
 ```
 SELECT COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom FROM COMMANDES  
