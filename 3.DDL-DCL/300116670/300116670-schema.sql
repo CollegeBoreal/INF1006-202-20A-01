@@ -57,11 +57,6 @@ FOREIGN KEY (client) REFERENCES CLIENTS(client),
 CONSTRAINT quantite_nonzero CHECK (quantite <> 0)
 );
 
-CREATE TABLE PRIX_LOCATIONS(
-prix_location INT AUTO_INCREMENT,
-prix INT,
-PRIMARY_KEY (prix_location)
-);
 
 CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
@@ -69,7 +64,12 @@ produit INT,
 prix_location INT,
 PRIMARY_KEY (location),
 FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
-FOREIGN KEY (prix_location) REFERENCES PRIX_LOCATIONS(prix_location)
+);
+
+CREATE TABLE PRIX_LOCATIONS(
+prix_location INT AUTO_INCREMENT,
+location,
+PRIMARY_KEY (prix_location)
 );
 
   
@@ -84,7 +84,6 @@ date_de_retour DATETIME DEFAULT NULL,
 PRIMARY_KEY(service_location,client,prix_location),
 FOREIGN KEY(client) REFERENCES CLIENTS(client),
 FOREIGN KEY(location) REFERENCES LOCATIONS(location);
-FOREIGN_KEY(prix_location) REFERENCES PRIX_LOCATIONS(prix_location)
 );
 
 
