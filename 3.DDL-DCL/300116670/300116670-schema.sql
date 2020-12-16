@@ -17,6 +17,8 @@ USE MOTOSPORT;
 -- CREATION DES TABLES
 -- *********************************
 
+CREATE TABLE FOURNISSEURS(
+fournisseur INT AUTO_INCREMENT,
 Nom VARCHAR(35) NOT NULL,
 Coordonnees VARCHAR(13) NOT NULL,
 Addresse VARCHAR(39) NOT NULL,
@@ -40,7 +42,7 @@ Coordonnees VARCHAR(13) NOT NULL,
 Addresse VARCHAR(39) NOT NULL,
 Addresse_electronique VARCHAR(50) NOT NULL,
 PRIMARY KEY (client),
-UNIQUE INDEX `Adresse_electronique_UNIQUE` (`Adresse_electronique` ASC)
+CONSTRAINT Adresse_electronique_U UNIQUE (Adresse_electronique ASC)
 );
 
 
@@ -68,24 +70,28 @@ FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
 
 CREATE TABLE PRIX_LOCATIONS(
 prix_location INT AUTO_INCREMENT,
-location,
+location INT,
 PRIMARY KEY (prix_location),
-FOREIGN KEY(location)
+FOREIGN KEY(location) REFERENCES LOCATIONS(location)
 );
 
   
-CREATE TABLE SERVICE
+CREATE TABLE SERVICE(
 service INT AUTO_INCREMENT,
 client INT,
+produit INT,
 quantite INT,
-location INT,
 total INT,
 date_de_sortie DATETIME NOT NULL,
 date_de_retour DATETIME DEFAULT NULL,
-PRIMARY_KEY(service_location,client,prix_location),
+PRIMARY KEY(service_location,client,produit),
 FOREIGN KEY(client) REFERENCES CLIENTS(client),
-FOREIGN KEY(location) REFERENCES LOCATIONS(location);
+FOREIGN KEY(location) REFERENCES LOCATIONS(location)
 );
+
+
+
+
 
 
 
