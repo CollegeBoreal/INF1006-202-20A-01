@@ -18,6 +18,9 @@ INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUE
 INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUES (2,'Moniteur 32P',1,'15');
 INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUES (3,'Manette Ps4',1,'60');
 INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUES (3,'Fifa2020',3,'60');
+INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUES (3,'Warios',3,'60');
+INSERT INTO ARTICLES (Fournisseur,Nom_Article,Type_Article,quantite_Stock) VALUES (3,'Mario',3,'60');
+
 
 -- Data TYPES DE SERVICES 
 INSERT INTO TYPESDESERVICES (nom_du_Service) VALUES ('Vente' );
@@ -27,4 +30,7 @@ INSERT INTO TYPESDESERVICES (nom_du_Service) VALUES ('depanage');
 -- Data SERVICES
 INSERT INTO SERVICES  VALUES (1,1,1,'5000',3,'2020/3/30');
 INSERT INTO SERVICES  VALUES (2,3,1,'5000',3,'2020/3/30');
+INSERT INTO SERVICES  VALUES (2,2,3,'5000',3,'2020/45');
+INSERT INTO SERVICES  VALUES (2,3,3,'24000',3,'2020/7/10');
+
 
