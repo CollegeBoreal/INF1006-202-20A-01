@@ -30,7 +30,7 @@ produit INT AUTO_INCREMENT,
 fournisseur INT,
 Nom_du_produit VARCHAR(20),
 Prix_du_produit INT NOT NULL,
-PRIMARY KEY (produit),
+PRIMARY KEY (produit,fournisseur),
 FOREIGN KEY (fournisseur) REFERENCES FOURNISSEURS(fournisseur)
 );
 
@@ -39,8 +39,8 @@ client INT AUTO_INCREMENT,
 Nom VARCHAR(35) NOT NULL,
 Prenom VARCHAR(35) NOT NULL,
 Coordonnees VARCHAR(13) NOT NULL,
-Addresse VARCHAR(39) NOT NULL,
-Addresse_electronique VARCHAR(50) NOT NULL,
+Adresse VARCHAR(39) NOT NULL,
+Adresse_electronique VARCHAR(50) NOT NULL,
 PRIMARY KEY (client),
 CONSTRAINT Adresse_electronique_U UNIQUE (Adresse_electronique ASC)
 );
@@ -69,9 +69,9 @@ FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
 );
 
 CREATE TABLE PRIX_LOCATIONS(
-prix_location INT AUTO_INCREMENT,
+prix_location INT,
 location INT,
-PRIMARY KEY (prix_location),
+PRIMARY KEY (prix_location,location),
 FOREIGN KEY(location) REFERENCES LOCATIONS(location)
 );
 
@@ -90,14 +90,6 @@ FOREIGN KEY(client) REFERENCES CLIENTS(client),
 FOREIGN KEY(location) REFERENCES LOCATIONS(location),
 FOREIGN KEY(produit) REFERENCES PRODUITS(produit)
 );
-
-
-
-
-
-
-
-
 
 
 
