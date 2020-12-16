@@ -97,7 +97,7 @@ GROUP BY COMMANDES.nom_de_instrument, vendeur, CLIENTS.Nom, EMPLOYES.nom_de_depa
 
 :star: Une Requêtes pour extraire les meilleures routes pour extraire les informations de la table précédente:
 
-![image](image/16.PNG)
+![image](image/17.PNG)
 
 
 
