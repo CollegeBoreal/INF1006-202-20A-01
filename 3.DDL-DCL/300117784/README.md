@@ -46,6 +46,21 @@ WHERE Nom_Type_Article='Jeux';
 ```
 ---
 # :pushpin: EXPLAIN
+---
 
 ### 1. :exclamation: 
+![Somme des Montant Vendu](img/Explain1.JPG)
+
+---
+
+### 2. :exclamation: 
+![Tous les articles Depanne](img/Explain2.JPG)
+
+---
+
+### 3. :exclamation: 
+![Le Nombre de Jeux ](img/Explain3.JPG)
+
+---
+
 
