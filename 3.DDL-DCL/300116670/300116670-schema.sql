@@ -62,23 +62,24 @@ CREATE TABLE LOCATIONS(
 location INT AUTO_INCREMENT,
 produit INT,
 prix_location INT,
-PRIMARY_KEY (location),
+PRIMARY KEY (location),
 FOREIGN KEY (produit) REFERENCES PRODUITS(produit)
 );
 
 CREATE TABLE PRIX_LOCATIONS(
 prix_location INT AUTO_INCREMENT,
 location,
-PRIMARY_KEY (prix_location)
+PRIMARY KEY (prix_location),
+FOREIGN KEY(location)
 );
 
   
-CREATE TABLE SERVICE(
+CREATE TABLE SERVICE
 service INT AUTO_INCREMENT,
 client INT,
 quantite INT,
 location INT,
-prix_location,
+total INT,
 date_de_sortie DATETIME NOT NULL,
 date_de_retour DATETIME DEFAULT NULL,
 PRIMARY_KEY(service_location,client,prix_location),
