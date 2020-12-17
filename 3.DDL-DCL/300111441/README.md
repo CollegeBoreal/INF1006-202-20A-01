@@ -18,8 +18,8 @@
 
 ``SELECT* FROM RELEVES;``
 
-<img src="image/base.png" width="8" height="9"></img>
+<img src="image/base.png" width="" height=""></img>
 
 ``SELECT nbre_deces_male FROM RELEVES
 
-<img src="image/Capture d'écran 2020-12-17 075658.png" width="8" height="9"></img>
+<img src="image/Capture d'écran 2020-12-17 075658.png" width="" height=""></img>
