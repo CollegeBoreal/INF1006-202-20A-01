@@ -1,24 +1,24 @@
-# mon domain
+#  :chicken: :chicken: mon domain :chicken: :chicken:
 
-### :chicken: EMPIRE_POUSSINNY
+### :chicken: EMPIRE_POUSSINNY :chicken:
 
-## :one: Description:
+## :one: :chicken: :chicken: Description: :chicken: :chicken:
 ``Cette base de donnees represente une mini ferme qui eleve des poussins et la production des oeufs. Elle permet la gestion facile des medicaments, la nourriture et les releves.``
 
 
-## :two: REVERSE ENGINEERING:
+## :two: :chicken: REVERSE ENGINEERING :chicken:
 
 <img src="image/empire.png" width="" height=""></img>
 
 
-## :three: REQUESTES:
+## :three: REQUESTES :chicken:
 
 
-## :apple: Imprimez tous les Releves ensuite afficher nombre deces male
+## :chicken: Imprimez tous les Releves ensuite afficher nombre deces male :chicken:
 
 ``SELECT* FROM RELEVES;``
 
-## :bird:
+## :chicken:  :chicken: :chicken:  :chicken:  v
 
 
 <img src="image/base.png" width="" height=""></img>
@@ -26,18 +26,18 @@
 
 
 
-## :orange:
+## :chicken: :chicken: :chicken: :chicken: :chicken: :chicken:
 
 ``SELECT nbre_deces_male FROM RELEVES``
 
 
 
 
-## :dog:
+## :chicken: :chicken:  :chicken:  :chicken:  :chicken:
 
 
 
 <img src="image/basee.png" width="" height=""></img>
 
 
-## :four:
+## :chicken:                       :chicken:   
