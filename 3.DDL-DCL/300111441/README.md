@@ -18,14 +18,14 @@
 
 ``SELECT* FROM RELEVES;``
 
-<img src="image/base.png" width="" height=""></img>
+::bird <img src="image/base.png" width="" height=""></img>
 
 
 
 
-``SELECT nbre_deces_male FROM RELEVES``
+:palm: ``SELECT nbre_deces_male FROM RELEVES``
 
 
 
 
-<img src="image/basee.png" width="" height=""></img>
+:dog: <img src="image/basee.png" width="" height=""></img>
