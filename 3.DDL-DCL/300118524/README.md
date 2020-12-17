@@ -16,6 +16,10 @@
   - (3)
   
     - afficher tous les noms des fournisseurs et leurs numéro de téléphone qui ont des prix égale à 49
+    
+  - (4) 
+  
+    - Imprimer le nombre de vente de la compagnie
 
 :four: requêtes
 
@@ -36,6 +40,12 @@
   - (3)
   
     - ![image](images/requete.png)
+    
+  - (4)
+  
+    - SELECT  COUNT(vente)  FROM VENTES;
+    
+
  
 
 
