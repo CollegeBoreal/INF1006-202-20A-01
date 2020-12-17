@@ -30,30 +30,30 @@ INSERT INTO VENTES (client,produit,quantite,date_et_heure_de_la_vente,date_et_he
 
 -- donnees table clients
 
-INSERT INTO CLIENTS (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Kouta','Auriane','647-648-5657,'22 Garden avenue east')
-INSERT INTO CLIENTS (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Batchi','Ezechiel','647-250-8987','123 Baldwin street')
-INSERT INTO CLIENTS (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Ngoma','Christopher','647-470-2250','79 Gridwood street') 
-INSERT INTO CLIENTS (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Green','Desmond',647-270-2550,'57 Combermere drive',ngoma)
-INSERT INTO CLIENTS (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Moe','Roger','647-547-5957,'101 Combermere drive')
+INSERT INTO CLIENTS (Nom,Prenom,Coordonnees,Adresse,Adresse_electronique) VALUES ('Kouta','Auriane','647-648-5657', ' 22 Garden avenue east','koutaauriane@gmail.com');
+INSERT INTO CLIENTS (Nom,Prenom,Coordonnees,Adresse,Adresse_electronique) VALUES ('Batchi','Ezechiel','647-250-8987','123 Baldwin street','batchiezechiel@gmail.com');
+INSERT INTO CLIENTS (Nom,Prenom,Coordonnees,Adresse,Adresse_electronique) VALUES ('Ngoma','Christopher','647-470-2250','79 Gridwood street','ngomachristopher@gmail.com');
+INSERT INTO CLIENTS (Nom,Prenom,Coordonnees,Adresse,Adresse_electronique) VALUES ('Green','Desmond','647-270-2550','57 Combermere drive','greendesmond@gmail.colocationlocationproduitprix_locationNomm');
+INSERT INTO CLIENTS (Nom,Prenom,Coordonnees,Adresse,Adresse_electronique) VALUES ('Moe','Roger','647-547-5957','101 Combermere drive','moegeorge@gmail.com');
 
 
 -- donnees table location
-INSERT INTO LOCATIONS (produit,prix_location) VALUES('Kouta','Auriane','647-648-5657,'22 Garden avenue east')
-INSERT INTO LOCATIONS (produit,prix_location) VALUES('Batchi','Ezechiel','647-250-8987','123 Baldwin street')
-INSERT INTO LOCATIONS (produit,prix_location) VALUES('Ngoma','Christopher','647-470-2250','79 Gridwood street') 
-INSERT INTO LOCATIONS (produit,prix_location) VALUES('Green','Desmond',647-270-2550,'57 Combermere drive',ngoma)
-INSERT INTO LOCATIONS (produit,prix_location) VALUES('Moe','Roger','647-547-5957,'101 Combermere drive')
+INSERT INTO LOCATIONS (produit,prix_location) VALUES()
+INSERT INTO LOCATIONS (produit,prix_location) VALUES()
+INSERT INTO LOCATIONS (produit,prix_location) VALUES() 
+INSERT INTO LOCATIONS (produit,prix_location) VALUES()
+INSERT INTO LOCATIONS (produit,prix_location) VALUES()
 
 -- donnees table service
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Kouta','Auriane','647-648-5657,'22 Garden avenue east')
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Batchi','Ezechiel','647-250-8987','123 Baldwin street')
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Ngoma','Christopher','647-470-2250','79 Gridwood street') 
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Green','Desmond',647-270-2550,'57 Combermere drive',ngoma)
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Moe','Roger','647-547-5957,'101 Combermere drive')
+INSERT INTO SERVICE (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Kouta','Auriane','647-648-5657,'22 Garden avenue east')
+INSERT INTO SERVICE (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Batchi','Ezechiel','647-250-8987','123 Baldwin street')
+INSERT INTO SERVICE (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Ngoma','Christopher','647-470-2250','79 Gridwood street') 
+INSERT INTO SERVICE (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Green','Desmond',647-270-2550,'57 Combermere drive',ngoma)
+INSERT INTO SERVICE (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Moe','Roger','647-547-5957,'101 Combermere drive')
 
 -- donnees prix_location
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Kouta','Auriane','647-648-5657,'22 Garden avenue east')
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Batchi','Ezechiel','647-250-8987','123 Baldwin street')
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Ngoma','Christopher','647-470-2250','79 Gridwood street') 
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Green','Desmond',647-270-2550,'57 Combermere drive',ngoma)
-INSERT INTO VENTES (Nom,Prenom,Coordonnées,Adresse,Adresse_electronique) VALUES('Moe','Roger','647-547-5957,'101 Combermere drive')
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES()
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES()
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES() 
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES()
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES()
