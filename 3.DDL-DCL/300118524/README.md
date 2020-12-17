@@ -19,13 +19,13 @@
 
   - (1)
   
-  - SELECT  * FROM CLIENTS;
+    - SELECT  * FROM CLIENTS;
   
   - (2)
   
-  - SELECT  CLIENTS.nom, CLIENTS.prenom, ZONES.ville FROM ZONES
-JOIN CLIENTS USING (zone)
-WHERE zone = '1'
+    - SELECT  CLIENTS.nom, CLIENTS.prenom, ZONES.ville FROM ZONES
+    JOIN CLIENTS USING (zone)
+    WHERE zone = '1'
  
 
 
