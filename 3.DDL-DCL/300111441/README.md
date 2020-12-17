@@ -18,3 +18,6 @@
 ``SELECT* FROM RELEVES;``
 
 ``SELECT nbre_deces_male FROM RELEVES
+
+
+<img src="image/base.png" width="" height=""></img>
