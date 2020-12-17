@@ -6,7 +6,7 @@
 
 - EXPLAIN
 
-[!image](image/explain.png)
+![image](images/explain.png)
 
 
 
