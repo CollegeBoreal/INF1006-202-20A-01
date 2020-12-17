@@ -24,7 +24,9 @@
   - (2)
   
     - SELECT  CLIENTS.nom, CLIENTS.prenom, ZONES.ville FROM ZONES
+    
     JOIN CLIENTS USING (zone)
+    
     WHERE zone = '1'
  
 
