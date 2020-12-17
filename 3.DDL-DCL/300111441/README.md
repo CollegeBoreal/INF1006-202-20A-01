@@ -22,4 +22,4 @@
 
 ``SELECT nbre_deces_male FROM RELEVES
 
-<img src="image/Capture d'écran 2020-12-17 075658.png" width="" height=""></img>
+<img src="image/basee.png" width="" height=""></img>
