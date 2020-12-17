@@ -29,12 +29,13 @@
   
     - SELECT  CLIENTS.nom, CLIENTS.prenom, ZONES.ville FROM ZONES
     
-  - (3)
-    - ![image](images/requete.png)
-    
     JOIN CLIENTS USING (zone)
     
     WHERE zone = '1'
+    
+  - (3)
+  
+    - ![image](images/requete.png)
  
 
 
