@@ -26,7 +26,7 @@
 
 
 
-## :plane:
+## :orange:
 
 ``SELECT nbre_deces_male FROM RELEVES``
 
