@@ -3,7 +3,7 @@
 ### :chicken: EMPIRE_POUSSINNY :chicken:
 
 ## :one: :chicken: :chicken: Description: :chicken: :chicken:
-``Cette base de donnees represente une mini ferme qui eleve des poussins et la production des oeufs. Elle permet la gestion facile des medicaments, la nourriture et les releves.``
+``Cette base de donnees represente une mini ferme qui eleve des poussins et la production des oeufs. Elle facilite la gestion des medicaments, la nourriture et les releves.``
 
 
 ## :two: :chicken: REVERSE ENGINEERING :chicken:
