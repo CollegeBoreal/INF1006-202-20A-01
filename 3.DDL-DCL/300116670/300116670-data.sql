@@ -50,15 +50,15 @@ INSERT INTO LOCATIONS (produit,prix_location) VALUES(8,8);
 
 
 -- donnees table service
-INSERT INTO SERVICE () VALUES();
-INSERT INTO SERVICE () VALUES();
-INSERT INTO SERVICE () VALUES();
-INSERT INTO SERVICE () VALUES();
-INSERT INTO SERVICE () VALUES();
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(1,2,4,5,2500,'2020-05-15 12:30:00','2020-05-16 17:00:00');
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(2,5,3,2,500,'2020-07-31 10:30:00','2020-05-31 15:30:20');
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(8,4,6,3,1200,'2020-06-14 09:00:00','2020-05-15 11:15:00');
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(6,1,7,10,5000,'2020-05-15 11:30:00','2020-05-15 18:45:00');
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(7,3,5,30,19800,'2020-12-29 12:30:00','2020-05-15 17:00:00');
 
 -- donnees prix_location
-INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES();
-INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES();
-INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES();
-INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES();
-INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES();
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(500,4);
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(250,3);
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(400,6);
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(660,5);
+INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(500,7);
