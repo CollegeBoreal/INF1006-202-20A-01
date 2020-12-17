@@ -26,25 +26,33 @@
     -- Afficher le noms des clients avec leurs achats 
 
  SELECT CLIENTS.nom,
- SUM(SERVICE.montant) As facture_totale,  
- PRODUITS.nom_du_produit As achat
- FROM CLIENTS
- JOIN SERVICE USING (client)
- JOIN LOCATIONS USING (produit)
- JOIN PRODUITS USING (produit)
- WHERE date_de_sortie = "2020-12-29 12:30:00 "
- GROUP BY CLIENTS.nom, PRODUITS.nom_du_produit ;
  
-    -- Afficher les produits qui ont été le plus acheter et louer après 2020-03-31 %
- SELECT
-
+ SUM(SERVICE.montant) As facture_totale, 
+ 
+ PRODUITS.nom_du_produit As achat
+ 
+ FROM CLIENTS
+ 
+ JOIN SERVICE USING (client)
+ 
+ JOIN LOCATIONS USING (produit)
+ 
+ JOIN PRODUITS USING (produit)
+ 
+ WHERE date_de_sortie = "2020-12-29 12:30:00 "
+ 
+ GROUP BY CLIENTS.nom, PRODUITS.nom_du_produit ;
 
     -- Imprimer le nom et le montant de la facture totale des clients ayant louer le 2020-12-29 12:30:00 
      
 SELECT CLIENTS.nom, SUM(SERVICE.montant) As facture_totale 
+
 FROM CLIENTS
+
 JOIN SERVICE USING (client)
+
 WHERE date_de_sortie = "2020-12-29 12:30:00 "
+
 GROUP BY CLIENTS.nom;
 
 
@@ -52,20 +60,31 @@ GROUP BY CLIENTS.nom;
 
 1/ 
 EXPLAIN SELECT CLIENTS.nom, SUM(SERVICE.montant) As facture_totale FROM CLIENTS
+
 JOIN SERVICE USING (client)
+
 WHERE date_de_sortie = "2020-12-29 12:30:00 "
+
 GROUP BY CLIENTS.nom;
 
 
  4/
  EXPLAIN SELECT CLIENTS.nom,
+ 
  SUM(SERVICE.montant) As facture_totale,  
+ 
  PRODUITS.nom_du_produit As achat
+ 
  FROM CLIENTS
+ 
  JOIN SERVICE USING (client)
+ 
  JOIN LOCATIONS USING (produit)
+ 
  JOIN PRODUITS USING (produit)
+ 
  WHERE date_de_sortie = "2020-12-29 12:30:00 "
+ 
  GROUP BY CLIENTS.nom, PRODUITS.nom_du_produit ;
  
  
