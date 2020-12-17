@@ -55,6 +55,7 @@ INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,dat
 INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(8,4,6,3,1200,'2020-06-14 09:00:00','2020-05-15 11:15:00');
 INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(6,1,7,10,5000,'2020-05-15 11:30:00','2020-05-15 18:45:00');
 INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(7,3,5,30,19800,'2020-12-29 12:30:00','2020-05-15 17:00:00');
+INSERT INTO SERVICE (location,client,produit,quantite,montant,date_de_sortie,date_de_retour) VALUES(7,3,6,30,19800,'2020-12-29 12:30:00','2020-05-15 17:00:00');
 
 -- donnees prix_location
 INSERT INTO PRIX_LOCATIONS (prix_location,location) VALUES(500,4);
