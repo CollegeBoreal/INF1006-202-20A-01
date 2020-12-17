@@ -6,13 +6,12 @@
 
 - Mes rapports
   - (1) 
+    - Imprimer tous les clients
   
   
   - (2)
   
-  - Imprimer tous les clients
-  
-  - afficher le nom, prenom, des clients de la zone 1 ou zone d'Alberta
+    - afficher le nom, prenom, des clients de la zone 1 ou zone d'Alberta
 
 :four: requêtes
 
