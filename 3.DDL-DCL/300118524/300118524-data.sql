@@ -78,12 +78,5 @@ INSERT INTO VENTES( produit, client, telephone) VALUES ('1', '1','5147779999');
 INSERT INTO VENTES( produit, client, telephone) VALUES ('3', '2','2125556767');
 INSERT INTO VENTES( produit, client, telephone) VALUES ('4', '3','4380007777');
 INSERT INTO VENTES( produit, client, telephone) VALUES ('5', '4','6471114444');
-INSERT INTO VENTES( produit, client, telephone) VALUES ('6', '5','8198887575');
-INSERT INTO VENTES( produit, client, telephone) VALUES ('2', '6','5146661111');
-
--- test
-SELECT ZONES.zone, ZONES.province FROM ZONES
-JOIN CLIENTS USING (zone)
-JOIN ROUTEURS USING (routeur)
-JOIN VITESSE USING (vitesse)
-WHERE zone ="1";
+INSERT INTO VENTES( produit, client, telephone) VALUES ('6', '5','5146661111');
+INSERT INTO VENTES( produit, client, telephone) VALUES ('2', '6','8198887575');
