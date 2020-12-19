@@ -20,9 +20,10 @@ INSERT INTO INGREDIENTS (Nom_ingredient) VALUES ("Mais");
 
 -- Creation des donnees de la table recette
 
-INSERT INTO RECETTES (Nom_de_la_recette, Ingredient, plat) VALUES ("Beignet", 1, 2 );
-INSERT INTO RECETTES (Nom_de_la_recette, Ingredient, plat) VALUES ("Haricot", 2, 1 );
-INSERT INTO RECETTES (Nom_de_la_recette, Ingredient, plat) VALUES ("Mais", 7, 3);
+INSERT INTO RECETTES (Nom_de_la_recette, Ingredient) VALUES ("Beignet", 1 );
+INSERT INTO RECETTES (Nom_de_la_recette, Ingredient) VALUES ("Haricot", 2 );
+INSERT INTO RECETTES (Nom_de_la_recette, Ingredient) VALUES ("Mais", 7);
+
 
 
 -- Creation des donnees de la table commande
