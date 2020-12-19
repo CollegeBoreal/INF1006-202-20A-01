@@ -38,7 +38,6 @@ PRIMARY KEY (plat)
   Nom_de_la_recette VARCHAR(25) NOT NULL,
   ingredient INT NOT NULL,
   PRIMARY KEY (recette, ingredient),
-  CONSTRAINT RECETTES_ibfk_1
   FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient)
 );
 
@@ -79,7 +78,6 @@ PRIMARY KEY (plat)
   montant INT,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
   facture INT,
-  CONSTRAINT PAIEMENTS_ibfk_1
   PRIMARY KEY (paiement, facture),
   FOREIGN KEY (facture) REFERENCES FACTURES (facture)
 );
