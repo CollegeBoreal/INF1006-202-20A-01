@@ -27,10 +27,10 @@ INSERT INTO RECETTES (Nom_de_la_recette, Ingredient, plat) VALUES ("Mais", 7, 3)
 
 -- Creation des donnees de la table commande
 
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-02''05:40:10', 1);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-05''08:10:08', 2);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-07''07:20:09', 4);
-INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-06''10:20:20', 3);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-02 05:40:10', 1);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-03-05 08:10:08', 2);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-07 07:20:09', 4);
+INSERT INTO COMMANDES (Date_et_heure_de_commande, Plat) VALUES ('2020-11-06 10:20:20', 3);
 
 
 -- Creation des donnees de la table client
@@ -51,11 +51,10 @@ INSERT INTO FACTURES (montant, quantites) VALUES (15, 2);
 
 -- Creation des donnees de la table paiement
 
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture) VALUES (15, '2020-03-02 05:40:30', 1);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture) VALUES (25, '2020-03-05 08:10:30', 2);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture) VALUES (15, '2020-11-07 07:20:40', 3);
-INSERT INTO PAIEMENTS (montant, Date_et_heure_de_paiement, facture) VALUES (15, '2020-11-06 10:35:30', 4);
-
+INSERT INTO PAIEMENTS (paiement, montant, Date_et_heure_de_paiement, facture) VALUES (1, 15, '2020-03-02 05:40:30', 1);
+INSERT INTO PAIEMENTS (paiement, montant, Date_et_heure_de_paiement, facture) VALUES (2, 25, '2020-03-05 08:10:30', 2);
+INSERT INTO PAIEMENTS (paiement, montant, Date_et_heure_de_paiement, facture) VALUES (3, 15, '2020-11-07 07:20:40', 3);
+INSERT INTO PAIEMENTS (paiement, montant, Date_et_heure_de_paiement, facture) VALUES (4, 15, '2020-11-06 10:35:30', 4);
 
 
 
