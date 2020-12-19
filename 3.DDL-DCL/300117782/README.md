@@ -51,4 +51,13 @@ SELECT *
 FROM RECETTES;
 ```
 
-:heavy_check_mark: Montant total vendu
+:heavy_check_mark: Chifre d'afaire par plats
+
+```
+SELECT Nom_du_plat, FACTURES.montant
+FROM PLATS
+JOIN COMMANDES USING (plat)
+JOIN FACTURES USING (commande)
+GROUP BY Nom_du_plat, FACTURES.montant
+```
+
