@@ -44,8 +44,11 @@ CREATE TABLE PAIEMENTS (
 
 ## :watermelon: Requête 
 
-:heavy_check_mark: Nombre de plat vendu
-
 :heavy_check_mark: Afficher la recette
+
+```
+SELECT * 
+FROM RECETTES;
+```
 
 :heavy_check_mark: Montant total vendu
