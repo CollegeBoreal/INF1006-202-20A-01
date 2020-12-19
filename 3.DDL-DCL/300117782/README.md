@@ -61,7 +61,7 @@ JOIN FACTURES USING (commande)
 GROUP BY Nom_du_plat, FACTURES.montant
 ```
 
-## :watermelon: Explains
+## :rice: Explains
 
 :heavy_check_mark: Afficher la recette
 
