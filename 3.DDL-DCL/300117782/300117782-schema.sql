@@ -80,7 +80,7 @@ PRIMARY KEY (plat)
   montant FLOAT NULL DEFAULT NULL,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
   facture INT NULL DEFAULT NULL,
-  commande INT NULL DEFAULT NULL,
+  PRIMARY KEY (paiement, facture),
   FOREIGN KEY (facture) REFERENCES FACTURES (facture)
   );
       
