@@ -37,11 +37,10 @@ PRIMARY KEY (plat)
   recette INT NOT NULL AUTO_INCREMENT,
   Nom_de_la_recette VARCHAR(25) NOT NULL,
   ingredient INT NOT NULL,
-  plat INT,
   PRIMARY KEY (recette, ingredient),
-  FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient),
-  FOREIGN KEY (plat) REFERENCES PLATS (plat)
-  );
+  CONSTRAINT RECETTES_ibfk_1
+  FOREIGN KEY (ingredient) REFERENCES INGREDIENTS (ingredient)
+);
 
 -- creation de la table commande
 
@@ -75,14 +74,16 @@ PRIMARY KEY (plat)
   );
   -- creation de la table paiement
   
-  CREATE TABLE PAIEMENTS (
+ CREATE TABLE PAIEMENTS (
   paiement INT NOT NULL,
-  montant INT,
+  montant FLOAT NULL DEFAULT NULL,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
-  facture INT,
-  PRIMARY KEY (paiement, facture),
+  facture INT NULL DEFAULT NULL,
+  commande INT NULL DEFAULT NULL,
+  CONSTRAINT PAIEMENTS_ibfk_1
   FOREIGN KEY (facture) REFERENCES FACTURES (facture)
-  );
+);
+
       
     
     
