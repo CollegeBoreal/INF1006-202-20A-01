@@ -76,11 +76,11 @@ PRIMARY KEY (plat)
   
  CREATE TABLE PAIEMENTS (
   paiement INT NOT NULL,
-  montant FLOAT NULL DEFAULT NULL,
+  montant INT,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
-  facture INT NULL DEFAULT NULL,
-  commande INT NULL DEFAULT NULL,
+  facture INT,
   CONSTRAINT PAIEMENTS_ibfk_1
+  PRIMARY KEY (paiement, facture),
   FOREIGN KEY (facture) REFERENCES FACTURES (facture)
 );
 
