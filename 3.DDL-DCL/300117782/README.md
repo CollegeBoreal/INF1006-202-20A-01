@@ -51,7 +51,7 @@ SELECT *
 FROM RECETTES;
 ```
 
-:heavy_check_mark: Chifre d'afaire par plats
+:heavy_check_mark: Chiffre d'affaire par plats
 
 ```
 SELECT Nom_du_plat, FACTURES.montant
@@ -60,4 +60,19 @@ JOIN COMMANDES USING (plat)
 JOIN FACTURES USING (commande)
 GROUP BY Nom_du_plat, FACTURES.montant
 ```
+
+## :watermelon: Explains
+
+:heavy_check_mark: Afficher la recette
+
+![image](images/BB1.PNG)
+
+
+:heavy_check_mark: Chiffre d'affaire par plats
+
+![image](images/BB2.PNG)
+
+
+
+
 
