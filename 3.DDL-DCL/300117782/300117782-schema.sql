@@ -77,7 +77,7 @@ PRIMARY KEY (plat)
   
   CREATE TABLE PAIEMENTS (
   paiement INT NOT NULL,
-  montant FLOAT NULL DEFAULT NULL,
+  montant INT,
   Date_et_heure_de_Paiement DATETIME NOT NULL,
   facture INT,
   PRIMARY KEY (paiement, facture),
